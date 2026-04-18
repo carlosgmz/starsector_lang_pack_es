@@ -1,11 +1,11 @@
 {
-  "id": "starsector_lang_pack_fr",
-  "name": "Starsector Language Pack - French",
-  "author": "mipsou",
+  "id": "starsector_lang_pack_es",
+  "name": "Starsector Language Pack - Spanish",
+  "author": "carlosgmz",
   "totalConversion": "false",
   "utility": "true",
-  "version": {"major":2, "minor":0, "patch":1},
-  "description": "Pack de langue francais pour Starsector. GitHub: github.com/mipsou/starsector_lang_pack_fr | Forum: fractalsoftworks.com/forum/index.php?topic=35135.0",
+  "version": {"major":0, "minor":0, "patch":1},
+  "description": "Paquete de idioma español para Starsector. GitHub: github.com/carlosgmz/starsector_lang_pack_es | Forum: ",
   "gameVersion": "0.98a-RC8",
   "modPlugin": "data.scripts.FrenchLangModPlugin",
   "replace": [

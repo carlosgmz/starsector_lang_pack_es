@@ -1,3 +1,9 @@
+# Traducción de Starsector a Español
+
+En progreso; este proyecto es un fork del proyecto de [mipsou](https://github.com/mipsou/starsector_lang_pack_fr). Todos los créditos van a él y por supuesto a los desarrolladores de Starsector.
+
+Readme original:
+
 # Jouez à Starsector en français
 
 > 40 000+ dialogues, missions, Codex, compétences traduits.
