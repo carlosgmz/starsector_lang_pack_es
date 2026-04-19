@@ -1,6 +1,6 @@
 id,name,desc,bravery,CAPTURE,PATROL,INTERCEPT,ASSAULT,DEFEND,STRIKE,HARASS,FIRE_SUPPORT,CARRIER_GROUP,CIVILIAN_CRAFT,STRIKE_FORCE,LIGHT_ESCORT,DESTROYER_ESCORT
-timid,Timide,"In combat, this officer will attempt to avoid direct engagements if at all possible, even if commanding a combat vessel.",5,0.5,0.5,0.1,0,1,0,0,3,3,3,1,1,1
-cautious,Prudent,"In combat, this officer will prefer to stay out of enemy range, only occasionally moving in if out-ranged by the enemy.",5,1,0.7,0.3,0.3,2,0.3,0.3,2,2,2,1,1,1
-steady,Équilibré,"In combat, this officer will favor a balanced approach with tactics matching the current situation.",5,1,1,1,1,1,1,1,1,1,1,1,1,1
-aggressive,Agressif,"In combat, this officer will prefer to engage at a range that allows the use of all of their ship's weapons, will pilot civilian ships as if they were combat ships, and will employ any fighters under their command aggressively.",5,1.5,1,2,2,0.5,2,2,0.5,0.5,0.5,1,0.5,0.5
-reckless,Téméraire,"In combat, this officer is aggressive to a fault, often disregarding the safety of their ship entirely in an effort to engage the enemy.",5,1.5,1,2,2,0.5,2,2,0.5,0.5,0.5,1,0.5,0.5
+timid,Tímido,"En combate, este oficial intentará evitar enfrentamientos directos siempre que sea posible, incluso si está al mando de una nave de combate.",5,0.5,0.5,0.1,0,1,0,0,3,3,3,1,1,1
+cautious,Cauteloso,"En combate, este oficial preferirá mantenerse fuera del alcance del enemigo, solo acercándose ocasionalmente si el enemigo le supera en alcance.",5,1,0.7,0.3,0.3,2,0.3,0.3,2,2,2,1,1,1
+steady,Equilibrado,"En combate, este oficial optará por un enfoque equilibrado con tácticas adaptadas a la situación del momento.",5,1,1,1,1,1,1,1,1,1,1,1,1,1
+aggressive,Agresivo,"En combate, este oficial preferirá enfrentarse a una distancia que le permita utilizar todas las armas de la nave, pilotará naves civiles como si fueran naves de combate, y empleará cualquier caza bajo su mando agresivamente.",5,1.5,1,2,2,0.5,2,2,0.5,0.5,0.5,1,0.5,0.5
+reckless,Temerario,"En combate, este oficial es agresivo hasta el extremo, frecuentemente haciendo caso omiso de la seguridad de su nave con tal de enfrentarse al enemigo.",5,1.5,1,2,2,0.5,2,2,0.5,0.5,0.5,1,0.5,0.5
