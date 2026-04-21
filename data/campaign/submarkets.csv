@@ -11,7 +11,7 @@ Vender una cantidad suficiente de un producto resolverá temporalmente la escase
 Las transacciones en el mercado negro pueden llamar la atención de las autoridades, dando lugar a inspecciones de cargamento y a una dismunición de la reputación, a menos que los intercambios se realicen con el transpondedor apagado.
 
 Participar en el comercio legítimo como «tapadera» también reduce la probabilidad de atraer la atención de las autoridades.",com.fs.starfarer.api.impl.campaign.submarkets.BlackMarketPlugin,graphics/factions/black_market.png,999
-storage,Stockage,player,Espacio de almacenamiento para naves y mercancías.,com.fs.starfarer.api.impl.campaign.submarkets.StoragePlugin,graphics/factions/storage.png,1000
+storage,Almacén,player,Espacio de almacenamiento para naves y mercancías.,com.fs.starfarer.api.impl.campaign.submarkets.StoragePlugin,graphics/factions/storage.png,1000
 generic_military,,,"Comercia con la base militar de $theFaction.
 
 Aquí se pueden comprar y vender armas y otro material militar, incluso aunque sean ilegales en el mercado legal. Estar comisionado y una mejor reputación con $theFaction te permitirán acceder a material de mayor calidad.
