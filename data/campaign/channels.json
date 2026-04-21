@@ -9,7 +9,7 @@
 	},
 	"player_intel_always":{
 		"name":"Análisis y Proyecciones",
-		"type":"Evaluación de Inteligencia",
+		"type":"Informe de Inteligencia",
 		"shortType":"Intel",
 	},
 	"player_intel":{
