@@ -1,23 +1,23 @@
 id,name,faction,desc,script,icon,order
-open_market,"Marché
-Libre",,"Le marché libre. Seules les marchandises légales peuvent être échangées ici, et les transactions sont soumises à des tarifs douaniers. Plus de marchandises sont disponibles lorsque la stabilité est élevée.
+open_market,"Mercado
+Legal",,"El mercado legal. Aquí solo se pueden comercializar productos legales, y las transacciones están sujetas a aranceles. Hay más productos disponibles cuando el nivel de estabilidad es alto.
 
-Vendre suffisamment d'une marchandise résoudra temporairement une pénurie.",com.fs.starfarer.api.impl.campaign.submarkets.OpenMarketPlugin,,0
-black_market,"Marché
-Noir",pirates,"Le marché noir. Tout et n'importe quoi peut être acheté ou vendu, et il n'y a pas de tarifs douaniers. Plus de marchandises sont disponibles lorsque la stabilité est basse.
+Vender una cantidad suficiente de un producto resolverá temporalmente la escasez.",com.fs.starfarer.api.impl.campaign.submarkets.OpenMarketPlugin,,0
+black_market,"Mercado
+Negro",pirates,"El mercado negro. Se puede comprar y vender de todo, y no hay aranceles. Hay más productos disponibles cuando la estabilidad es baja.
 
-Vendre suffisamment d'une marchandise résoudra temporairement une pénurie.
+Vender una cantidad suficiente de un producto resolverá temporalmente la escasez.
 
-Les transactions au marché noir peuvent attirer l'attention des autorités, entraînant des inspections de cargaison et une réduction de la réputation de faction, sauf si les échanges sont effectués avec le transpondeur désactivé.
+Las transacciones en el mercado negro pueden llamar la atención de las autoridades, dando lugar a inspecciones de cargamento y a una dismunición de la reputación, a menos que los intercambios se realicen con el transpondedor apagado.
 
-S'engager dans du commerce légitime comme ""couverture"" réduit également la probabilité d'attirer l'attention des autorités.",com.fs.starfarer.api.impl.campaign.submarkets.BlackMarketPlugin,graphics/factions/black_market.png,999
-storage,Stockage,player,Espace de stockage pour vaisseaux et cargaison.,com.fs.starfarer.api.impl.campaign.submarkets.StoragePlugin,graphics/factions/storage.png,1000
-generic_military,,,"Commercer avec la base militaire $theFaction.
+Participar en el comercio legítimo como «tapadera» también reduce la probabilidad de atraer la atención de las autoridades.",com.fs.starfarer.api.impl.campaign.submarkets.BlackMarketPlugin,graphics/factions/black_market.png,999
+storage,Stockage,player,Espacio de almacenamiento para naves y mercancías.,com.fs.starfarer.api.impl.campaign.submarkets.StoragePlugin,graphics/factions/storage.png,1000
+generic_military,,,"Comercia con la base militar de $theFaction.
 
-Les armes et autres équipements militaires peuvent être achetés et vendus ici même s'ils sont illégaux sur le marché libre. Une commission et une meilleure réputation auprès de $theFaction donnent accès à du matériel de qualité supérieure.
+Aquí se pueden comprar y vender armas y otro material militar, incluso aunque sean ilegales en el mercado legal. Estar comisionado y una mejor reputación con $theFaction te permitirán acceder a material de mayor calidad.
 
-Rachètera les marchandises localement illégales dans le cadre d'un programme de rachat sans questions.
+Se comprarán productos ilegales a nivel local a través de un programa de readquisición sin preguntas.
 
-Vendre suffisamment d'une marchandise résoudra temporairement une pénurie.",com.fs.starfarer.api.impl.campaign.submarkets.MilitarySubmarketPlugin,,100
-local_resources,"Stocks de
-Ressources",,,com.fs.starfarer.api.impl.campaign.submarkets.LocalResourcesSubmarketPlugin,,200
+Vender una cantidad suficiente de un producto resolverá temporalmente la escasez.",com.fs.starfarer.api.impl.campaign.submarkets.MilitarySubmarketPlugin,,100
+local_resources,"Reservas de
+Recursos",,,com.fs.starfarer.api.impl.campaign.submarkets.LocalResourcesSubmarketPlugin,,200
