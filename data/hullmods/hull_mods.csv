@@ -215,8 +215,8 @@ Coordinador de Fragmentos,fragment_coordinator,,,,"codex_unlockable, fragment, n
 Casco del Malevo,dweller_hullmod,,,,dweller,,,,TRUE,TRUE,0,0,0,0,com.fs.starfarer.api.impl.combat.dweller.DwellerHullmod,Añade los elementos visuales del Malevo Envuelto y cualquier mecánica personalizada. No es visible para el jugador.,,,
 Manto Envuelto,shrouded_mantle,,,,"codex_unlockable, shrouded, no_drop_salvage",Special,,,,,3,6,9,15,com.fs.starfarer.api.impl.combat.dweller.ShroudedMantleHullmod,"La nave intentará (con suerte) alejarse del peligro cuando sufra daños importantes en el casco.
 
-Las bajas entre la tripulación en combate aumentan en un %s.",La nave se aleja para evitar los daños.,La nave se beneficia del %s de la curación proporcionada por Grieta Voraz.,graphics/hullmods/shrouded_mantle.png
-Nube de Tormenta Envuelta,shrouded_thunderhead,,,,"codex_unlockable, shrouded, no_drop_salvage","Weapons, Special",,,,,5,10,15,25,com.fs.starfarer.api.impl.combat.dweller.ShroudedThunderheadHullmod,<created by script>,La nave dispara Rayos Grieta hacia objetivos recientes de sus armas.,,graphics/hullmods/shrouded_thunderhead.png
+Las bajas entre la tripulación en combate aumentan en un %s.",La nave se aleja para evitar los daños.,La nave se beneficia del %s de la curación proporcionada por Fisura Voraz.,graphics/hullmods/shrouded_mantle.png
+Nube de Tormenta Envuelta,shrouded_thunderhead,,,,"codex_unlockable, shrouded, no_drop_salvage","Weapons, Special",,,,,5,10,15,25,com.fs.starfarer.api.impl.combat.dweller.ShroudedThunderheadHullmod,<created by script>,La nave dispara Rayos Fisura hacia objetivos recientes de sus armas.,,graphics/hullmods/shrouded_thunderhead.png
 Lente Envuelta,shrouded_lens,,,,"codex_unlockable, shrouded, no_drop_salvage",Special,,,,,3,6,9,15,com.fs.starfarer.api.impl.combat.dweller.ShroudedLensHullmod,<created by script>,"La Lente enfoca automáticamente los objetivos cercanos e inflige daño en un área.",,graphics/hullmods/shrouded_lens.png
 ,,,,,,,,,,,,,,,,,,,
 ,,,,,,,,,,,,,,,,,,,
