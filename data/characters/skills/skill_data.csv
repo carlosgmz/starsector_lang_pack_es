@@ -10,7 +10,7 @@ field_modulation,Modulación de Campos de Fuerza,50,2,0,,Pocos tienen talento pa
 point_defense,Defensa Antiaérea,60,3,0,,"A mí, personalmente, no me convencen los láseres y esas cosas. Es cierto que te montas un espectáculo de luces impresionante, pero nada detiene misiles enemigos como el muro de uranio empobrecido de una buena batería Vulcan.","«Héroes de la cubierta inferior», una serie de HEGCOM",TRUE,,,,graphics/icons/skills/advanced_countermeasures.png,
 target_analysis,Análisis de Objetivos,70,4,0,,Una mente humana asistida por una máquina es capaz de intuir soluciones eficaces a pesar de datos sensoriales conflictivos y directrices tácticas contradictorias. El software de puntería por sí solo nunca podrá sustituir a un verdadero guerrero.,"«Sobre el combate espacial, 22.ª ed.», de la biblioteca del Grupo de Combate XIV del Dominio",TRUE,,,,graphics/icons/skills/target_analysis2.png,
 ballistic_mastery,Maestría Balística,80,4,0,,"¿Qué frustró el complot de Tri-Tachyon? (¡Cañones!)
-¿Qué fue lo que se le olvidó al viejo Ludd? (¡Cañones!)
+¿Qué fue lo que el viejo Ludd olvidó? (¡Cañones!)
 ¿Qué tenemos nosotros que ellos no? (¡Cañones enormes!)",canción de taberna de la Armada de la Hegemonía,TRUE,,,ballistic_weapons,graphics/icons/skills/ranged_specialization.png,
 
 
