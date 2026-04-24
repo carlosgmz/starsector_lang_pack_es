@@ -1,0 +1,15 @@
+{
+	id:"threat",
+	"displayName":"Amenaza",
+	"displayNameWithArticle":"la Amenaza",
+	"displayNameLong":"Amenaza",
+	"displayNameLongWithArticle":"la Amenaza",
+	"personNamePrefixAOrAn":"una",
+	"displayNameIsOrAre":"son",
+
+	"fleetTypeNames":{
+		"patrolSmall":"Primer Asalto",
+		"patrolMedium":"Segundo Asalto",
+		"patrolLarge":"Tercer Asalto",
+	},
+},

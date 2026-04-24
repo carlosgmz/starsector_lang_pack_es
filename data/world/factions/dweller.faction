@@ -1,0 +1,15 @@
+{
+	id:"dweller",
+	"displayName":"Malevo Envuelto",
+	"displayNameWithArticle":"el Malevo Envuelto",
+	"displayNameLong":"Malevo Envuelto",
+	"displayNameLongWithArticle":"el Malevo Envuelto",
+	"personNamePrefixAOrAn":"un",
+	"displayNameIsOrAre":"son",
+
+	"fleetTypeNames":{
+		"patrolSmall":"Manifestación Menor", 
+		"patrolMedium":"Manifestación Mayor", 
+		"patrolLarge":"Manifestation Trascendental", 
+	},
+},

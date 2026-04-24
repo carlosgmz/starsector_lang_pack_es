@@ -1,17 +1,17 @@
 {
 	id:"hegemony",
-	"displayName":"Hégémonie",
-	"displayNameWithArticle":"l'Hégémonie",
+	"displayName":"Hegemonía",
+	"displayNameWithArticle":"la Hegemonía",
 	"ranks":{
 		"ranks":{
-			"factionLeader":{"name":"Haut Hégémon"},
-			"spaceCommander":{"name":"Commandant"},
+			"factionLeader":{"name":"Gran Hegemón"},
+			"spaceCommander":{"name":"Comandante"},
 		},
 		"posts":{
-			"factionLeader":{"name":"Haut Hégémon"},
-			"patrolCommander":{"name":"Commandant de patrouille"},
-			"fleetCommander":{"name":"Commandant de flotte"},
-			"baseCommander":{"name":"Commandant de base"},
+			"factionLeader":{"name":"Gran Hegemón"},
+			"patrolCommander":{"name":"Comandante de Patrulla"},
+			"fleetCommander":{"name":"Comandante de Flota"},
+			"baseCommander":{"name":"Comandante de Base"},
 		},
 	},
 }

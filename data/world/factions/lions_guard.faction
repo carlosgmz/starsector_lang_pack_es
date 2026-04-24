@@ -1,10 +1,10 @@
 {
 	id:"lions_guard",
-	"displayName":"Garde du Lion",
-	"displayNameWithArticle":"la Garde du Lion",
+	"displayName":"Guardia del León",
+	"displayNameWithArticle":"la Guardia del León",
 	"fleetTypeNames":{
-		"patrolSmall":"Reconnaissance de la Garde du Lion",
-		"patrolMedium":"Patrouille de la Garde du Lion",
-		"patrolLarge":"Détachement de la Garde du Lion",
+		"patrolSmall":"Reco. de la Guardia del León",
+		"patrolMedium":"Patrulla de la Guardia del León",
+		"patrolLarge":"Destacamento de la Guardia del León",
 	},
 }

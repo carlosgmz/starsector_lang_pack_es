@@ -1,11 +1,11 @@
 {
 	id:"poor",
-	"displayName":"Réfugiés",
-	"displayNameWithArticle":"les réfugiés",
-	"displayNameLong":"réfugiés",
-	"displayNameLongWithArticle":"les réfugiés",
-	"entityNamePrefix":"refugie",
-	"personNamePrefix":"refugie",
+	"displayName":"refugiados",
+	"displayNameWithArticle":"los refugiados",
+	"displayNameLong":"refugiados",
+	"displayNameLongWithArticle":"los refugiados",
+	"entityNamePrefix":"refugiado",
+	"personNamePrefix":"refugiado",
 	"personNamePrefixAOrAn":"un",
-	"displayNameIsOrAre":"sont",
+	"displayNameIsOrAre":"son",
 }

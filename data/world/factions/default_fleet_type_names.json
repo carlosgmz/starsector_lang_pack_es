@@ -1,41 +1,41 @@
 {
-	"trade":"Convoi Marchand",
-	"tradeLiner":"Convoi de Paquebots",
-	"tradeSmuggler":"Contrebandier",
-	"smallTrader":"Marchand",
+	"trade":"Convoy Mercante",
+	"tradeLiner":"Convoy de Línea",
+	"tradeSmuggler":"Contrabandista",
+	"smallTrader":"Mercante",
 
-	"patrolSmall":"Piquet Rapide",
-	"patrolMedium":"Patrouille",
-	"patrolLarge":"Détachement",
+	"patrolSmall":"Piquete Rápido",
+	"patrolMedium":"Patrulla",
+	"patrolLarge":"Destacamento",
 
-	"leagueEnforcer":"Exécuteur",
-	"leagueArmada":"Grande Armada",
-	"supplyFleet":"Flotte de Ravitaillement",
+	"leagueEnforcer":"Impositor",
+	"leagueArmada":"Gran Armada",
+	"supplyFleet":"Flota de Suministros",
 
-	"commerceRaiders":"Corsaires",
-	"raider":"Pillard",
+	"commerceRaiders":"Asaltantes de Comercio",
+	"raider":"Asaltantes",
 
-	"sacredProtectors":"Protecteurs Sacrés",
+	"sacredProtectors":"Protectores Sagrados",
 
-	"investigators":"Enquêteurs",
+	"investigators":"Investigadores",
 
-	"inspectionFleet":"Flotte d'Inspection",
-	"taskForce":"Force Opérationnelle",
+	"inspectionFleet":"Flota de Inspección",
+	"taskForce":"Destacamento Especial",
 
-	"scavengerSmall":"Prospecteur",
-	"scavengerMedium":"Récupérateur",
-	"scavengerLarge":"Flotte de Sauvetage",
+	"scavengerSmall":"Prospector",
+	"scavengerMedium":"Rebuscador",
+	"scavengerLarge":"Flota de Salvamento",
 
-	"foodReliefFleet":"Convoi Humanitaire",
+	"foodReliefFleet":"Convoy de Ayuda",
 
-	"shrinePilgrims":"Pèlerins Luddiques",
-	"academyFleet":"Navette de l'Académie",
+	"shrinePilgrims":"Peregrinos Luditas",
+	"academyFleet":"Servicio de Transporte de la Academia",
 
-	"mercScout":"Éclaireur Mercenaire",
-	"mercBountyHunter":"Chasseur de Primes",
-	"mercPrivateer":"Corsaire",
-	"mercPatrol":"Patrouille Mercenaire",
-	"mercArmada":"Compagnie de Mercenaires",
+	"mercScout":"Explorador Mercenario",
+	"mercBountyHunter":"Cazarrecompensas",
+	"mercPrivateer":"Corsario",
+	"mercPatrol":"Patrulla Mercenaria",
+	"mercArmada":"Compañía de Mercenarios",
 
-	"battlestation":"Fortestation",
+	"battlestation":"Estación de Combate",
 }
