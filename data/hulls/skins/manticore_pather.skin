@@ -1,23 +1,7 @@
 {
 	"baseHullId":"manticore",
 	"skinHullId":"manticore_luddic_path",
-	"hullName":"Manticore (LP)",
+	"hullName":"Mantícora (LP)",
 	"descriptionId":"manticore",
-	"descriptionPrefix":"Les fanatiques de la Voie Luddique ont grossièrement modifié ce vaisseau, surchargeant les moteurs et les systèmes d'alimentation puis remplaçant la tourelle balistique d'origine par un lance-missiles massif, afin de mieux exécuter des frappes alpha audacieuses contre les vaisseaux capitaux et les croiseurs.",
-	"tags":["rare_bp"],
-	"tech":"Luddic Path",
-	"suppliesToRecover":14,
-	"suppliesPerMonth":14,
-	"spriteName":"graphics/ships/manticore/manticore_pather.png",
-	"removeWeaponSlots":[],
-	"weaponSlotChanges":{
-		"WS 000":{"type": "MISSILE"},
-		"WS 004":{"type": "BALLISTIC"},
-		"WS 005":{"type": "BALLISTIC"},
-	},
-	"removeEngineSlots":[], 		# indices, as engine slots have no id in the .ship file
-	"removeBuiltInMods":["ballistic_rangefinder"], 		# hullmod ids
-	"removeBuiltInWeapons":[], 		# weapon slot ids
-	"builtInMods":["safetyoverrides","ill_advised"],
-    },    
+	"descriptionPrefix":"Los fanáticos del Camino Ludita han modificado de forma burda esta nave, sobrecargando los motores y los sistemas de energía y sustituyendo la torreta balística original por un enorme lanzamisiles, con el fin de poder lanzar audaces ataques iniciales contra naves capitales y cruceros.",
 }
