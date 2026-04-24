@@ -2,84 +2,84 @@ CATEGORY gm_cat_combat|manual_combat|Combat|game_mechanics
 
 CURRENT_CATEGORY gm_cat_combat
 
-BEGIN gm_damage_types|Types de dégâts
-Tous les types de dégâts infligent {{100%}} de dégâts à la coque, en fonction de la valeur d'armure résiduelle. De plus :
+BEGIN gm_damage_types|Tipos de daño
+Todos los tipos de daño infligen {{100 %}} de daño al casco, en función del valor de blindaje residual. Además:
 IMAGE ui|icon_high_explosive
-Les dégâts {{Hautement Explosifs}} infligent {{200%}} contre l'armure, et {{50%}} contre les boucliers. Les projectiles tendent à être jaunes.
+El daño {{Altamente Explosivo}} inflige un {{200%}} contra el blindaje y un {{50%}} contra los escudos. Los proyectiles suelen ser de color amarillo.
 IMAGE ui|icon_kinetic
-Les dégâts {{Cinétiques}} infligent {{200%}} contre les boucliers, et {{50%}} contre l'armure. Les projectiles tendent à être blancs.
+El daño {{Cinético}} inflige un {{200%}} contra los escudos y un {{50%}} contra el blindaje. Los proyectiles suelen ser blancos.
 IMAGE ui|icon_energy
-Les dégâts {{Énergétiques}} infligent {{100%}} contre les boucliers et l'armure. Les armes à fort pouvoir de pénétration tendent à être peu efficientes en flux.
+El daño {{Energético}} inflige un {{100%}} contra escudos y armadura. Las armas con gran poder de penetración suelen ser poco eficaces en flux.
 IMAGE ui|icon_fragmentation
-Les dégâts de {{Fragmentation}} infligent {{25%}} contre les boucliers et l'armure. Les armes infligeant ce type de dégâts ont souvent un DPS élevé et une bonne efficience en flux. Les projectiles tendent à être rouges.
+El daño de {{Fragmentación}} inflige un {{25%}} contra escudos y armadura. Las armas que infligen este tipo de daño suelen tener un DPS elevado y una buena eficiencia en flux. Los proyectiles suelen ser rojos.
 END
 
-BEGIN gm_armor|Armure
+BEGIN gm_armor|Blindaje
 ICON manual_armor
-#==Réduction des dégâts==
-L'armure réduit les dégâts subis par tous les impacts et attaques de faisceau, en fonction de l'armure restante dans la cellule touchée et dans les cellules adjacentes, ainsi que de la {{puissance d'impact}} de l'attaque. La réduction maximale des dégâts par l'armure est de {{85%}}.
+#==Reducción de daño==
+El blindaje reduce el daño recibido por todos los impactos y ataques de rayo, en función del blindaje restante en la celda afectada y en las celdas adyacentes, así como de la {{potencia de impacto}} del ataque. La reducción máxima de daño por parte de la armadura es del {{85%}}.
 
-Un vaisseau peut avoir son armure détruite à un endroit tout en conservant une armure intacte ailleurs. Faire pivoter le vaisseau pour encaisser les dégâts sur une armure intacte est souvent une tactique efficace.
-==Puissance d'impact==
-Les armes infligeant davantage de dégâts par tir sont plus efficaces contre l'armure. Le type de dégâts {{rel:gm_damage_types|hautement explosif}} est particulièrement avantageux, mais les armes énergétiques à fort impact peuvent également détruire l'armure sans difficulté. La puissance d'impact des armes à faisceau est basée sur leur DPS.
-==Armure résiduelle==
-Même après que l'armure a été entièrement détruite, {{5%}} de celle-ci s'appliquent toujours à la réduction des dégâts subis par la coque. Cela rend les vaisseaux à armure de base élevée moins vulnérables aux armes à cadence rapide et faibles dégâts, même après que leur armure a été percée.
+Una nave puede tener la armadura destripada en una zona y mantenerla intacta en otras. Girar la nave para recibir el daño en una zona con armadura intacta suele ser una táctica eficaz.
+==Potencia de impacto==
+Las armas que infligen más daño por disparo son más eficaces contra el blindaje. El tipo de daño {{rel:gm_damage_types|altamente explosivo}} es especialmente ventajoso, aunque las armas energéticas de alto impacto también pueden destruir el blindaje sin dificultad. La potencia de impacto de las armas de rayos se basa en su DPS.
+==Blindaje residual==
+Incluso si el blindaje ha sido destripado por completo, el {{5%}} de este sigue aplicándose a la reducción del daño sufrido por el casco. Esto hace que las naves con un blindaje base elevado sean menos vulnerables a las armas de cadencia rápida y daño bajo, incluso después de que su blindaje haya sido destripado.
 END
 
-BEGIN gm_shields|Boucliers
+BEGIN gm_shields|Escudos
 ICON manual_shields
 RELATED gm_damage_types|gm_flux
-Les dégâts absorbés par les boucliers augmentent le niveau de {{rel:gm_flux|flux dur}} du vaisseau, et provoqueront une {{rel:gm_venting|surcharge}} si le flux atteint son maximum. Le niveau de flux dur est indiqué par une petite encoche sur la barre de flux du vaisseau. Le flux dur ne se dissipe pas tant que les boucliers sont actifs.
+El daño absorbido por los escudos aumenta el nivel de {{rel:gm_flux|flux duro}} de la nave y provocará una {{rel:gm_venting|sobrecarga}} si el flux alcanza el máximo. El nivel de flux duro se indica mediante una pequeña muesca en la barra de flux de la nave. El flux duro no se disipa mientras los escudos estén activos.
 
-Maintenir les boucliers actifs a un coût en flux équivalent à une fraction du taux de dissipation de flux de base du vaisseau. Cela n'augmente pas le niveau de flux à lui seul, mais réduit la capacité du vaisseau à dissiper le {{rel:gm_flux|flux mou}} généré par le tir des armes. Abaisser les boucliers {{augmente la puissance de feu du vaisseau}} sur le long terme.
+Mantener los escudos activos tiene un coste de flux equivalente a una fracción de la tasa de disipación de flux básica de la nave. Esto no aumenta el nivel de flux por sí solo, pero reduce la capacidad de la nave para disipar el {{rel:gm_flux|flux blando}} generado por el disparo de las armas. Bajar los escudos {{aumenta la potencia de fuego de la nave}} a largo plazo.
 END
 
 
 BEGIN gm_flux|Flux
 ICON manual_flux
 RELATED codex_weapon_harpoon
-Tirer avec des armes ou subir des dégâts sur les boucliers augmente le niveau de flux du vaisseau. Si le flux atteint son maximum, le vaisseau sera incapable de tirer et subir davantage de dégâts sur les boucliers provoquera une {{rel:gm_venting|surcharge}}. Le flux se dissipe en continu au taux de dissipation du vaisseau, et celui-ci peut activement {{rel:gm_venting|purger}} son flux pour accélérer le processus.
+Disparar con armas o recibir daño en los escudos aumenta el nivel de flux de la nave. Si el flux alcanza el máximo, la nave no podrá disparar y recibir más daño en los escudos provocará una {{rel:gm_venting|sobrecarga}}. El flux se disipa continuamente a la tasa de disipación de la nave, y esta puede {{rel:gm_venting|ventilar}} activamente el flux para acelerar el proceso.
 
-==Flux dur==
-Les dégâts absorbés par les {{rel:gm_shields|boucliers}} augmentent le niveau de {{rel:gm_flux|flux dur}} du vaisseau. Le niveau de flux dur est indiqué par une petite encoche sur la barre de flux du vaisseau. Le flux dur ne se dissipe pas tant que les boucliers sont actifs.
+==Flux duro==
+El daño absorbido por los {{rel:gm_shields|escudos}} aumenta el nivel de {{rel:gm_flux|flux duro}} de la nave. El nivel de flux duro se indica mediante una pequeña muesca en la barra de flux de la nave. El flux duro no se disipa mientras los escudos estén activos.
 
-Le flux ordinaire est parfois appelé {{flux mou}}, par opposition au flux dur.
+El flux ordinario se denomina a veces {{flux blando}}, en contraposición al flux duro.
 END
 
-BEGIN gm_venting|Purge et surcharge
+BEGIN gm_venting|Ventilación y sobrecarga
 ICON manual_venting
-==Purge==
-Un vaisseau en purge dissipe son {{rel:gm_flux|flux}} au double de la vitesse normale. Il est incapable de tirer ou d'utiliser ses boucliers et autres défenses, mais peut toujours se déplacer normalement.
+==Ventilación==
+Una nave en ventilación disipa su {{rel:gm_flux|flux}} al doble de la velocidad normal. Es incapaz de disparar o de utilizar sus escudos y otras defensas, pero puede seguir moviéndose con normalidad.
 
-La purge rend un vaisseau vulnérable, et les vaisseaux ne l'effectuent généralement que lorsqu'ils se trouvent en relative sécurité, sauf en cas de situation désespérée. Les vaisseaux lourdement blindés acceptent souvent de subir quelques dégâts d'armure pendant la purge.
+La ventilación deja a la nave vulnerable, y las naves suelen realizarla solo cuando se encuentran en relativa seguridad salvo en situaciones desesperadas. Las naves fuertemente blindadas suelen aceptar sufrir algunos daños en el blindaje durante la ventilación.
 
-==Surcharge==
-Un vaisseau en surcharge est incapable de tirer ou d'utiliser ses boucliers et autres défenses, mais peut toujours se déplacer normalement. Le flux se dissipe à la moitié de la vitesse normale pendant la surcharge.
+==Sobrecarga==
+Una nave en sobrecarga es incapaz de disparar o utilizar sus escudos y otras defensas, pero puede seguir moviéndose con normalidad. El flux se disipa a la mitad de la velocidad normal durante la sobrecarga.
 
-La durée d'une surcharge dépend de la quantité de dégâts absorbés par les boucliers qui ont fait dépasser la capacité de flux maximale du vaisseau.
+La duración de una sobrecarga depende de la cantidad de daño absorbido por los escudos que ha hecho que se supere la capacidad máxima de flux de la nave.
 
-Les vaisseaux en surcharge tentent généralement de reculer vers une position sûre, et constituent une cible privilégiée pour les salves de missiles de finition tels que les Harpons.
+Las naves en sobrecarga suelen intentar retroceder hacia una posición segura y constituyen un objetivo privilegiado para las andanadas de misiles explosivos como los Harpones.
 
 END
 
-BEGIN gm_ballistics|Armes balistiques
+BEGIN gm_ballistics|Armas balísticas
 ICON manual_ballistic_weapons
-Les armes balistiques tendent à avoir une portée supérieure à leurs homologues énergétiques, et infligent généralement des dégâts {{rel:gm_damage_types|Cinétiques}} ou {{rel:gm_damage_types|Hautement Explosifs}}, permettant une spécialisation contre les {{rel:gm_shields|boucliers}} et l'{{rel:gm_armor|armure}}.
+Las armas balísticas suelen tener un alcance mayor que sus homólogas energéticas y, por lo general, infligen daño {{rel:gm_damage_types|Cinético}} o {{rel:gm_damage_types|Altamente Explosivo}}, lo que permite una especialización contra los {{rel:gm_shields|escudos}} y la {{rel:gm_armor|armadura}}.
 END
 
-BEGIN gm_energies|Armes énergétiques
+BEGIN gm_energies|Armas energéticas
 ICON manual_energy_weapons
-Les armes {{color:text|énergétiques}} tendent à avoir une portée inférieure à leurs homologues balistiques, et infligent généralement des dégâts {{rel:gm_damage_types|Énergétiques}}, efficaces de manière équivalente contre toutes les défenses mais sans en contrer aucune de façon décisive. Il existe cependant une certaine diversité dans les types de dégâts, et les armes énergétiques à fort pouvoir de pénétration restent très efficaces contre l'{{rel:gm_armor|armure}}.
+Las armas {{color:text|energéticas}} suelen tener un alcance inferior al de sus homólogas balísticas y, por lo general, infligen daño {{rel:gm_damage_types|Energético}}, eficaz de manera equivalente contra todas las defensas, pero sin contrarrestar ninguna de forma decisiva. Sin embargo, existe cierta diversidad en los tipos de daño, y las armas energéticas con gran poder de penetración siguen siendo muy eficaces contra el {{rel:gm_armor|blindaje}}.
 
-==Armes à faisceau==
-Les armes à faisceau ont souvent une très longue portée — dépassant même la portée typique des armes {{rel:gm_ballistics|balistiques}} — mais n'infligent que des dégâts de {{rel:gm_flux|flux mou}} aux {{rel:gm_shields|boucliers}}.
+==Armas de rayos==
+Las armas de rayos suelen tener un alcance muy largo —superando incluso el alcance típico de las armas {{rel:gm_ballistics|balísticas}}— pero solo infligen daño de {{rel:gm_flux|flux suave}} a los {{rel:gm_shields|escudos}}.
 
-Malgré cela, elles restent très utiles ; elles ne parviendront simplement pas à vaincre les boucliers seules, à moins d'être déployées en nombre écrasant.
+A pesar de ello, siguen siendo muy útiles; simplemente no lograrán derrotar a los escudos por sí solas, a menos que se desplieguen en cantidades abrumadoras.
 END
 
-BEGIN gm_missiles|Armes à missiles
+BEGIN gm_missiles|Armas de misiles
 ICON manual_missiles
-Les missiles ont tendance à disposer de munitions limitées, mais il en existe de nombreuses variétés remplissant des rôles différents. Un vaisseau disposant de davantage d'emplacements missiles offre plus de polyvalence dans ses configurations et une plus grande liberté de spécialisation ou de compensation de ses faiblesses.
+Los misiles suelen tener munición limitada, pero existen muchas variedades que cumplen funciones diferentes. Una nave con más emplazamientos para misiles ofrece mayor versatilidad en sus configuraciones y una mayor libertad para especializarse o compensar sus debilidades.
 
-Certains missiles, comme la torpille {{rel:codex_weapon_reaper|Reaper}}, permettent aux petits vaisseaux de constituer une menace sérieuse pour les vaisseaux de plus grande taille — jusqu'à épuisement de leurs munitions !
+Algunos misiles, como el torpedo {{rel:codex_weapon_reaper|Reaper}}, permiten a las naves pequeñas constituir una seria amenaza para las naves de mayor tamaño, ¡hasta que se agoten sus municiones, claro!
 END

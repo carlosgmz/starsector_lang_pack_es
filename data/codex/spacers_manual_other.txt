@@ -2,23 +2,23 @@ CATEGORY gm_cat_other|generic|Other|game_mechanics
 
 CURRENT_CATEGORY gm_cat_other
 
-BEGIN gm_techs|Types technologiques
-Les niveaux technologiques de certains vaisseaux - {{Low Tech}}, {{Midline}} et {{High Tech}} - ne constituent pas une progression de qualité. Il s'agit simplement d'approches différentes du combat, aucune n'étant supérieure aux autres. Les vaisseaux plus puissants ont généralement un coût de déploiement plus élevé.
+BEGIN gm_techs|Tipos tecnológicos
+Los niveles tecnológicos de algunas naves —{{Low Tech}}, {{Midline}} y {{High Tech}}— no constituyen una progresión de calidad. Se trata simplemente de diferentes enfoques de combate sin que ninguno sea superior a los demás. Las naves más potentes suelen tener un coste de despliegue más elevado.
 
 COLOR Low Tech
-==Basse technologie==
+==Baja tecnología==
 RESET
-Fortement blindés, lents, utilisant un mélange d'armes balistiques et à missiles. Boucliers plus faibles. Le {{rel:codex_system_burndrive|Propulseur d'urgence}}, système de vaisseau courant en basse technologie, n'offre qu'une mobilité vers l'avant et permet aux vaisseaux de rattraper et de punir les ennemis plus rapides, mais est peu utile pour se dégager d'une mauvaise situation. Les grands vaisseaux sont souvent vulnérables aux contournements et nécessitent un soutien pour être efficaces.
+Fuertemente blindadas, lentas y utilizan una combinación de armas balísticas y misiles. Escudos más débiles. La {{rel:codex_system_burndrive|Propulsión Primaria}}, un sistema habitual en las naves de baja tecnología, solo ofrece movilidad hacia delante y permite a las naves alcanzar y castigar a los enemigos más rápidos, pero es de poca utilidad para escapar de una situación complicada. Las naves grandes suelen ser vulnerables a las maniobras de flanqueo y necesitan apoyo para ser eficaces.
 
 COLOR Midline
-==Technologie intermédiaire==
+==Media Tecnología==
 RESET
-Blindage, boucliers et mobilité généralement dans la moyenne. Utilisant un mélange d'armes balistiques, énergétiques et à missiles. Les armes énergétiques se limitent pour l'essentiel aux faisceaux - si ces vaisseaux peuvent embarquer d'autres armes énergétiques, ils manquent généralement de la dissipation de flux nécessaire pour en tirer pleinement parti. Dépendent souvent de la coordination entre vaisseaux spécialisés pour maximiser leur efficacité.
+Blindaje, escudos y movilidad generalmente en la media. Utilizan una combinación de armas balísticas, energéticas y de misiles. Las armas energéticas se limitan principalmente a rayos; aunque estas naves pueden llevar otras armas energéticas, suelen carecer de la disipación de flux necesaria para aprovecharlas al máximo. A menudo dependen de la coordinación entre naves especializadas para maximizar su eficacia.
 
 COLOR High Tech
-==Haute technologie==
+==Alta tecnología==
 RESET
-Rapides, dotés de boucliers puissants et d'un blindage plus léger. Utilisant un mélange d'armes énergétiques et à missiles, avec une dissipation de flux suffisante pour exploiter une plus grande variété d'énergies. La portée réduite des armes énergétiques est compensée par la vitesse de pointe élevée des vaisseaux. S'appuient souvent sur des tactiques de harcèlement et s'épanouissent dans les environnements de combat les plus chaotiques.
+Rápidas, dotadas de potentes escudos y un blindaje más ligero. Utilizan una combinación de armas energéticas y misiles, con una disipación de flux suficiente para hacer uso de una mayor variedad de armas de energía. El alcance reducido de las armas energéticas se compensa con la elevada velocidad punta de las naves. A menudo se basan en tácticas de hostigamiento y se desenvuelven mejor en los entornos de combate más caóticos.
 
-Tout ceci reste des généralisations, et des exceptions existent.
+Todo esto son generalizaciones y existen excepciones.
 END

@@ -2,21 +2,21 @@ CATEGORY gm_cat_ui|manual_ui|UI|game_mechanics
 
 CURRENT_CATEGORY gm_cat_ui
 
-BEGIN gm_basic_ui|Prise en main de votre TriPad
+BEGIN gm_basic_ui|Introducción a tu TriPad
 ICON manual_tripad
-==Listes défilantes==
-La barre de défilement s'agrandit à l'approche de la souris pour faciliter le clic. Vous pouvez également maintenir {{Shift}} tout en utilisant la molette pour faire défiler plus rapidement.
+==Listas desplegables==
+La barra de desplazamiento se amplía al acercar el ratón para facilitar el clic. También puedes mantener pulsada la tecla {{Shift}} mientras utilizas la rueda del ratón para desplazarte más rápidamente.
 
- ==Champs de saisie==
-Vous pouvez appuyer sur {{Ctrl-Backspace}} pour effacer un mot, et sur {{Shift-Backspace}} pour vider entièrement le champ de saisie.
+ ==Campos de entrada==
+Puedes pulsar {{Ctrl-Retroceso}} para borrar una palabra, y {{Mayús-Retroceso}} para vaciar completamente el campo de entrada.
 
-==Étiquettes==
-Vous pouvez {{Ctrl-Cliquer}} pour sélectionner plusieurs étiquettes, ou en désélectionner une sans affecter le reste de la sélection.
+==Etiquetas==
+Puedes pulsar {{Ctrl-clic}} para seleccionar varias etiquetas, o deseleccionar una sin afectar al resto de la selección.
 
 ==Intel==
-Vous pouvez appuyer sur {{Ctrl-S}} pour sauvegarder l'ensemble d'étiquettes actuel, et sur {{Q}} pour le resélectionner. Vous pouvez également appuyer sur {{Shift-Q}} pour ajouter l'ensemble sauvegardé à votre sélection courante. Cela ne fonctionne que pour les étiquettes de l'écran {{Intel}}.
+Puedes pulsar {{Ctrl-S}} para guardar el conjunto de etiquetas actual, y {{Q}} para volver a seleccionarlo. También puedes pulsar {{Shift-Q}} para añadir el conjunto guardado a tu selección actual. Esto solo funciona con las etiquetas de la pantalla {{Intel}}.
 
 ==Codex==
-Vous pouvez appuyer sur {{F2}} n'importe où pour ouvrir le Codex. Dans de nombreux cas, par exemple dans l'écran de configuration ou lors de la consultation d'une infobulle, le Codex s'ouvre automatiquement sur l'entrée correspondante.
+Puedes pulsar {{F2}} en cualquier lugar para abrir el Codex. En muchos casos, por ejemplo en la pantalla de configuración o al consultar una ventana emergente, el Codex se abre automáticamente en la entrada correspondiente.
 
 END
