@@ -1,7 +1,7 @@
 event_type,event_stage,p,target_rel,channels,subject,summary,assessment,image,icon,tags,sound_id,implementation notes
 food_shortage,possible,,,player_intel,Posible escasez de alimentos $onOrAt $market,Análisis de inteligencia obtenida a partir de comunicaciones interceptadas y otras fuentes sugiere que es probable que se produzca una escasez de alimentos $onOrAt $market en unas pocas semanas.,Aumento del precio de los alimentos y reducción de estabilidad $onOrAt $market si se produjera la escasez.,,graphics/icons/markets/food_shortage.png,,,
 food_shortage,likely,,,player_intel,Probable escasez de alimentos $onOrAt $market,Análisis de inteligencia obtenida a partir de comunicaciones interceptadas y otras fuentes sugiere que es muy probable que se produzca una escasez de alimentos $onOrAt $market en unas pocas semanas.,Aumento del precio de los alimentos y reducción de estabilidad $onOrAt $market si se produjera la escasez.,,graphics/icons/markets/food_shortage.png,,,
-food_shortage,likely,0.5,HOSTILE,hegemony_internal,Probable escasez de alimentos $onOrAt $market,"Este informe indica que es casi seguro que se producirá una escasez de alimentos $onOrAt $market, y aconseja a las unidades de la zona sobre las medidas que podrían adoptarse para maximizar su impacto.","La flota de apoyo humanitario probablemente se envíe desde un sistema estelar cercano; interceptarla prolongará la escasez y desestabilizará aún más $market.
+food_shortage,likely,0.5,HOSTILE,hegemony_internal,Probable escasez de alimentos $onOrAt $market,"Este informe indica que es casi seguro que se producirá una escasez de alimentos $onOrAt $market, y aconseja a las unidades de la zona sobre las medidas que podrían adoptarse para maximizar su impacto.","La flota de ayuda humanitaria probablemente se envíe desde un sistema estelar cercano; interceptarla prolongará la escasez y desestabilizará aún más $market.
 
 La venta de alimentos en el mercado negro aumentará el desorden tras la escasez.",,graphics/icons/markets/food_shortage.png,,,
 food_shortage,likely,0.5,FRIENDLY,hegemony_internal,Probable escasez de alimentos $onOrAt $market,"Este informe indica que es casi seguro que se producirá una escasez de alimentos $onOrAt $market, y aconseja a las unidades que se mantengan preparadas para prestar asistencia.",Suministrar rápidamente alimentos suficientes a $market reducirá la duración y el impacto de la escasez.,,graphics/icons/markets/food_shortage.png,,,
@@ -10,7 +10,7 @@ food_shortage,start,,,news,Escasez de alimentos $onOrAt $market,"El informe anal
 Estabilidad reducida en $stabilityPenalty.
 
 Se necesitan aproximadamente $neededFood unidades de alimentos para poner fin a la escasez.
-Es probable que se envíe una flota de apoyo humanitario desde un sistema estelar cercano.
+Es probable que se envíe una flota de ayuda humanitaria desde un sistema estelar cercano.
 
 Mayor impacto en la reputación por la venta de alimentos. La venta de alimentos en el mercado negro aumentará el desorden social tras la escasez.",,graphics/icons/markets/food_shortage.png,prices,,
 food_shortage,start,0.25,HOSTILE,hegemony_public,Escasez crítica de alimentos $onOrAt $market,"El informe señala que la escasez de alimentos $onOrAt $market es inusualmente grave y acusa a la administración de $theMarketFaction de provocar una crisis humanitaria.","Aumento del precio de los alimentos $onOrAt $market.
@@ -19,7 +19,7 @@ Estabilidad reducida en $stabilityPenalty.
 
 Se necesitan aproximadamente $neededFood unidades de alimentos para poner fin a la escasez.
 
-Es probable que se envíe una flota de apoyo humanitario desde un sistema estelar cercano.
+Es probable que se envíe una flota de ayuda humanitaria desde un sistema estelar cercano.
 
 Mayor impacto en la reputación por la venta de alimentos. La venta de alimentos en el mercado negro aumentará el desorden social tras la escasez.",,graphics/icons/markets/food_shortage.png,prices,,
 food_shortage,start,0.25,SELF,hegemony_public,Supuesta escasez de alimentos $onOrAt $market,"El informe desmiente rotundamente cualquier rumor sobre una escasez de alimentos $onOrAt $market y anima a los ciudadanos a colaborar denunciando a cualquier persona sospechosa de difundir rumores maliciosos.","Aumento del precio de los alimentos $onOrAt $market.
@@ -28,10 +28,10 @@ Estabilidad reducida en $stabilityPenalty.
 
 Se necesitan aproximadamente $neededFood unidades de alimentos para poner fin a la escasez.
 
-Es probable que se envíe una flota de apoyo humanitario desde un sistema estelar cercano.
+Es probable que se envíe una flota de ayuda humanitaria desde un sistema estelar cercano.
 
 Mayor impacto en la reputación por la venta de alimentos. La venta de alimentos en el mercado negro aumentará el desorden social tras la escasez.",,graphics/icons/markets/food_shortage.png,prices,,
-food_shortage,warning_relief,,,player_intel,Escasez de alimentos $onOrAt $market: se está organizando una ayuda en $reliefMarket,"Análisis de comunicaciones indica que se está organizando una flota de ayuda humanitaria desde $reliefMarket en $reliefSystem, y que será enviada a $market en un futuro próximo.","La flota lleva consigo alimentos suficientes para poner fin a la escasez.
+food_shortage,warning_relief,,,player_intel,Escasez de alimentos $onOrAt $market: se está organizando una ayuda en $reliefMarket,"Análisis de comunicaciones sugiere que se está organizando una flota de ayuda humanitaria desde $reliefMarket en $reliefSystem, y que será enviada a $market en un futuro próximo.","La flota lleva consigo alimentos suficientes para poner fin a la escasez.
 
 Si la flota no llega según lo previsto, la situación en $market se desestabilizará aún más.",,graphics/icons/markets/food_shortage.png,,,
 food_shortage,warning_relief,0.5,HOSTILE,"hegemony_internal,
@@ -82,7 +82,7 @@ $InvestigatorPost $investigatorName $onOrAt $market es el encargado de llevar a 
 
 La investigación durará $duration.",,,important,,
 investigation_goodrep,clear_goodrep,,,player_intel_always,Investigación de $MarketFaction sobre tus vínculos con $OtherFaction - cerrada,"La investigación de $marketFaction sobre tus vínculos con $theOtherFactionLong ha concluido, y se te ha exonerado de haber actuado en contra de los intereses de $marketFaction.",La reputación con $theMarketFaction no se ve afectada.,,,important,,
-investigation_goodrep,clear_goodrep_bribe,,,player_intel_always,Investigación de $MarketFaction sobre tus vínculos con $OtherFaction- cerrada,"La investigación de $marketFaction sobre tus vínculos con $theOtherFactionLong ha concluido de acuerdo con tu «trato especial» con $investigatorName, y se te ha exonerado de haber actuado en contra de los intereses de $marketFaction.","El soborno a $InvestigatorPost $investigatorName ha surtido efecto.
+investigation_goodrep,clear_goodrep_bribe,,,player_intel_always,Investigación de $MarketFaction sobre tus vínculos con $OtherFaction - cerrada,"La investigación de $marketFaction sobre tus vínculos con $theOtherFactionLong ha concluido de acuerdo con tu «trato especial» con $investigatorName, y se te ha exonerado de haber actuado en contra de los intereses de $marketFaction.","El soborno a $InvestigatorPost $investigatorName ha surtido efecto.
 
 La reputación con $theMarketFaction no se ve afectada.",,,important,,
 investigation_goodrep,player_guilty_goodrep,,,player_intel_always,Investigación de $MarketFaction sobre tus vínculos con $OtherFaction - declarado culpable,La investigación de $marketFaction sobre tus vínculos con $theOtherFactionLong ha concluido que has estado actuando en contra de los intereses de $theMarketFaction. Es evidente que $theMarketFaction sospechará especialmente de ti.,,,,important,,
@@ -98,8 +98,8 @@ Las siguientes mercancías se ven afectadas:
 $commoditySummary
 
 Selecciona «precios» y ve a la pestaña del mapa para obtener más detalles.",,graphics/icons/markets/trade_disruption.png,prices,,
-trade_disruption,report_smuggling,,,news,Actividad de contrabando $onOrAt $market en el sistema $marketSystem,La situación $onOrAt $market se ha vuelto más inestable a raíz de las recientes actividades de contrabando. Las autoridades locales prometen una investigación a fondo.,Estabilidad reducida en $smugglingPenalty.,,graphics/icons/markets/smuggling.png,,,
-trade_disruption,report_smuggling_player,,,news,Actividad de contrabando $onOrAt $market en el sistema $marketSystem,La situación $onOrAt $market se ha vuelto más inestable a raíz de las recientes actividades de contrabando en las que has estado involucrado. Las autoridades locales prometen una investigación a fondo.,"Estabilidad reducida en $smugglingPenalty.
+trade_disruption,report_smuggling,,,news,Actividad de contrabando $onOrAt $market del sistema $marketSystem,La situación $onOrAt $market se ha vuelto más inestable a raíz de las recientes actividades de contrabando. Las autoridades locales prometen una investigación a fondo.,Estabilidad reducida en $smugglingPenalty.,,graphics/icons/markets/smuggling.png,,,
+trade_disruption,report_smuggling_player,,,news,Actividad de contrabando $onOrAt $market del sistema $marketSystem,La situación $onOrAt $market se ha vuelto más inestable a raíz de las recientes actividades de contrabando en las que has estado involucrado. Las autoridades locales prometen una investigación a fondo.,"Estabilidad reducida en $smugglingPenalty.
 
 Tus acciones recientes han contribuido a esta situación.",,graphics/icons/markets/smuggling.png,,,
 ,,,,,,,,,,,,
@@ -109,9 +109,9 @@ rep_tracker,smuggling_rep,,,player_intel_always,Reputación con $theFaction empe
 rep_tracker,trade_negative,,,player_intel_always,Reputación con $theHostileFaction reducida debido al comercio con $pickedMarket,"Hay indicios de que tu operación con $pickedMarket fue lo suficientemente importante como para llamar la atención de $theHostileFaction, que es hostil hacia $theFaction.","Tu actividad fue informada inicialmente por terceros en $hostileMarket.
 
 El contrabando (si lo hubo) tuvo menos repercusión que el comercio legal.",,,nomap,,
-#rep_tracker,trade_no_change,,,player_intel_always,Reputación con $theFaction no afectada por el comercio,"Tu reciente actividad comercial con $marketList, aunque ha sido observada por $theFaction, no ha dado lugar a ningún cambio en las relaciones.",La reputación se encuentra en un punto en el que el comercio ya no la va a influir.,,,,,
+#rep_tracker,trade_no_change,,,player_intel_always,Reputación con $theFaction no afectada por el comercio,"Tu reciente actividad comercial con $marketList, aunque ha sido observada por $theFaction, no ha dado lugar a ningún cambio en las reputaciones.",La reputación se encuentra en un punto en el que el comercio ya no la va a influir.,,,,,
 #rep_tracker,trade_no_change_negative,,,player_intel_always,Reputación con $theHostileFaction no afectada por el comercio,"Tu actividad comercial reciente con $pickedMarket, aunque observada por las autoridades hostiles de $hostileMarket, no ha dado lugar a ningún cambio en las relaciones.",La reputación se encuentra en un punto en el que el comercio ya no la va a influir.,,,,,
-rep_tracker,trade_xp_gain,,,player_intel_always,Ganancia de Exp por comercio,Tus transacciones recientes te han proporcionado una nueva perspectiva sobre el funcionamiento de la economía. También has establecido algunos contactos valiosos.,$xpGain puntos de experiencia obtenidos.,,,nomap,,
+rep_tracker,trade_xp_gain,,,player_intel_always,Ganancia de experiencia por comercio,Tus transacciones recientes te han proporcionado una nueva perspectiva sobre el funcionamiento de la economía. También has establecido algunos contactos valiosos.,$xpGain puntos de experiencia obtenidos.,,,nomap,,
 rep_tracker,rep_decay_positive,,,player_intel_always,Reputación con $theFaction mejorada,"Las pequeñas ofensas y agravios se olvidan con el tiempo, siempre que no se vean reforzados por un patrón de comportamiento recurrente.",,,,nomap,,
 #rep_tracker,rep_decay_negative,,,player_intel_always,Reputación con $theFaction empeorada,"Las pequeñas ofensas o favores se olvidan rápidamente, a menos que se vean reforzados por un patrón de comportamiento recurrente.",,,,,,
 rep_tracker,battle_rep_positive,,,secure_comm,Reputación con $theFaction mejorada,Tu enfrentamiento con $otherFleetName fue observado por $theFaction en $market.,Las noticias sobre la batalla fueron recabadas inicialmente por terceros en $market.,,,nomap,,
@@ -131,7 +131,7 @@ customs_inspection,player_evaded,,,player_intel_always,Inspección aduanera,"Tu 
 # system-wide bounty reports,,,,,,,,,,,,
 system_bounty,likely,,,player_intel,Recompensa probablemente ofrecida por $market,Se rumorea que las autoridades $onOrAt $market están considerando ofrecer una recompensa sobre todas las flotas hostiles hacia $theMarketFaction.,"
 ",,,,,
-system_bounty,start,,,news,Recompensa ofrecida por $market,"Las autoridades $onOrAt $market, hartas de los constantes ataques al transporte marítimo, las interrumpciones del comercio y la situación general de cuasi-guerra, han ofrecido una recompensa sobre todas y cada una de las flotas hostiles a $theMarketFaction.","Tendrá una duración de $daysLeft días.
+system_bounty,start,,,news,Recompensa ofrecida por $market,"Las autoridades $onOrAt $market, hartas de los constantes ataques al transporte naval, las interrumpciones del comercio y la situación general de cuasi-guerra, han ofrecido una recompensa sobre todas y cada una de las flotas hostiles a $theMarketFaction.","Tendrá una duración de $daysLeft días.
 
 La cantidad pagada depende de las naves destruidas (a partir de $baseBounty créditos por una fragata); además, la reputación con $theMarketFaction también puede mejorar.
 
@@ -139,7 +139,7 @@ Las naves deben ser destruidas o inutilizadas dentro del sistema o en las proxim
 
 El pago se realizará a través de un canal de com. seguro mediante un repetidor de comunicaciones cercano.
 ",,,,,
-system_bounty,start_with_faction,,,news,Recompensa ofrecida por $market,"Las autoridades $onOrAt $market, hartas de los constantes ataques al transporte marítimo, las interrumpciones del comercio y la situación general de cuasi-guerra, han ofrecido una recompensa sobre todas y cada una de las flotas hostiles a $theMarketFaction.","Tendrá una duración de $daysLeft días.
+system_bounty,start_with_faction,,,news,Recompensa ofrecida por $market,"Las autoridades $onOrAt $market, hartas de los constantes ataques al transporte naval, las interrumpciones del comercio y la situación general de cuasi-guerra, han ofrecido una recompensa sobre todas y cada una de las flotas hostiles a $theMarketFaction.","Tendrá una duración de $daysLeft días.
 
 Probablemente provocada por la actividad de $enemyFaction en el sistema.
 
@@ -228,12 +228,12 @@ market_procurement,success_bonus,,,player_intel_always,Completado: $quantity de 
 market_procurement,failure,,,player_intel_always,Fallido: no se ha podido entregar a tiempo $quantity unidad(es) de $commodity en $market,Misión fallida: no se ha cumplido el plazo.,,,,"no_system_prefix, important",,
 ,,,,,,,,,,,,
 # analyze entity mission,,,,,,,,,,,,
-analyze_entity,posting,,,posting,"Ejecuta el paquete de sensores en $entityName, dentro de $systemName, en un plazo de $daysLeft para recibir un pago de $rewardCredits.",La misión se considerará completada y el pago se abonará inmediatamente tras la ejecución del paquete de sensores.,$locationHint,,,no_system_prefix,,
-analyze_entity,accept,,,secure_comm,Aceptado: ejecutar el paquete de sensores en $entityName dentro de $systemName,"Recompensa de $rewardCredits; debe completarse en un plazo de $daysLeft.
+analyze_entity,posting,,,posting,"Activa el paquete de sensores en $entityName, dentro de $systemName, en un plazo de $daysLeft para recibir un pago de $rewardCredits.",La misión se considerará completada y el pago se abonará inmediatamente tras la activación del paquete de sensores.,$locationHint,,,no_system_prefix,,
+analyze_entity,accept,,,secure_comm,Aceptado: activar el paquete de sensores en $entityName dentro de $systemName,"Recompensa de $rewardCredits; debe completarse en un plazo de $daysLeft.
 
-La misión se considerará completada y el pago se abonará inmediatamente tras la ejecución del paquete de sensores.",$locationHint,,,"no_system_prefix, important",,
-analyze_entity,failure,,,player_intel_always,Fallido: ejecutar el paquete de sensores en $entityName dentro de $systemName,Misión fallida: no se ha cumplido el plazo.,,,,"no_system_prefix, important",,
-analyze_entity,success,,,player_intel_always,Completado: ejecutar el paquete de sensores en $entityName dentro de $systemName,Misión completada con éxito.,$rewardCredits de recompensa.,,,"no_system_prefix, important",,
+La misión se considerará completada y el pago se abonará inmediatamente tras la activación del paquete de sensores.",$locationHint,,,"no_system_prefix, important",,
+analyze_entity,failure,,,player_intel_always,Fallido: activar el paquete de sensores en $entityName dentro de $systemName,Misión fallida: no se ha cumplido el plazo.,,,,"no_system_prefix, important",,
+analyze_entity,success,,,player_intel_always,Completado: activar el paquete de sensores en $entityName dentro de $systemName,Misión completada con éxito.,$rewardCredits de recompensa.,,,"no_system_prefix, important",,
 ,,,,,,,,,,,,
 # survey planet mission,,,,,,,,,,,,
 survey_planet,posting,,,posting,Realiza un sondeo completo de $planetName en $systemName en un plazo de $daysLeft para recibir un pago de $rewardCredits.,La misión se considerará completada y el pago se abonará inmediatamente tras la finalización del sondeo.,$surveyInfo,,,no_system_prefix,,
@@ -247,7 +247,7 @@ survey_planet,success,,,player_intel_always,Completado: realizar un sondeo compl
 tutorial_mission,start,,,secure_comm,Comunicación segura desde Ancyra,"Recibes una comunicación restringida procedente del principal planeta habitado del sistema, Ancyra.
 
 El mensaje es breve y te pide que te desplaces hasta allí y te pongas en contacto con $mainContactPost $mainContactName lo antes posible.",,,,"no_system_prefix, important",,
-tutorial_mission,sneak_start,,,player_intel_always,Recupera datos del punto de salto en Derinkuyu,"Ponte en contacto con $dataContactName en la Estación Minera de Derinkuyu para obtener las mediciones sin procesar del punto de salto.
+tutorial_mission,sneak_start,,,player_intel_always,Recupera datos del punto de salto en Derinkuyu,"Ponte en contacto con $dataContactName en la Estación Minera de Derinkuyu para obtener las mediciones brutas del punto de salto.
 
 Debes establecer contacto con el transpondedor apagado, ya que los mineros de Derinkuyu se han convertido en piratas y, de lo contrario, tu flota será atacada.","Utiliza la abilidad «En Sigilo» para evitar ser detectado, y «Propulsión de Emergencia» para escapar si te ven.",,,"no_system_prefix, important",,
 tutorial_mission,sneak_end,,,player_intel_always,Vuelve a Ancyra con los datos,Vuelve a Ancyra y ponte en contacto con $mainContactPost $mainContactLastName para entregar los datos del punto de salto.,,,,"no_system_prefix, important",,
