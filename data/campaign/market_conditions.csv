@@ -54,9 +54,9 @@ Población,population_10,,,TRUE,com.fs.starfarer.api.impl.campaign.econ.Populati
 ,,,,,,,,
 Escasez de Alimentos,event_food_shortage,,,TRUE,com.fs.starfarer.api.impl.campaign.econ.FoodShortage,"Hay una escasez temporal de alimentos en $market.
 - La estabilidad se ha reducido en $stabilityPenalty
-- Se necesitan aproximadamente $neededFood unidades de comida para poner fin a la escasez
+- Se necesitan aproximadamente $neededFood unidades de alimentos para poner fin a la escasez
 - Los precios de los alimentos han subido debido a la menor oferta de suministro
-- Se obtiene más reputación y experiencia al vender comida",graphics/icons/markets/food_shortage.png,1000
+- Se obtiene más reputación y experiencia al vender alimentos",graphics/icons/markets/food_shortage.png,1000
 Disturbios Recientes,recent_unrest,show_in_codex,,TRUE,com.fs.starfarer.api.impl.campaign.econ.RecentUnrest,$Market ha atravesado recientemente una serie de eventos tumultuosos que han tenido un efecto duradero en su estabilidad.,graphics/icons/markets/recent_unrest.png,2000
 Interrupción del Comercio,event_trade_disruption,,,TRUE,com.fs.starfarer.api.impl.campaign.econ.TradeDisruption,"Las flotas mercantes que se dirigen hacia o desde $market están sufriendo pérdidas importantes. Lo más probable es que la culpa sea de la piratería o de la guerra.
 
