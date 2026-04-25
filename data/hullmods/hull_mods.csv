@@ -202,7 +202,7 @@ Generador de Fragmentos,shard_spawner,,,,,,,,TRUE,TRUE,0,0,0,0,com.fs.starfarer.
 No Retroceder,do_not_back_off,,,,,,,,TRUE,TRUE,0,0,0,0,com.fs.starfarer.api.impl.hullmods.DoNotBackOff,Activa la bandera IA DO_NOT_BACK_OFF,,,
 ,,,,,,,,,,,,,,,,,,,
 ,,,,,,,,,,,,,,,,,,,
-Casco de la Amenaza,threat_hullmod,,,,"codex_require_related, threat",,,,TRUE,,0,0,0,0,com.fs.starfarer.api.impl.combat.threat.ThreatHullmod,Modificación de casco oculta para gestionar las propiedades especiales de las naves de la Amenaza. Descripción creada en el script.,,,graphics/hullmods/the_threat.png
+Casco de la Amenaza,threat_hullmod,,,,"codex_require_related, threat",,,,TRUE,,0,0,0,0,com.fs.starfarer.api.impl.combat.threat.ThreatHullmod,Modificación del casco oculta para gestionar las propiedades especiales de las naves de la Amenaza. Descripción creada en el script.,,,graphics/hullmods/the_threat.png
 Enjambre de Fragmentos,fragment_swarm,,,,"codex_unlockable, fragment, no_drop_salvage","Weapons, Special",30000,,,,6,12,18,30,com.fs.starfarer.api.impl.combat.threat.FragmentSwarmHullmod,"Un enjambre de fragmentos de la Amenaza se arremolina alrededor de la nave, proporcionando un suministro renovado de fragmentos para las armas basadas en fragmentos.
 
 El número base de fragmentos es de %s/%s/%s/%s, y se lanzan fragmentos de repuesto %s/%s/%s/%s veces por segundo, dependiendo del tamaño del casco.
