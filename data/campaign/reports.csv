@@ -240,7 +240,7 @@ survey_planet,posting,,,posting,Realiza un sondeo completo de $planetName en $sy
 survey_planet,accept,,,secure_comm,Aceptado: realizar un sondeo completo de $planetName en $systemName,"Recompensa de $rewardCredits; debe completarse en un plazo de $daysLeft.
 
 La misión se considerará completada y el pago se abonará inmediatamente tras la finalización del sondeo.",$surveyInfo,,,"no_system_prefix, important",,
-survey_planet,failure,,,player_intel_always,Fallido: realizar un sondeo completo de $planetName en $systemNameMission échouée — délai non respecté.,,,,"no_system_prefix, important",,
+survey_planet,failure,,,player_intel_always,Fallido: realizar un sondeo completo de $planetName en $systemName,Misión fallida: no se ha cumplido el plazo.,,,,"no_system_prefix, important",,
 survey_planet,success,,,player_intel_always,Completado: realizar un sondeo completo de $planetName en $systemName,Misión completada con éxito.,$rewardCredits de recompensa.,,,"no_system_prefix, important",,
 ,,,,,,,,,,,,
 # tutorial mission,,,,,,,,,,,,
