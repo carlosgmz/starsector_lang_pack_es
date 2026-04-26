@@ -1,6 +1,35 @@
 {
     
 	"fleetInteractionDialog":{
+		# Available tokens:
+		#
+		# $faction  faction of other fleet ("Hegemony", "Tri-Tachyon", "Pirate", etc)
+		# $fleetName name of other fleet ("Scout", "Security Detachment", etc)
+		# $firstName first name of other fleet's commander
+		# $lastName last name of other fleet's commander
+		# $fleetOrShip "fleet", "ship" if only one ship in fleet, "fighter wing" if only one fighter wing (and nothing else)
+		# $repairedShipList list of names of the ships that were successfully repaired after being disabled
+		# $crewLost Approximate number of crew lost during the last engagement, i.e. "4", "around 100", or "no". 
+		# $marinesLost Approximate number of marines lost during the last engagement, i.e. "4", "around 100", or "no". 
+		# $crewRecovered Number of crew recovered after winning the entire encounter. 
+		# $marinesRecovered Number of marines recovered after winning the entire encounter.
+		# $numLifeSigns Approximate number of crew + marines on ship about to be boarded. Can also be "no".
+		# $boardingTaskForceShips List of names of the ships in the boarding task force.
+		# $boardingCrewLost
+		# $boardingEnemyCrewLost
+		# $boardingMarinesLost
+		# $boardingEnemyMarinesLost
+		# $boardableShipName "ISS Something or Other"
+		# $boardingTaskForceShipName "ISS Something or Other", name of the first ship in the boarding task force
+		# $creditsLooted
+		# $flagship On flagship selection
+		# $crashMothballList
+		# battles with allies
+		# Tokens:
+		# $alliedFactionAndTheirAllies "Hegemony forces and their allies"
+		# $enemyFactionAndTheirAllies "Hegemony forces and their allies"
+		# $yourForcesWereOrYourSideWas	 
+
     	"initialWithStationVsLargeFleet": "$fleetOrShip de $theFaction maniobra para permanecer apoyado por la estación, permitiendo que tu flota se retire. Sin embargo, tus fuerzas probablemente serán hostigadas mientras se retiran.",
     	"initialAggressive": "$fleetOrShip de $theFaction maniobra para impedirte una retirada fácil.",
     	"initialDisengage": "$fleetOrShip de $theFaction está intentando escapar.",
@@ -56,7 +85,8 @@
     	
 		"enemyCleanDisengage": "La flota enemiga consiguió escapar con facilidad ya que tus fuerzas no pueden realizar una persecución.",
     	"enemyCleanDisengageSide": "La flota enemiga consiguió escapar con facilidad ya que las fuerzas de tu bando no pueden realizar una persecución.",
-    	
+
+		# in playerUnableToPursue, the player can still harass the escaping ships, so it's not a "clean" disengagement.
 		"playerUnableToPursue": "Parece que la flota enemiga podrá escapar sin que puedas forzar una pelea.",
     	"playerUnableToPursueNoReadyShips": "Ninguna de tus naves está en condiciones de realizar una persecución.",
     	"playerUnableToPursueStoodDown": "Tus naves están enfocadas en recuperar la capacidad operativa y no pueden realizar una persecución.",
@@ -65,7 +95,11 @@
     	"enemyDisruptedPlayer": "A pesar de ser victoriosas en el último enfrentamiento, tus fuerzas han sufrido pérdidas suficientes para no poder realizar una persecución mientras el enemigo se retira.",
     	"enemyDisruptedPlayerSide": "A pesar de ser victoriosas en el último enfrentamiento, las fuerzas de tu bando han sufrido pérdidas suficientes para no poder realizar una persecución mientras el enemigo se retira.",
     	"cleanDisengageOpportunity": "Después de una victoria táctica, tus fuerzas tienen la oportunidad de escapar con facilidad del enemigo.",
-    	
+
+		#"playerTooLargeToDisengage":"Your fleet is too large to be able to disengage effectively unless the opposing forces are already in disarray.",
+		#"playerTooLargeCanFightToDisengage":"Engaging the opponent and destroying, disabling, or forcing enough of their ships to retreat will allow your fleet to disengage without being pursued.",
+		#"highlightTooLarge":"too large to be able to disengage",
+		#"highlightCanFight":"disengage without being pursued",
 		"playerTooLargeToDisengage": "Tu flota es demasiado grande para poder escapar fácilmente. Enfrentarse al enemigo y destruir, deshabilitar o forzar suficientes naves a retirarse permitirá que tu flota se retire sin ser perseguida.",
     	"highlightTooLarge": "demasiado grande para poder escapar",
     	"highlightDisengage": "escapar sin ser perseguido",
@@ -101,6 +135,9 @@
     	"casualtyReport": "Los informes preliminares indican que $crewLost tripulantes y $marinesLost marines se perdieron durante el último enfrentamiento.",
     	"recoveryReport": "Después de la batalla, $crewRecovered tripulantes y $marinesRecovered marines fueron rescatados de cápsulas de emergencia y compartimentos intactos en los restos.",
 
+		#
+		# BOARDING ENEMY SHIP
+		#
 		"enemyShipBoardable": "Tus fuerzas se preparan para comenzar operaciones de salvamento, cuando de repente los sistemas de una nave enemiga vuelven a funcionar. Un escaneo rápido detecta $numLifeSigns signo(s) de vida a bordo.",
     	"engageBoardableDisabled": "Tus fuerzas se enfrentan a la nave enemiga, y unos pocos disparos bien apuntados la neutralizan rápidamente.",
     	"engageBoardableDestroyed": "Tus fuerzas se enfrentan a la nave enemiga. Una enorme explosión apaga las pantallas poco después de que varios disparos impacten en su casco dañado, y lo único que queda cuando se reestablece la imagen es una bola de escombros que se expande lentamente.",
@@ -128,7 +165,10 @@
     	"boardingProjection": "Tienes $marines marine(s) disponible(s). Según simulaciones ejecutadas por una IA de nivel gamma, una operación de abordaje tendría una $boardingSuccessChance posibilidad de éxito.",
     	
 		"boardingCasualtyReport": "Una evaluación posterior indica que $boardingMarinesLost marine(s) se perdieron durante la batalla.",
-    	
+
+		#
+		# BEING BOARDED (limited to ship being engaged and shot down or not, at the moment)
+		#
 		"friendlyShipBoardable": "La tripulación de una de tus naves deshabilitadas ha efectuado suficientes reparaciones para que los sistemas críticos vuelvan a funcionar. Si consiguiese recuperar la propulsión, podría ser capaz de reunirse con tu flota.",
     	"engageFriendlyBoardableDisabled": "Desafortunadamente, las naves enemigas se acercan y lanzan unos cuantos disparos precisos que eliminan esa posibilidad.",
     	"engageFriendlyBoardableDestroyed": "Desafortunadamente, las naves enemigas se acercan y disparan antes de que se completen las reparaciones. Un disparo perdido parece haber colapsado el campo de contención del reactor - la nave explota, dejando atrás un campo de escombros que se expande lentamente.",
@@ -143,17 +183,26 @@
     	
 		"finalOutcomeNoShipsLeft": "Lo último que recuerdas es el repentino subidón de aceleración mientras la cápsula de escape en la que estás se aleja de tu nave condenada.",
     	
+		#
+		# OTHER
+		#
 		"creditsLootedReport": "Los equipos de salvamento pudieron recuperar $creditsLooted crédito(s) de núcleos de CPU aún activos en los restos.",
     	"selectedFlagship": "Transfieres el mando a $flagship para el próximo enfrentamiento.",
     	"noSalvageReport": "No hay nada que rebuscar.",
     	"noSalvageReportPlayerDidNothing": "Tu $playerFleetOrShip no participa en operaciones de salvamento debido a su escasa contribución durante el encuentro.",
     	"salvageReportPlayer": "Tu $playerFleetOrShip es capaz de participar en operaciones de salvamento debido a su contribución durante el encuentro.",
     	
+		#
+		# CRASH MOTHBALLING
+		#
 		"crashMothballSelectedOneShip": "Ordenas a $crashMothballList que apague todos los sistemas de combate para evitar el riesgo de fallos durante la batalla. La tripulación de la nave destina todos los recursos disponibles para mantener los motores funcionando con la mayor fluidez posible.",
     	"crashMothballSelectedMultiple": "Ordenas a $crashMothballList que apague todos los sistemas de combate para evitar el riesgo de fallos durante la batalla. Las tripulaciones de las naves destinan todos los recursos disponibles para mantener los motores funcionando con la mayor fluidez posible.",
     	"tooltipCrashMothball": "Algunas de tus naves sufren de baja capacidad operativa y podrían experimentar fallos durante la batalla.\n\nSus sistemas de combate pueden ser apagados para evitar fallos y permitir que las naves alcancen su máxima velocidad para escapar.",
     	"tooltipCrashMothballUnavailable": "Todas tus naves están preparadas y no corren el riesgo de sufrir fallos.",
     	
+		#
+		# TOOLTIPS
+		#
 		"tooltipPursue": "Provoca una batalla en la que las fuerzas en retirada intentan escapar.",
     	"tooltipPursueAutoresolve": "Ordena a tu segundo al mando que se encargue de la persecución. No supone ningún riesgo a tus naves, pero quizás sea menos efectivo que comandar la persecución tú mismo.",
     	"tooltipPursueLostLast": "Tus fuerzas fueron derrotadas en el último enfrentamiento y son incapaces de perseguir.",
@@ -188,6 +237,12 @@
     	"ongoingBattleShareIFF": "$alliedFactionAndTheirAllies transmiten sus códigos IFF, lo que te permite unirte a la batalla de su lado si así lo decides.",
     	"ongoingBattleNoJoin": "Ninguno de los bandos confía en ti lo suficiente para compartir códigos IFF o combatir a tu lado, y eres incapaz de unirte a la batalla en ninguno de los dos bandos.",
     	"ongoingBattleNoJoinTransponder": "Ninguno de los bandos confía en ti lo suficiente para compartir códigos IFF, pero eso podría cambiar si regresases con tu transpondedor activado.",
+		#"playerOutFirstEscapeWin":"Your forces leave the battlespace before all of your allies, who are nonetheless able to rout the enemy forces.",
+		#"playerOutFirstEscapeLoss":"Your forces leave the battlespace before all of your allies, who are able to escape shortly thereafter.",
+		#"playerOutFirstEngageWin":"Your forces retreat from the battlespace before your allies, who are nonetheless able to win the engagement.",
+		#"playerOutFirstEngageLoss":"Your forces retreat from the battlespace before all of your allies and have an opportunity to leave in relative safety, despite your allies being defeated shortly thereafter.",
+		#"playerOutFirstPursuitWin":"Your forces retreat from the battlespace before your allies, who are nonetheless able to chase off the retreating enemy forces.",
+		#"playerOutFirstPursuitLoss":"Your forces retreat from the battlespace before your allies, and the enemy side is able to turn the tables and defeat them shortly thereafter.",
 		"playerOutFirstEscapeWin": "Tus fuerzas dejan el espacio de batalla antes que todos tus aliados, quienes sin embargo son capaces de derrotar a las fuerzas enemigas.",
     	"playerOutFirstEscapeLoss": "Tus fuerzas dejan el espacio de batalla antes que todos tus aliados, quienes son capaces de escapar poco después.",
     	"playerOutFirstEngageWin": "Tus fuerzas se retiran del espacio de batalla antes que tus aliados, quienes sin embargo son capaces de ganar el enfrentamiento.",
@@ -200,10 +255,17 @@
     	"ongoingBattleHarass": "$alliedFactionAndTheirAllies hostigan a $enemyFactionAndTheirAllies en retirada, causando muchos daños, pero finalmente no fuerzan una batalla.",
     	"ongoingBattleLetGo": "$alliedFactionAndTheirAllies dejan que $enemyFactionAndTheirAllies se retiren sin más incidentes.",
     	"ongoingBattleDisengage": "$alliedFactionAndTheirAllies están intentando escapar de $enemyFactionAndTheirAllies."
+		#"ongoingBattleJoinEnemyWillFlee":"Your forces join the battle, and the now-outclassed $enemyFactionAndTheirAllies attempt to disengage.",
+		#"ongoingBattleJoinAlliesWillFight":"Your forces join the battle, and encouraged by this turn of events, the $alliedFactionAndTheirAllies turn to engage the enemy.",
+		#"ongoingBattleJoinTurnTables":"Your forces join the battle, shifting the balance drastically. The $alliedFactionAndTheirAllies turn to engage the $enemyFactionAndTheirAllies which, in turn, attempt to disengage.",
 	},
 
 
   	"jumpPointInteractionDialog":{
+		# Available tokens:
+		#
+		# $fleetOrShip "fleet", "ship" if only one ship in fleet, "fighter wing" if only one fighter wing (and nothing else)
+
 		"approach": "Tu $fleetOrShip se acerca al punto de salto.",
   	  	"starAnchor": "Saltar a través del agujero de gusano generado por el campo gravitacional de la estrella es toda una hazaña de navegación. Solo los más hábiles considerarían siquiera intentarlo, e incluso entonces, los resultados son impredecibles.",
   	  	"starAnchorUnusable": "Eres incapaz de usar este punto de salto.",
@@ -213,6 +275,10 @@
 
 
   	"planetInteractionDialog":{
+		# Available tokens:
+		#
+		# $fleetOrShip "fleet", "ship" if only one ship in fleet, "fighter wing" if only one fighter wing (and nothing else)
+		# $planetName
   	  	"approach": "Tu $fleetOrShip se acerca a $planetName."
   	},
 
@@ -239,6 +305,7 @@
     	"chmWeaponGroups_action": "Ajustar grupos de armas",
     	"chmWeaponGroups_dismiss": "No importa",
     	
+		#"chmOpenTrade_text":"In the cargo/trade screen, you can:\n\n- Left-click to pick up a stack\n- Shift-click to pick up items from a stack one at a time\n- Shift-click and hold, then drag to pick up a specific quantity\n- Control-click to transfer an entire stack without picking it up\n- Hold down Alt and move the mouse to transfer multiple stacks quickly",
 		"chmOpenTrade_text": "En la pantalla de inventario/comercio, puedes hacer:\n\n- Clic izquierdo para tomar una pila de objetos\n\n- Shift-clic para tomar objetos de una pila de uno en uno\n\n- Shift-clic y mantener, luego arrastrar para tomar una cantidad específica\n\n- Control-clic para transferir una pila completa sin tomarla",
     	"chmOpenTrade_dismiss": "Descartar",
     	
