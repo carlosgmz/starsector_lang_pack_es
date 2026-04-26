@@ -219,9 +219,9 @@
 		"tooltipLetThemGoNoPenalty": "Deja que la otra flota se marche libremente.\n\nTu flota no necesita reorganizarse después del encuentro y no se ve ralentizada.",
     	"tooltipLetThemGo": "Deja que la otra flota se marche libremente.\n\nTu flota no necesita reorganizarse después del encuentro y no se ve ralentizada.",
     	"tooltipEngage": "Ataca a la flota enemiga.\n\nSi infliges suficiente daño antes de retirarte, podrás escapar sin ser perseguido.",
-    	"tooltipCleanDisengage": "Termina la batalla sin riesgo de ser hostigado por la flota enemiga.\n\nYa que el enemigo permanece en control del campo de batalla, no podrás realizar operaciones de salvamento.\n\nSi tu flota no ha tomado acciones hostiles, retirarte no dañará tu reputación con la facción enemiga.",
-    	"tooltipHarrassableDisengage": "Termina la batalla sin riesgo de ser perseguido. La flota enemiga aún puede hostigar tu retirada.\n\nYa que el enemigo permanece en control del campo de batalla, no podrás realizar operaciones de salvamento.\n\nSi tu flota no ha tomado acciones hostiles, retirarte no dañará tu reputación con la facción enemiga.",
-    	"tootipAttemptToDisengage": "Intenta retirarte de la batalla. La flota enemiga puede iniciar una persecución y forzar una batalla, o puede dejarte ir.\n\nYa que el enemigo permanece en control del campo de batalla, no podrás realizar operaciones de salvamento.\n\nSi tu flota no ha tomado acciones hostiles, retirarte - sin dañar a naves persecutorias - hará el menor daño a tu reputación con la facción enemiga.",
+    	"tooltipCleanDisengage": "Termina la batalla sin riesgo de ser hostigado por la flota enemiga.\n\nYa que el enemigo permanece en control del espacio de batalla, no podrás realizar operaciones de salvamento.\n\nSi tu flota no ha tomado acciones hostiles, retirarte no dañará tu reputación con la facción enemiga.",
+    	"tooltipHarrassableDisengage": "Termina la batalla sin riesgo de ser perseguido. La flota enemiga aún puede hostigar tu retirada.\n\nYa que el enemigo permanece en control del espacio de batalla, no podrás realizar operaciones de salvamento.\n\nSi tu flota no ha tomado acciones hostiles, retirarte no dañará tu reputación con la facción enemiga.",
+    	"tootipAttemptToDisengage": "Intenta retirarte de la batalla. La flota enemiga puede iniciar una persecución y forzar una batalla, o puede dejarte ir.\n\nYa que el enemigo permanece en control del espacio de batalla, no podrás realizar operaciones de salvamento.\n\nSi tu flota no ha tomado acciones hostiles, retirarte - sin dañar a naves persecutorias - hará el menor daño a tu reputación con la facción enemiga.",
     	
 		"tooltipBoardingAction": "Organiza una acción de abordaje. Requiere marines y probablemente resultará en graves pérdidas de personal.",
     	"tooltipEngageBoardable": "Ataca la nave antes de que pueda completar las reparaciones.\n\nExiste la posibilidad de que la nave sea destruida completamente.",
@@ -267,8 +267,8 @@
 		# $fleetOrShip "fleet", "ship" if only one ship in fleet, "fighter wing" if only one fighter wing (and nothing else)
 
 		"approach": "Tu $fleetOrShip se acerca al punto de salto.",
-  	  	"starAnchor": "Saltar a través del agujero de gusano generado por el campo gravitacional de la estrella es toda una hazaña de navegación. Solo los más hábiles considerarían siquiera intentarlo, e incluso entonces, los resultados son impredecibles.",
-  	  	"starAnchorUnusable": "Eres incapaz de usar este punto de salto.",
+  	  	"starAnchor": "Saltar a través del agujero de gusano generado por el campo gravitacional de la estrella es toda una hazaña de navegación. Solo los más hábiles considerarían siquiera intentarlo y, aún así, los resultados son impredecibles.",
+  	  	"starAnchorUnusable": "No puedes usar este punto de salto.",
   	  	"noFuel": "Tu $fleetOrShip no tiene combustible restante y es incapaz de hacer un salto.",
   	  	"noExits": "El punto de salto no parece tener salidas útiles y, en la práctica, es inutilizable."
   	},
@@ -284,13 +284,13 @@
 
 
   	"campaignHelp":{
-    	"chmNewgame_text": "¡Bienvenido a la campaña de Starsector!\n\nPuedes presionar F5 para hacer un guardado rápido y F9 para cargar la partida guardada.\n\nIntenta evitar enfrentarte a flotas mucho más grandes que la tuya o las que cuentan con naves más grandes, y por favor recuerda que el juego está en desarrollo así que podrían ocurrir errores ocasionalmente.\n\n¡Buena suerte!",
+    	"chmNewgame_text": "¡Bienvenido a la campaña de Starsector!\n\nPuedes presionar F5 para hacer un guardado rápido y F9 para cargar rápido.\n\nIntenta evitar enfrentarte a flotas mucho más grandes que la tuya o las que cuentan con naves más grandes, y por favor recuerda que el juego está en desarrollo así que podrían ocurrir errores ocasionalmente.\n\n¡Buena suerte!",
     	"chmNewgame_dismiss": "Descartar",
 		
 		"chmNewgameIron_text": "¡Bienvenido a la campaña de Starsector!\n\nDado que estás jugando en modo ironman, solo podrás guardar la partida cuando salgas, y no podrás cargar otra partida sin salir (y guardar) tu partida actual primero.\n\nIntenta evitar enfrentarte a flotas mucho más grandes que la tuya o las que cuentan con naves más grandes, y por favor recuerda que el juego está en desarrollo así que podrían ocurrir errores ocasionalmente.\n\n¡Buena suerte!",
     	"chmNewgameIron_dismiss": "Descartar",
     	
-		"chmDeployCritCR_text": "Algunas de las naves seleccionadas para el despliegue están en peligrosamente baja capacidad operativa (por debajo del 20%).\n\nLlevar los sistemas en estas naves a niveles de potencia de combate es probable que cause fallos críticos - causando daño, deshabilitando algunas armas y motores durante la batalla, y causando todavía más fallos críticos durante el despliegue.\n\nCorrer estos riesgos - que incluyen la destrucción total de una nave - es solo una medida de último recurso.",
+		"chmDeployCritCR_text": "Algunas de las naves seleccionadas para el despliegue están en peligrosamente baja capacidad operativa (por debajo del 20%).\n\nElevar los sistemas de estas naves a niveles de potencia de combate es probable que provoque fallos críticos - causando daño, deshabilitando algunas armas y motores durante la batalla, y causando todavía más fallos críticos durante el despliegue.\n\nCorrer estos riesgos - que incluyen la destrucción total de una nave - es solo una medida de último recurso.",
     	"chmDeployCritCR_action": "Proceder con el despliegue",
     	"chmDeployCritCR_dismiss": "Reconsiderar",
 		
@@ -309,68 +309,68 @@
 		"chmOpenTrade_text": "En la pantalla de inventario/comercio, puedes hacer:\n\n- Clic izquierdo para tomar una pila de objetos\n\n- Shift-clic para tomar objetos de una pila de uno en uno\n\n- Shift-clic y mantener, luego arrastrar para tomar una cantidad específica\n\n- Control-clic para transferir una pila completa sin tomarla",
     	"chmOpenTrade_dismiss": "Descartar",
     	
-		"chmHyperStorm_text": "¡Tu flota ha sido golpeada por una tormenta del hiperespacio! Una de tus naves ha sufrido daño y su capacidad operativa ha sido reducida.\n\nLas tormenta también pueden sacar a tu flota del curso, pero una \"Propulsión de Emergencia\" permite que tu flota regrese al curso más fácilmente y le permite atravesar tormentas.",
+		"chmHyperStorm_text": "¡Tu flota ha sido golpeada por una tormenta del hiperespacio! Una de tus naves ha sufrido daño y su capacidad operativa ha sido reducida.\n\nLas tormentas también pueden desviar a tu flota de su rumbo, pero una \"Propulsión de Emergencia\" permite que tu flota recupere el rumbo más fácilmente y atravesar las tormentas.",
     	"chmHyperStorm_dismiss": "Descartar",
     	
 		"chmShipPurchase_text": "¡Felicidades, acabas de comprar una nueva nave!\n\nNo tiene armas ni modificaciones del casco instaladas, así que sería una buena idea equiparla.\n\nTambién necesitas asegurarte de tener suficiente personal para tripularla.",
     	"chmShipPurchase_action": "Abrir la pantalla de reacondicionamiento",
     	"chmShipPurchase_dismiss": "Descartar",
     	
-		"chmWingPurchase_text": "¡Felicidades, acabas de comprar un nuevo escuadrón de cazas!\n\nLa capacidad operativa del escuadrón de cazas representa el número de chasis de repuesto disponibles, pero estos solo pueden usarse si tienes una nave con cubierta de vuelo en tu flota.\n\nNuevos cazas despegarán de una cubierta de vuelo cercana para reemplazar cualquier pérdida tomada en combate. Mientras tu flota tenga una nave con instalaciones de reparación adecuadas (es decir, una cubierta de vuelo), un escuadrón de cazas no puede perderse completamente, incluso si su capacidad operativa se reduce a cero.",
+		"chmWingPurchase_text": "¡Felicidades, acabas de comprar un nuevo escuadrón de cazas!\n\nLa capacidad operativa del escuadrón de cazas representa el número de chasis de repuesto disponibles, pero estos solo pueden usarse si tienes una nave con cubierta de despegue en tu flota.\n\nNuevos cazas saldrán de una cubierta de despegue cercana para reemplazar cualquier baja sufrida en combate. Siempre que tu flota cuente con una nave con instalaciones de reparación adecuadas (es decir, una cubierta de despegue), un escuadrón de cazas no puede perderse por completo, incluso si su capacidad operativa se reduce a cero.",
     	"chmWingPurchase_dismiss": "Descartar",
     	
-		"chmRefitOnStation_text": "Cuando reacondicionas una nave mientras estás atracado en una estación espacial, puedes montar tanto las armas en tu bodega de cargamento como las disponibles para compra en la estación.\n\nDeshacer los cambios a la configuración de la nave (o simplemente desmontar las armas compradas) reembolsará los créditos usados, pero solo si no te has alejado de la pantalla de reacondicionamiento.",
+		"chmRefitOnStation_text": "Al reacondicionar una nave mientras estás atracado en una estación espacial, puedes montar tanto las armas de tu inventario como las disponibles para comprar en la estación.\n\nDeshacer los cambios a la configuración de la nave (o simplemente desmontar las armas compradas) reembolsará los créditos usados, pero solo si no te has salido de la pantalla de reacondicionamiento.",
     	"chmRefitOnStation_dismiss": "Descartar",
     	
-		"chmLootOverCapacity_text": "Advertencia: estás tomando más salvamento de lo que tu flota tiene capacidad para llevar.\n\nEsto resultará en un consumo diario de suministros enormemente aumentado y una velocidad de viaje reducida.\n\nSe recomienda que tomes menos cargamento o te dirijas a una estación cercana para vender el exceso.",
+		"chmLootOverCapacity_text": "Advertencia: estás tomando más material del que tu flota tiene capacidad para transportar.\n\nEsto resultará en un consumo diario de suministros enormemente aumentado y una velocidad de viaje reducida.\n\nSe recomienda que tomes menos cargamento o te dirijas a una estación cercana para vender el exceso.",
     	"chmLootOverCapacity_dismiss": "Descartar",
     	
-		"chmOverCargoCapacity_text": "Tu flota está llevando más cargamento del que tiene capacidad.\n\nEsto resultará en un consumo diario de suministros enormemente aumentado y una velocidad de viaje reducida.\n\nSe recomienda que abandones algo del cargamento ahora o te dirijas a una estación rápidamente para poder vender el exceso. Puedes abandonar equipaje desde la pantalla de tripulación/inventario.",
+		"chmOverCargoCapacity_text": "Tu flota lleva más cargamento del que tiene capacidad.\n\nEsto resultará en un consumo diario de suministros enormemente aumentado y una velocidad de viaje reducida.\n\nSe recomienda que abandones algo del cargamento ahora o te dirijas a una estación rápidamente para poder vender el exceso. Puedes abandonar cargamento desde la pantalla de tripulación/inventario.",
     	"chmOverCargoCapacity_action": "Abrir la pantalla de tripulación/inventario",
     	"chmOverCargoCapacity_dismiss": "Descartar",
     	
-		"chmOverFuelCapacity_text": "Tu flota está llevando más combustible del que tiene capacidad.\n\nEsto resultará en un consumo diario de suministros enormemente aumentado y una velocidad de viaje reducida.\n\nSe recomienda que abandones algo del combustible ahora o te dirijas a una estación rápidamente para poder vender el exceso. Puedes abandonar combustible desde la pantalla de tripulación/inventario.",
+		"chmOverFuelCapacity_text": "Tu flota lleva más combustible del que tiene capacidad.\n\nEsto resultará en un consumo diario de suministros enormemente aumentado y una velocidad de viaje reducida.\n\nSe recomienda que abandones algo del combustible ahora o te dirijas a una estación rápidamente para poder vender el exceso. Puedes abandonar combustible desde la pantalla de tripulación/inventario.",
     	"chmOverFuelCapacity_action": "Abrir la pantalla de tripulación/inventario",
     	"chmOverFuelCapacity_dismiss": "Descartar",
     	
-		"chmOverCrewCapacity_text": "Tu flota está llevando más personal del que tiene capacidad.\n\nEsto resultará en un consumo diario de suministros enormemente aumentado y una velocidad de viaje reducida.\n\nSe recomienda que te dirijas a un mercado cercano para dejarlos allí.",
+		"chmOverCrewCapacity_text": "Tu flota lleva más personal del que tiene capacidad.\n\nEsto resultará en un consumo diario de suministros enormemente aumentado y una velocidad de viaje reducida.\n\nSe recomienda que te dirijas a un mercado cercano para dejarlos allí.",
     	"chmOverCrewCapacity_action": "Abrir la pantalla de tripulación/inventario",
     	"chmOverCrewCapacity_dismiss": "Descartar",
     	
 		"chmLowFuel_text": "Tu flota se está quedando sin combustible.\n\nSi se queda sin combustible en el hiperespacio, se irá a la deriva hacia el sistema estelar más cercano y puede quedar varada si no eres capaz de adquirir más combustible allí.",
     	"chmLowFuel_dismiss": "Descartar",
     	
-		"chmLowSupplies_text": "Tu flota se está quedando sin suministros.\n\nSi se queda sin suministros, todas las reparaciones se detendrán y las naves comenzarán a perder capacidad operativa con el tiempo. Después de más de un par de días sin suministros, la flota comienza a correr el riesgo de fallos que van desde menores (como la pérdida de cargamento) a críticos (perder una nave).\n\nSe recomienda que adquieras más suministros lo más rápido posible.\n\nPara reducir el consumo de suministros, puedes suspender cualquier reparación en curso. Una forma de último recurso para obtener más suministros es desguazar una de tus naves.\n\nLos comandos para hacerlo están disponibles en la pantalla de flota.",
+		"chmLowSupplies_text": "Tu flota se está quedando sin suministros.\n\nSi se queda sin suministros, todas las reparaciones se detendrán y las naves comenzarán a perder capacidad operativa con el tiempo. Después de más de un par de días sin suministros, la flota comienza a correr el riesgo de fallos que van desde menores (como la pérdida de cargamento) a críticos (perder una nave).\n\nSe recomienda que adquieras más suministros lo más rápido posible.\n\nPara reducir el consumo de suministros, puedes suspender cualquier reparación en curso. Un último recurso para obtener más suministros es desguazar una de tus naves.\n\nLos comandos para hacerlo están disponibles en la pantalla de flota.",
     	"chmLowSupplies_action": "Abrir la pantalla de flota",
     	"chmLowSupplies_dismiss": "Descartar",
     	
-		"chmNotEnoughCrew_text": "Tu flota no tiene suficiente personal para tripular todas tus naves.\n\nEsto resulta en capacidad operativa reducida y una recuperación más lenta de esta para las naves afectadas.\n\nPuedes concentrar la tripulación disponible en naves específicas al desguazar algunas naves desde la pantalla de flota. Se recomienda que contrates más tripulación en una estación espacial cercana lo antes posible.",
+		"chmNotEnoughCrew_text": "Tu flota no tiene suficiente personal para tripular todas tus naves.\n\nEsto resulta en capacidad operativa reducida y una recuperación más lenta de esta para las naves afectadas.\n\nPuedes concentrar la tripulación disponible en naves específicas al poner en reserva algunas naves desde la pantalla de flota. Se recomienda que contrates más tripulación en una estación espacial cercana lo antes posible.",
     	"chmNotEnoughCrew_action": "Abrir la pantalla de flota",
     	"chmNotEnoughCrew_dismiss": "Descartar",
     	
-		"chmSomeLowCR_text": "Algunas de las naves en tu flota están en baja capacidad operativa (por debajo del 40%).\n\nSus sistemas de armas y motores son propensos a sufrir fallos y quedar temporalmente deshabilitados durante el uso sostenido, haciéndolas menos capaces en combate.\n\nSe recomienda que dejes que estas naves se recuperen antes de usarlas en combate. Las naves recuperan capacidad operativa con el tiempo, y las estaciones amistosas ofrecen una forma rápida de hacerlo y efectuar reparaciones, así como contratar tripulación adicional si es necesario.\n\nPuedes verificar los niveles de capacidad operativa de tus naves en la pantalla de flota.",
+		"chmSomeLowCR_text": "Algunas de las naves en tu flota están en baja capacidad operativa (por debajo del 40%).\n\nSus sistemas de armas y motores son propensos a sufrir fallos y quedar temporalmente deshabilitados durante el uso sostenido, haciéndolas menos capaces en combate.\n\nSe recomienda que dejes que estas naves se recuperen antes de usarlas en combate. Las naves recuperan capacidad operativa con el tiempo, y las estaciones aliadas ofrecen una forma rápida de hacerlo efectuando reparaciones, así como contratar tripulación adicional si es necesario.\n\nPuedes verificar los niveles de capacidad operativa de tus naves en la pantalla de flota.",
     	"chmSomeLowCR_action": "Abrir la pantalla de flota",
     	"chmSomeLowCR_dismiss": "Descartar",
     	
-		"chmSomeCritCR_text": "Algunas de las naves en tu flota están en peligrosamente baja capacidad operativa (por debajo del 20%).\n\nDesplegar estas naves en combate es probable que cause fallos críticos - causando daño, deshabilitando armas y motores durante el combate, y causando más fallos críticos durante el despliegue.\n\nSe recomienda que dejes que estas naves se recuperen antes de usarlas en combate. Las naves recuperan capacidad operativa con el tiempo, y las estaciones amistosas ofrecen una forma rápida de hacerlo y efectuar reparaciones, así como contratar tripulación adicional si es necesario.\n\nPuedes verificar los niveles de capacidad operativa de tus naves en la pantalla de flota.",
+		"chmSomeCritCR_text": "Algunas de las naves en tu flota están en peligrosamente baja capacidad operativa (por debajo del 20%).\n\nDesplegar estas naves en combate es probable que provoque fallos críticos - causando daño, deshabilitando armas y motores durante el combate, y causando más fallos críticos durante el despliegue.\n\nSe recomienda que dejes que estas naves se recuperen antes de usarlas en combate. Las naves recuperan capacidad operativa con el tiempo, y las estaciones amistosas ofrecen una forma rápida de hacerlo y efectuar reparaciones, así como contratar tripulación adicional si es necesario.\n\nPuedes verificar los niveles de capacidad operativa de tus naves en la pantalla de flota.",
     	"chmSomeCritCR_action": "Abrir la pantalla de flota",
     	"chmSomeCritCR_dismiss": "Descartar",
     	
-		"chmAllCritCR_text": "Todas las naves en tu flota están en peligrosamente baja capacidad operativa (por debajo del 20%).\n\nDesplegar estas naves en combate es probable que cause fallos críticos - causando daño, deshabilitando armas y motores durante el combate, y causando más fallos críticos durante el despliegue.\n\nSe recomienda que dejes que tu flota se recupere antes de involucrarse en combate. Las naves recuperan capacidad operativa con el tiempo, y las estaciones amistosas ofrecen una forma rápida de hacerlo y efectuar reparaciones, así como contratar tripulación adicional si es necesario.\n\nPuedes verificar los niveles de capacidad operativa de tus naves en la pantalla de flota.",
+		"chmAllCritCR_text": "Todas las naves en tu flota están en peligrosamente baja capacidad operativa (por debajo del 20%).\n\nDesplegar estas naves en combate es probable que provoque fallos críticos - causando daño, deshabilitando armas y motores durante el combate, y causando más fallos críticos durante el despliegue.\n\nSe recomienda que dejes que tu flota se recupere antes de involucrarse en combate. Las naves recuperan capacidad operativa con el tiempo, y las estaciones amistosas ofrecen una forma rápida de hacerlo y efectuar reparaciones, así como contratar tripulación adicional si es necesario.\n\nPuedes verificar los niveles de capacidad operativa de tus naves en la pantalla de flota.",
     	"chmAllCritCR_action": "Abrir la pantalla de flota",
     	"chmAllCritCR_dismiss": "Descartar",
     	
-		"chmSupplyUseAfterBattle_text": "¡El consumo de suministros de tu flota acaba de aumentar!\n\nLa recuperación de capacidad operativa usada para desplegar naves cuesta suministros, al igual que reparar daños de combate.\n\nPara reducir el uso de suministros, las reparaciones y recuperación de CR en naves pueden suspenderse desde la pantalla de flota.",
+		"chmSupplyUseAfterBattle_text": "¡El consumo de suministros de tu flota acaba de aumentar!\n\nRecuperar la capacidad necesaria para desplegar naves en batalla consume suministros, al igual que reparar daños sufridos en combate.\n\nPara reducir el consumo de suministros, puedes suspender las reparaciones y recuperación de CR de las naves desde la pantalla de flota.",
     	"chmSupplyUseAfterBattle_action": "Abrir la pantalla de flota",
     	"chmSupplyUseAfterBattle_dismiss": "Descartar",
     	
-		"chmRiskOfAccidents_text": "Algunas de las naves en tu flota están en peligro de sufrir accidentes debido a tener 0% de capacidad operativa.\n\nLos accidentes pueden dañar o incluso destruir una nave.\n\nSe recomienda que desguaces esas naves o les dejes recuperar capacidad operativa lo antes posible.",
+		"chmRiskOfAccidents_text": "Algunas de las naves en tu flota están en peligro de sufrir accidentes debido a que su capacidad operativa es del 0%.\n\nLos accidentes pueden dañar o incluso destruir una nave.\n\nSe recomienda que pongas en reserva esas naves o les permitas recuperar capacidad operativa lo antes posible.",
     	"chmRiskOfAccidents_dismiss": "Descartar",
     	
-		"chmEnteredHyper_text": "¡Tu flota ha entrado en hiperespacio!\n\nLas naves que viajan en el hiperespacio consumen combustible en proporción a la distancia recorrida. Las flotas que se quedan sin combustible van a la deriva hacia el sistema estelar más cercano y pueden quedar varadas allí.",
+		"chmEnteredHyper_text": "¡Tu flota ha entrado en el hiperespacio!\n\nLas naves que viajan por el hiperespacio consumen combustible en proporción a la distancia recorrida. Las flotas que se quedan sin combustible van a la deriva hacia el sistema estelar más cercano y pueden quedar varadas allí.",
     	"chmEnteredHyper_dismiss": "Descartar",
     	
-		"chmRefitCRLoss_text": "Reacondicionar una nave en el espacio causará que pierda algo de capacidad operativa.\n\nLa cantidad perdida depende de la extensión de los cambios hechos y se indica por la porción atenuada de la barra de capacidad operativa.\n\nReacondicionar en un mercado o estación no reduce la capacidad operativa.",
+		"chmRefitCRLoss_text": "Reacondicionar una nave en el espacio causará que pierda algo de capacidad operativa.\n\nLa cantidad perdida depende de la extensión de los cambios realizados y se indica en la parte atenuada de la barra de capacidad operativa.\n\nReacondicionar en un mercado o estación no reduce la capacidad operativa.",
     	"chmRefitCRLoss_dismiss": "Descartar"
   	}
 

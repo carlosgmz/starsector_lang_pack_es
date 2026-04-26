@@ -70,7 +70,7 @@
             "body": "Las %ss puestas en reserva no pueden utilizarse en combate ni repararse, y no proporcionan capacidad combustible, cargamento ni transporte de personal.\n\nRecuperar la capacidad operativa de esta nave tras sacarla de la reserva consumirá %s de suministros a lo largo de %s día(s)."
         },
         "tooltipScuttle": {
-            "title": "Hundir",
+            "title": "Desguazar",
             "body": "Despoja a este %s de todo lo que pueda ser útil y obtén %d suministros, %d de combustible y %d de maquinaria pesada."
         },
         "tooltipSuspendRepairs": {
