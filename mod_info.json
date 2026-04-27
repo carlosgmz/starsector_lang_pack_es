@@ -4,7 +4,7 @@
   "author": "carlosgmz",
   "totalConversion": "false",
   "utility": "true",
-  "version": {"major":0, "minor":0, "patch":1},
+  "version": {"major":0, "minor":1, "patch":0},
   "description": "Paquete de idioma español para Starsector. GitHub: github.com/carlosgmz/starsector_lang_pack_es | Forum: ",
   "gameVersion": "0.98a-RC8",
   "modPlugin": "data.scripts.FrenchLangModPlugin",
