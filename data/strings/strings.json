@@ -30,12 +30,12 @@
 		# $enemyFactionAndTheirAllies "Hegemony forces and their allies"
 		# $yourForcesWereOrYourSideWas	 
 
-    	"initialWithStationVsLargeFleet": "$fleetOrShip de $theFaction maniobra para permanecer apoyado por la estación, permitiendo que tu flota se retire. Sin embargo, tus fuerzas probablemente serán hostigadas mientras se retiran.",
-    	"initialAggressive": "$fleetOrShip de $theFaction maniobra para impedirte una retirada fácil.",
-    	"initialDisengage": "$fleetOrShip de $theFaction está intentando escapar.",
-    	"initialCareful": "$fleetOrShip de $theFaction se mantiene a cierta distancia, preparado para escapar en caso de hostilidades.",
-    	"initialNeutral": "$fleetOrShip de $theFaction asume una postura neutral.",
-    	"initialHoldVsStrongerEnemy": "$fleetOrShip de $theFaction parece preparado para combatir a pesar de enfrentarse a fuerzas superiores, pero no es probable que tome la iniciativa.",
+    	"initialWithStationVsLargeFleet": "$fleetOrShip de $faction maniobra para permanecer apoyado por la estación, permitiendo que tu flota se retire. Sin embargo, tus fuerzas probablemente serán hostigadas mientras se retiran.",
+    	"initialAggressive": "$fleetOrShip de $faction maniobra para impedirte una retirada fácil.",
+    	"initialDisengage": "$fleetOrShip de $faction está intentando escapar.",
+    	"initialCareful": "$fleetOrShip de $faction se mantiene a cierta distancia, preparado para escapar en caso de hostilidades.",
+    	"initialNeutral": "$fleetOrShip de $faction asume una postura neutral.",
+    	"initialHoldVsStrongerEnemy": "$fleetOrShip de $faction parece preparado para combatir a pesar de enfrentarse a fuerzas superiores, pero no es probable que tome la iniciativa.",
     	"initialAggressiveSide": "$enemyFactionAndTheirAllies maniobran para impedirte una retirada fácil.",
     	"initialDisengageSide": "$enemyFactionAndTheirAllies están intentando escapar.",
     	"initialCarefulSide": "$enemyFactionAndTheirAllies se mantienen a cierta distancia, preparados para escapar en caso de hostilidades.",
