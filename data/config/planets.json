@@ -251,7 +251,7 @@
 		"starCoronaSizeMult":5.12, # required, multiplier for star's radius
 	},
 	"star_red_dwarf":{
-		"name":"Enana ROja",
+		"name":"Enana Roja",
 		"tilt":-10, # left-right (>0 tilts to the left)
 		"pitch":0, # towards-away from the viewer (>0 pitches towards)
 		"rotation":-3, # degrees/second
