@@ -3,5 +3,5 @@
 	"skinHullId":"lasher_luddic_church",
 	"hullName":"Lasher (IL)",
 	"descriptionId":"lasher",  # optional
-	"descriptionPrefix":"Esta nave lleva insignias de la Iglesia Ludita. Las modificaciones a los sistemas no son más que superficiales.",
+	"descriptionPrefix":"Esta nave lleva insignias de la Iglesia de Ludd. Las modificaciones a los sistemas no son más que superficiales.",
 }
