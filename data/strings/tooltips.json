@@ -59,15 +59,15 @@
         },
         "tooltipGive": {
             "title": "Almacenar",
-            "body": "Transfiere este %s de tu flota. Su estado de capacidad operativa no variará mientras permanezca almacenado."
+            "body": "Transfiere este %s de tu flota. Su estado de capacidad de combate no variará mientras permanezca almacenado."
         },
         "tooltipMothball": {
             "title": "Poner en Reserva",
-            "body": "Las %ss puestas en reserva no pueden utilizarse en combate ni repararse, y no proporcionan capacidad combustible, cargamento ni transporte de personal.\n\nPoner una nave en reserva reducirá su capacidad operativa a cero; recuperarla requerirá tiempo y suministros."
+            "body": "Las %ss puestas en reserva no pueden utilizarse en combate ni repararse, y no proporcionan capacidad combustible, cargamento ni transporte de personal.\n\nPoner una nave en reserva reducirá su capacidad de combate a cero; recuperarla requerirá tiempo y suministros."
         },
         "tooltipUnmothball": {
             "title": "Poner en Reserva",
-            "body": "Las %ss puestas en reserva no pueden utilizarse en combate ni repararse, y no proporcionan capacidad combustible, cargamento ni transporte de personal.\n\nRecuperar la capacidad operativa de esta nave tras sacarla de la reserva consumirá %s de suministros a lo largo de %s día(s)."
+            "body": "Las %ss puestas en reserva no pueden utilizarse en combate ni repararse, y no proporcionan capacidad combustible, cargamento ni transporte de personal.\n\nRecuperar la capacidad de combate de esta nave tras sacarla de la reserva consumirá %s de suministros a lo largo de %s día(s)."
         },
         "tooltipScuttle": {
             "title": "Desguazar",
@@ -75,11 +75,11 @@
         },
         "tooltipSuspendRepairs": {
             "title": "Suspender Reparaciones y Recuperaciones",
-            "body": "Impide que este %s realice reparaciones o recupere su capacidad operativa. La reparación al completo y la recuperación de la capacidad operativa consumirán aproximadamente %s de suministros a lo largo de %s días si se permite que procedan."
+            "body": "Impide que este %s realice reparaciones o recupere su capacidad de combate. La reparación al completo y la recuperación de la capacidad de combate consumirán aproximadamente %s de suministros a lo largo de %s días si se permite que procedan."
         },
         "tooltipSuspendRepairsNotNeeded": {
             "title": "Suspender Reparaciones y Recuperaciones",
-            "body": "Impide que este %s realice reparaciones o recupere su capacidad operativa. Este %s no necesita actualmente reparaciones ni recuperar CR."
+            "body": "Impide que este %s realice reparaciones o recupere su capacidad de combate. Este %s no necesita actualmente reparaciones ni recuperar CR."
         },
         "tooltipRefit": {
             "title": "Reacondicionar",

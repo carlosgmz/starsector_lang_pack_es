@@ -261,7 +261,7 @@ Es probable que primero tengas que derrotar a algunas defensas automatizadas.",,
 tutorial_mission,salvage_core_end,,,player_intel_always,Vuelve a Ancyra con el núcleo IA,Vuelve a Ancyra y ponte en contacto con $mainContactPost $mainContactLastName para entregar el núcleo de IA.,,,,"no_system_prefix, important",,
 tutorial_mission,ship_recovery_start,,,player_intel_always,Recupera naves abandonadas cerca de Tetra,"Dirígete al cementerio de naves que hay cerca de Tetra y recupera tantas naves como puedas.
 
-Lleva tripulación adicional para tripular las naves recuperadas, así como suministros adicionales para ayudar a restablecer su capacidad operativa.",,,,"no_system_prefix, important",,
+Lleva tripulación adicional para tripular las naves recuperadas, así como suministros adicionales para ayudar a restablecer su capacidad de combate.",,,,"no_system_prefix, important",,
 tutorial_mission,ship_recovery_end,,,player_intel_always,Vuelve a Ancyra y equipa las naves recuperadas,Reúnete con $mainContactPost $mainContactLastName en Ancyra para que te ayude a equipar con armas las naves recuperadas.,,,,"no_system_prefix, important",,
 tutorial_mission,stabilize_jump_point,,,player_intel_always,Estabiliza el punto de salto interior del sistema,"Utiliza la secuencia de hiperondas generada por el núcleo de IA para estabilizar el punto de salto interior del sistema.
 
