@@ -24,7 +24,7 @@ Autocañón Pesado,heavyac,1,,1000,800,,100,,10,7,10,,,,KINETIC,90,,0,1,3,0.2,0,
 Acelerador de Hipervelocidad,hveldriver,3,0.3,2250,1000,,275,400,40,10,13,,,,KINETIC,350,,0,2,1,,,,,,,1000,,,300,,,,"kinetic15, LR, remnant, rare_bp, merc, ind",,,,Anti Shield,,,,,,,,,,5.5
 Aguijoneador Pesado,heavyneedler,3,0.3,2500,700,,50,,1,15,15,,,,KINETIC,40,,0,4.55,30,0.05,1,10,0.5,5,,1200,,,10,,,,"kinetic15, remnant, rare_bp, hist1t, merc, ind",,,,Anti Shield,,,,,,,,,,5.75
 Cañón Gauss,gauss,3,,5000,1200,,700,,300,3,25,,,,KINETIC,1200,,1,1,,,,,,,,1200,,,400,,,,"kinetic20, LR, remnant, rare_bp, hist1t, merc, ind",,,,Anti Shield,,,,,,,,,,6
-Cañón de Asalto Hephaestus,hephag,1,,4000,900,,120,,5,20,20,,,,HIGH_EXPLOSIVE,110,,0,0.25,1,,0,5,1,5,,800,,,50,,,,"he18, lowtech_bp, midline_bp, merc, ind",,,,Anti Armor,,,,,,,,,,7
+Cañón de Asalto Hefesto,hephag,1,,4000,900,,120,,5,20,20,,,,HIGH_EXPLOSIVE,110,,0,0.25,1,,0,5,1,5,,800,,,50,,,,"he18, lowtech_bp, midline_bp, merc, ind",,,,Anti Armor,,,,,,,,,,7
 Autocañón Mark IX,mark9,0,,3000,900,,200,,20,10,18,,,,KINETIC,200,,0,2,4,0.1,0,15,2,10,,800,,,100,,,,"kinetic18, base_bp, merc, ind",,,,Anti Shield,,,,,,,,,,7.25
 Cañón Devastador,devastator,1,,3500,900,,150,,40,12,20,,,,HIGH_EXPLOSIVE,75,,0,2,12,0.1,5,30,5,5,,700,,,100,,,"PD,PD_ALSO","he16, pd17, lowtech_bp, merc, ind",,,,Anti Fighter (Area),,,,,"Cada proyectil tiene un detonador programado para explotar a una distancia aleatoria, lo que da lugar a una descarga cada vez más letal a distancias más cortas.
 
