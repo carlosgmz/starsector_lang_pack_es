@@ -9,17 +9,17 @@ El daño {{Altamente Explosivo}} inflige un {{200%}} contra el blindaje y un {{5
 IMAGE ui|icon_kinetic
 El daño {{Cinético}} inflige un {{200%}} contra los escudos y un {{50%}} contra el blindaje. Los proyectiles suelen ser blancos.
 IMAGE ui|icon_energy
-El daño {{Energético}} inflige un {{100%}} contra escudos y armadura. Las armas con gran poder de penetración suelen ser poco eficaces en flux.
+El daño {{Energético}} inflige un {{100%}} contra escudos y blindaje. Las armas con gran poder de penetración suelen ser poco eficaces en flux.
 IMAGE ui|icon_fragmentation
-El daño de {{Fragmentación}} inflige un {{25%}} contra escudos y armadura. Las armas que infligen este tipo de daño suelen tener un DPS elevado y una buena eficiencia en flux. Los proyectiles suelen ser rojos.
+El daño de {{Fragmentación}} inflige un {{25%}} contra escudos y blindaje. Las armas que infligen este tipo de daño suelen tener un DPS elevado y una buena eficiencia en flux. Los proyectiles suelen ser rojos.
 END
 
 BEGIN gm_armor|Blindaje
 ICON manual_armor
 #==Reducción de daño==
-El blindaje reduce el daño recibido por todos los impactos y ataques de rayo, en función del blindaje restante en la celda afectada y en las celdas adyacentes, así como de la {{potencia de impacto}} del ataque. La reducción máxima de daño por parte de la armadura es del {{85%}}.
+El blindaje reduce el daño recibido por todos los impactos y ataques de rayo, en función del blindaje restante en la celda afectada y en las celdas adyacentes, así como de la {{potencia de impacto}} del ataque. La reducción máxima de daño por parte del blindaje es del {{85%}}.
 
-Una nave puede tener la armadura destripada en una zona y mantenerla intacta en otras. Girar la nave para recibir el daño en una zona con armadura intacta suele ser una táctica eficaz.
+Una nave puede tener el blindaje destripado en una zona y mantenerlo intacto en otras. Girar la nave para recibir el daño en una zona con blindaje intacto suele ser una táctica eficaz.
 ==Potencia de impacto==
 Las armas que infligen más daño por disparo son más eficaces contra el blindaje. El tipo de daño {{rel:gm_damage_types|altamente explosivo}} es especialmente ventajoso, aunque las armas energéticas de alto impacto también pueden destruir el blindaje sin dificultad. La potencia de impacto de las armas de rayos se basa en su DPS.
 ==Blindaje residual==
@@ -64,7 +64,7 @@ END
 
 BEGIN gm_ballistics|Armas balísticas
 ICON manual_ballistic_weapons
-Las armas balísticas suelen tener un alcance mayor que sus homólogas energéticas y, por lo general, infligen daño {{rel:gm_damage_types|Cinético}} o {{rel:gm_damage_types|Altamente Explosivo}}, lo que permite una especialización contra los {{rel:gm_shields|escudos}} y la {{rel:gm_armor|armadura}}.
+Las armas balísticas suelen tener un alcance mayor que sus homólogas energéticas y, por lo general, infligen daño {{rel:gm_damage_types|Cinético}} o {{rel:gm_damage_types|Altamente Explosivo}}, lo que permite una especialización contra los {{rel:gm_shields|escudos}} y la {{rel:gm_armor|blindaje}}.
 END
 
 BEGIN gm_energies|Armas energéticas

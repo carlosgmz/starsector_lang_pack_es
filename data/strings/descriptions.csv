@@ -88,7 +88,7 @@ El Acelerador de Hipervelocidad utiliza un proceso de dos etapas para acelerar u
 heavyneedler,WEAPON,"Una versión de doble montaje del Aguijoneador Ligero con una base más pesada, este avanzado sistema de armas es capaz de abrumar rápidamente a los proyectores de escudos.
 
 El Aguijoneador Pesado es un arma avanzada que dispara pequeños proyectiles flechette. Se trata de una mejora con respecto al Aguijoneador Ligero, ya que cuenta con mejores sistemas de alimentación y refrigeración, lo que permite una cadencia de fuego aún mayor. Los proyectiles son idénticos a los de la versión ligera: munición sin casquillo con flechettes recubiertas de tungsteno, llamados «aguijones».",,,,,
-gauss,WEAPON,"Un arma de largo alcance diseñada para provocar una sobrecarga en los escudos del objetivo. El proyectil cinético pesado que dispara también es eficaz contra todas las armaduras, salvo las más pesadas.
+gauss,WEAPON,"Un arma de largo alcance diseñada para provocar una sobrecarga en los escudos del objetivo. El proyectil cinético pesado que dispara también es eficaz contra todos los blindajes, salvo los más pesados.
 
 Utiliza bobinas magnéticas para acelerar un gran proyectil compuesto ultradenso hasta velocidades relativistas. Suele tener un alcance de cientos de gigaamperios, y rara vez supera el teraamperio. A diferencia de la mayoría de las armas balísticas, tiene una carga de flux muy alta al disparar. Las torretas equipadas con este sistema tienen una velocidad de rotación extremadamente baja. 
 
@@ -251,7 +251,7 @@ Extremadamente eficaz contra todos los objetivos.",,,,,
 phasebeam,WEAPON,"Un rayo de corto alcance y corta duración que causa graves daños en una ráfaga. Eficaz contra blindajes, dentro de lo que permiten las armas de rayos.
 
 Esta arma es, en esencia, simplemente un rayo láser con un medio de ganancia de zafiro triplicado para garantizar las longitudes de onda armamentísticas más altas posibles. Los fotones se disparan a través de un filtro hiperdimensional que emite un rayo de energía que existe parcialmente en el espacio p. La física del filtro no se comprende del todo, y en entornos de laboratorio los componentes del espacio p de un rayo que superen los 6,66 gigavatios a veces parpadean, como si estuvieran bloqueados. Los soportes de armas nunca utilizan niveles de energía tan altos para garantizar la fiabilidad.",,,,,
-gravitonbeam,WEAPON,"Un arma de rayos atípica que resulta muy eficaz contra los escudos, ya que los desestabiliza y aumenta el daño infligido por cualquier fuente. Tiene un alcance excelente, pero su ratio de daño por segundo contra la armadura es inferior a la media.
+gravitonbeam,WEAPON,"Un arma de rayos atípica que resulta muy eficaz contra los escudos, ya que los desestabiliza y aumenta el daño infligido por cualquier fuente. Tiene un alcance excelente, pero su ratio de daño por segundo contra el blindaje es inferior a la media.
 
 El núcleo de esta arma es un generador de fisuras de brana que sigue un rayo trazador de 500 nm. El rayo prepara el espacio-tiempo local para la fisura, además de proporcionar información de puntería a los operadores manuales. 
 
