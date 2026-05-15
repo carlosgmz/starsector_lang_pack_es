@@ -1796,7 +1796,7 @@ $entity.LP_titheConv score:10",FireAll MostLuddicEthosRefresh,"""Serviteur de Mo
 
 Les yeux du Pathéen s'écarquillent face à un éclair rouge sur un écran secondaire.
 
-""Par les enfers de Ludd, c'est..."" $HeOrShe revient fixer, horrifié$eOrE, le lien de communication. Le visage de $heOrShe est empli de terreur... et de haine.
+""Par les enfers de Ludd, c'est..."" $HeOrShe revient fixer, horrifié, le lien de communication. Le visage de $heOrShe est empli de terreur... et de haine.
 OR
 ""Soumettez-vous et repentez-vous ! Votre usage de technologies pécheresses pourrait- pourrait...""
 
@@ -1829,7 +1829,7 @@ MakeOtherFleetHostile true
 MakeOtherFleetAggressive true
 $entity.ignorePlayerCommRequests = true 0
 EndConversation
-ShowDefaultVisual","""Une abomination, un$eOr $shipOrFleet diabolique sorti de l'Enfer même est devant nous ! Nous prions la Providence de surmonter cette épreuve qui a été donnée à nos indignes-""
+ShowDefaultVisual","""Une abomination, un $shipOrFleet diabolique sorti de l'Enfer même est devant nous ! Nous prions la Providence de surmonter cette épreuve qui a été donnée à nos indignes-""
 
 Les paroles du $post sont destinées à $hisOrHer équipage, pas à vous, et le lien se brouille de parasites. La dernière image que vous voyez est celle de mains jointes en prière.",,
 PathFleetWeirdModsUnknownEndWeaker,DialogOptionSelected,"$option == pathFleet_weirdModsEnd2unknown
@@ -21826,7 +21826,7 @@ SetTextHighlights $gaDA_dist $gaDA_fuel","Les yeux de l'académicien Sebestyen s
 Il affiche un grand sourire. ""Ce sera simple, ils savent exactement où trouver le, euh,"" $heOrShe regarde à nouveau le datapad, sourcils froncés, ""'$gaDA_widgetNoArticle' dans la coque de la cible. Il suffit d'envoy","gaDA_and:""Et ?""",
 gaDAMissionTextRemnants2,DialogOptionSelected,$option == gaDA_and,"SetTextHighlights $gaDA_reward
 $aseb_givePlayerNeutrinoDetector = true 0
-Call $global.gaDA_ref showMap ""Target: $gaDA_systemName""","""Et. Eh bien, la dernière expédition qu'ils ont envoyée. Euh. La dernière transmission mentionnait quelque chose à propos de 'vaisseaux de guerre IA hostiles'. Peut-être."" $HeOrShe baisse la voix, ""On n'est pas censés en parler. Officiellement, je veux dire. Mais ça pourrait être... peut-être dangereux ? C'est pour ça que celle-ci paie plus que d'habitude - $gaDA_rew","aseb_accept:Accepter
+Call $global.gaDA_ref showMap ""Target: $gaDA_systemName""","""Et. Eh bien, la dernière expédition qu'ils ont envoyée. Euh. La dernière transmission mentionnait quelque chose à propos de 'vaisseaux de guerre IA hostiles'. Peut-être."" $HeOrShe baisse la voix, ""On n'est pas censés en parler. Officiellement, je veux dire. Mais ça pourrait être... peut-être dangereux ? C'est pour ça que celle-ci paie plus que d'habitude - $gaDA_reward","aseb_accept:Accepter
 aseb_decline:Refuser",
 gaDAMissionReturn,PickGreeting,"$gaDA_returnHere score:1000
 Call $global.gaDA_ref updateData
@@ -27359,7 +27359,7 @@ smug_checkCompletionCont,DialogOptionSelected,$option == smug_deliverContinue,"R
 $market.smug_completed = true 0
 Call $market.smug_ref updateStage","Vous ordonnez que la cargaison de $smug_commodityName soit déposée dans un spatioport abandonné, loin des regards indiscrets. Votre vaisseau amiral reçoit bientôt la confirmation de la livraison par un satellite de communication jetable.
 OR
-Un transport surface-orbite reconverti pour passagers se met en parallèle de l'orbite de votre $fleetOrShip après que vous avez donné le signal convenu. La cargaison de $smug_commodityName est rapidement transférée par des drones robots sans transpondeurs de navigation, puis le transport s'éloigne.",marketCmd_checkDebtContinue:Continuer,
+Un transport surface-orbite reconverti pour passagers se met en parallèle de l'orbite de votre $shipOrFleet après que vous avez donné le signal convenu. La cargaison de $smug_commodityName est rapidement transférée par des drones robots sans transpondeurs de navigation, puis le transport s'éloigne.",marketCmd_checkDebtContinue:Continuer,
 smug_checkCompletionNotSneaking,MarketPostDock,"$market.smug_target score:1000
 $tradeMode != SNEAK
 Call $market.smug_ref updateData
@@ -33317,14 +33317,14 @@ $global.sdtu_toldMacarioHyderBacksCaden",,"""Ah vraiment,"" dit-il, contrarié. 
 ""Il faut qu'une nouvelle histoire apparaisse. Caden adore les histoires - surtout quand elles parlent de lui. Quelque chose pour les séparer...""",sdtu_postCaden2:Continuer,
 sdtu_postCadenHydCadLieB,DialogOptionSelected,"$option == sdtu_postCadenHydCadLie
 $global.sdtu_toldMacarioHyderBacksMacario","AdjustRepActivePerson VENGEFUL -1
-$hâte++","""Vraiment,"" dit-il, mécontent. Peut-être envers vous.
+$hate++","""Vraiment,"" dit-il, mécontent. Peut-être envers vous.
 
 ""Vous avez précédemment suggéré que Hyder avait l'intention de soutenir ma propre ascension. Ce... développement, il me paraît étrange. Hyder est tout sauf versatile.""
 
 Ses yeux froids sont rivés aux vôtres, d'une manière ou d'une autre, à travers le communicateur.",sdtu_postCaden2:Continuer,
 sdtu_postCadenHydCadLieC,DialogOptionSelected,"$option == sdtu_postCadenHydCadLie
 $global.sdtu_toldMacarioHyderBacksHyder","AdjustRepActivePerson VENGEFUL -1
-$hâte++","""Ah vraiment,"" dit-il, contrarié. Peut-être contre vous.
+$hate++","""Ah vraiment,"" dit-il, contrarié. Peut-être contre vous.
 
 ""Si, comme vous l'avez suggéré précédemment, Hyder a l'intention de s'emparer du pouvoir, alors rallier Caden serait évidemment un moyen de s'assurer le soutien de la Garde du Lion.""
 
@@ -33334,7 +33334,7 @@ $hâte++","""Ah vraiment,"" dit-il, contrarié. Peut-être contre vous.
 sdtu_postCadenHydCadLieD,DialogOptionSelected,"$option == sdtu_postCadenHydCadLie
 $global.sdtu_toldMacarioHyderWantsToDefect","$player.macarioMentionedOrcusRao = true
 AdjustRepActivePerson VENGEFUL -1
-$hâte++","""Ah vraiment,"" dit-il, contrarié. Peut-être contre vous.
+$hate++","""Ah vraiment,"" dit-il, contrarié. Peut-être contre vous.
 
 ""Si, comme vous l'avez suggéré précédemment, Hyder a l'intention de faire défection vers l'Hégémonie, alors retourner Caden contre moi serait évidemment un moyen de maximiser le chaos.""
 
@@ -33347,19 +33347,19 @@ sdtu_postCadenHydCadLieE,DialogOptionSelected,$option == sdtu_postCadenHydCadLie
 
 ""D'où cela vient-il ? Des manigances de l'Hégémonie ? Rao en est capable. Mais qui est son agent infiltré chez nous ?""",sdtu_postCaden2:Continuer,
 sdtuPostCadenToldCadHydForMac,DialogOptionSelected,$option == sdtu_postCadenToldCadHydForMac,"AdjustRepActivePerson VENGEFUL -1
-$hâte++","Macario semble souffrir, comme frappé par une migraine soudaine.
+$hate++","Macario semble souffrir, comme frappé par une migraine soudaine.
 
 ""Pourquoi... au nom sacré des saintes déjections de Ludd, béni soit-il, diriez-vous quelque chose d'aussi stupide ?""
 
 Il porte ses mains sur ses yeux, comme pour effacer la bêtise. Vous n'arrivez pas tout à fait à identifier le son qu'il émet.",sdtu_postCaden2:Continuer,
 sdtuPostCadenOverstepped,DialogOptionSelected,$option == sdtu_postCadenOverstepped,"AdjustRepActivePerson VENGEFUL -1
-$hâte++","""Vraiment ?"" Macario lève les yeux au ciel. ""Je ne peux que spéculer sur l'endroit où ce bouffon pompeux a découvert une telle idée. Elle ne peut pas être sortie de sa propre tête, c'est certain.""
+$hate++","""Vraiment ?"" Macario lève les yeux au ciel. ""Je ne peux que spéculer sur l'endroit où ce bouffon pompeux a découvert une telle idée. Elle ne peut pas être sortie de sa propre tête, c'est certain.""
 
 Il reste parfaitement immobile un instant. Ses yeux froids pivotent pour se fixer sur vous, d'une façon ou d'une autre, à travers les comms.
 
 ""Capitaine. Vous n'auriez quand même pas... non, bien sûr que non. Mais...""",sdtu_postCaden2:Continuer,
 sdtuPostCadenPuppet,DialogOptionSelected,$option == sdtu_postCadenPuppet,"AdjustRepActivePerson VENGEFUL -1
-$hâte++","""Vraiment,"" dit-il, sans poser de question. ""Étant donné que je sais avec une certitude absolue que le contenu desséché du crâne correctement formé de Caden est incapable de pensée originale, une question se pose : d'où - de qui - a-t-il reçu cette notion troublante."" La langue de Macario frémit au coin de sa bouche, ""Cher capitaine.""
+$hate++","""Vraiment,"" dit-il, sans poser de question. ""Étant donné que je sais avec une certitude absolue que le contenu desséché du crâne correctement formé de Caden est incapable de pensée originale, une question se pose : d'où - de qui - a-t-il reçu cette notion troublante."" La langue de Macario frémit au coin de sa bouche, ""Cher capitaine.""
 
 Il marque une pause, lourde de sens.
 
@@ -33397,7 +33397,7 @@ sdtuMacarioPostCadenGreetingEnraged,PickGreeting,"$id == macario score:1000
 $sdtu_didCadenMeeting score:10
 $global.sdtu_enragedCaden","BeginConversation macario
 AdjustRepActivePerson VENGEFUL -2
-$hâte++
+$hate++
 Call $global.sdtu_ref playMusicMacario","Après une brève attente, Macario apparaît devant vous.
 
 ""Oh capitaine, capitaine, capitaine. Ça ne s'est pas très bien passé, n'est-ce pas."" Il secoue la tête. ""Vous n'avez pas suivi mon conseil, n'est-ce pas.""
@@ -33420,7 +33420,7 @@ sdtu_postCadenIntNotCheap:""Mes faveurs ne sont pas gratuites.""
 sdtu_postCadenIntBegPlease:""Supplier ? Oh, je vous en prie, continuez.""",
 sdtuPostCadenIntNotCheap,DialogOptionSelected,$option == sdtu_postCadenIntNotCheap,"$option = sdtu_postCadenIntBegPlease
 FireBest DialogOptionSelected",,,
-sdtuPostCadenIntBegPlease,DialogOptionSelected,$option == sdtu_postCadenIntBegPlease,"$hâte++
+sdtuPostCadenIntBegPlease,DialogOptionSelected,$option == sdtu_postCadenIntBegPlease,"$hate++
 AdjustRepActivePerson VENGEFUL -1
 $option = sdtu_postCadenInt2
 FireBest DialogOptionSelected","La façade d'un sourire s'amincit encore, chose délicate, comme le fil d'un rasoir.",,
@@ -33637,7 +33637,7 @@ sdtuNewsEndWho,DialogOptionSelected,$option == sdtu_newsEndWho,FireBest SDTUNews
 sdtuNewsEndHeirs,DialogOptionSelected,$option == sdtu_newsEndHeirs,FireBest SDTUNewsEndOptions,"""L'avenir ne tient qu'à si peu de chose, capitaine,"" dit Macario d'une voix creuse, sans ciller.",,
 sdtuNewsEndOnlySix,DialogOptionSelected,$option == sdtu_newsEndOnlySix,FireBest SDTUNewsEndOptions,"""Tragique,"" dit Macario machinalement. ""N'est-ce pas.""",,
 sdtuNewsEndYourDoing,DialogOptionSelected,$option == sdtu_newsEndYourDoing,"$player.ethosCocky++
-$hâte++
+$hate++
 FireBest SDTUNewsEndOptions","""Vous me blessez par cette accusation, capitaine,"" dit Macario avec une pointe d'amusement glacial.",,
 sdtuNewsEndSale,DialogOptionSelected,$option == sdtu_newsEndSale,"AddCredits 200000
 $player.ethosMercenary++
