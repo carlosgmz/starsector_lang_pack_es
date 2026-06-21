@@ -4472,7 +4472,7 @@ lpp_gileadPilgrimageEndHowKnow:""How do you know of this?""",
 ,,,,,,
 # LPP end sequence - meeting Jaspis,,,,,,
 lppEnding1KnightInsist,DialogOptionSelected,$option == lpp_endingKnightInsist,RemoveOption lpp_endingKnightInsist,El caballero se limita a hacer una pequeña reverencia en reconocimiento a tu descripción del Arzobispo. Supones que está siendo diplomático.,,
-lppEnding1KnightWhat,DialogOptionSelected,$option == lpp_endingKnightWhat,RemoveOption lpp_endingKnightWhat,"«No lo sé. Es mi deber ofrecerle esta hospitalidad en nombre del Reverendo Arzobispo», dice el caballero, y luego, tras pensarlo un momento, añade: «No se le acusa de herejía ni de ningún delito secular. Vuestra seguridad es mi deber». ",,
+lppEnding1KnightWhat,DialogOptionSelected,$option == lpp_endingKnightWhat,RemoveOption lpp_endingKnightWhat,"«No lo sé. Es mi deber ofrecerle esta hospitalidad en nombre del Reverendo Arzobispo», dice el caballero, y luego, tras pensarlo un momento, añade: «No se le acusa de herejía ni de ningún delito laico. Vuestra seguridad es mi deber». ",,
 lppEnding1KnightAllowed,DialogOptionSelected,$option == lpp_endingKnightAllowed,"$option = lpp_endingKnightDecline 0
 FireBest DialogOptionSelected",,,
 lppEnding1KnightDecline,DialogOptionSelected,$option == lpp_endingKnightDecline,,"Las cejas del Caballero se arquean con sorpresa. En un abrir y cerrar de ojos, el Caballero recupera la compostura y dice: «S... sí. Por supuesto. Es una petición, no una exigencia. Aunque... el Arzobispo». Una breve pausa. «Sugirió que insistiera, si fuera necesario». 
@@ -4686,7 +4686,7 @@ SetPersonHidden jaspis false
 AddStoryPoints 1
 AddTextSmall ""Received comms ID for Sophronia Jaspis"" highlight","Dejas al Arzobispo Jaspis absorto en su libro.
 
-Un asistente de voz suave, vestido con túnicas, saca de la nada un datapad —algo que parece fuera de lugar— y coordina la transferencia del identificador de com. del Arzobispo —al menos, el de su oficina—; a continuación, te entrega al caballero Ailanthus, de rostro impasible, para que te acompañe hasta la lanzadera. 
+Un asistente de voz suave, vestido con túnicas, saca de la nada un datapad —algo que parece fuera de lugar— y coordina la transferencia del identificador de com. del Arzobispo —al menos, el de su oficina—; a continuación, te entrega al caballero Ailanthus, de rostro impasible, para que te acompañe hasta la lanzadera.
 
 Tu regreso a órbita transcurre sin incidentes.",,
 ,,,,,,
@@ -4711,23 +4711,23 @@ $faction.id == sindrian_diktat
 $menuState == main
 $global.lpp_missionCompleted
 !$justVisitedShrine",,,3:lpp_volturnVisitStart:Take a shuttle to visit the Luddic shrine,
-lppVolturnVisit,DialogOptionSelected,$option == lpp_volturnVisitStart,ShowLargePlanet,"Con el destello de la iconografía oficial, llegan instrucciones del servicio de navegación orbital, que intenta rastrear los innumerables artefactos construidos por el hombre en el mar de Volturn: hábitats flotantes, extensas granjas, plataformas mineras temporales e incluso naves de estilo antiguo.
+lppVolturnVisit,DialogOptionSelected,$option == lpp_volturnVisitStart,ShowLargePlanet,"Con el destello de la iconografía oficial, llegan instrucciones del servicio de navegación orbital, que intenta rastrear los innumerables artefactos construidos por el hombre en el mar de Volturn: hábitats flotantes, extensas granjas, plataformas mineras temporales e incluso naves de alta mar de estilo antiguo.
 
-Tu lanzadera atraviesa la atmósfera en un largo arco de descenso, reduciendo cortésmente la velocidad por debajo de la del sonido a medida que se enfoca en un banco de espesa niebla iluminado por la estrella principal de Askonia. Lo que al principio parece un castillo etéreo se revela, al acercarse, como una sórdida y agitada acumulación de barcazas adheridas a una plataforma de extracción en desuso.",lpp_volturnVisitStart2:Continue,
+Tu lanzadera atraviesa la atmósfera en un largo arco de descenso, reduciendo suavemente la velocidad por debajo de la del sonido a medida que se acerca a un banco de espesa niebla iluminado por la estrella principal de Askonia. Lo que al principio parece un castillo etéreo se revela, al acercarse, como una sórdida y agitada acumulación de barcazas adheridas a una plataforma de extracción en desuso.",lpp_volturnVisitStart2:Continue,
 #lppVolturnVisitRazedSD,DialogOptionSelected,"$option == lpp_volturnVisitStart2
 $faction.id == sindrian_diktat
 $global.lpp_volturnShrineRazed
 $faction.id == sindrian_diktat
-$market.didShrineIntro",ShowDefaultVisual,"Tu lanzadera aterriza en la plataforma de aterrizaje y no hay nadie para recibirte. Quedan puntos de montaje oxidados donde antes se alzaban emplazamientos de armas.
+$market.didShrineIntro",ShowDefaultVisual,"Tu lanzadera aterriza en la plataforma de aterrizaje y no hay nadie para recibirte. Quedan puntos de anclaje oxidados donde antes se alzaban emplazamientos de armas.
 
-Supones que la pequeña guarnición del Diktat ha sido desplegada en otro lugar y que al funcionario con el que te reuniste le han asignado algún nuevo destino en un lugar apartado.",lpp_volturnShrineRevisit1:Continue,# TODO later maybe
+Supones que la pequeña guarnición del Diktat ha sido desplegada a otro lugar y que al funcionario con el que te reuniste le han asignado algún nuevo destino en un lugar apartado.",lpp_volturnShrineRevisit1:Continue,# TODO later maybe
 #lppVolturnVisitRazed,DialogOptionSelected,"$option == lpp_volturnVisitStart2
 $faction.id == sindrian_diktat
 $global.lpp_volturnShrineRazed
 $faction.id != sindrian_diktat
-$market.didShrineIntro",ShowDefaultVisual,"Tu lanzadera aterriza en la plataforma de aterrizaje y no hay nadie para recibirte. Quedan puntos de montaje oxidados donde antes se alzaban emplazamientos de armas.
+$market.didShrineIntro",ShowDefaultVisual,"Tu lanzadera aterriza en la plataforma de aterrizaje y no hay nadie para recibirte. Quedan puntos de anclaje oxidados donde antes se alzaban emplazamientos de armas.
 
-Un par de obreros fuera de servicio te miran con miedo y luego se esconden en el laberinto de pasarelas suspendidas que crujen entre la plataforma de extracción y las estructuras de las barcazas circundantes.",lpp_volturnShrineRevisit1:Continue,# TODO later maybe
+Un par de obreros fuera de servicio te miran con miedo y luego se esconden en el laberinto de pasarelas suspendidas entre la plataforma de extracción y las estructuras de las barcazas circundantes.",lpp_volturnShrineRevisit1:Continue,# TODO later maybe
 lppVolturnVisitDidBribe,DialogOptionSelected,"$option == lpp_volturnVisitStart2
 $faction.id == sindrian_diktat
 $market.bribedShrineOfficial
@@ -4742,23 +4742,23 @@ $faction.id == sindrian_diktat
 $market.usedCommissionOnShrineOfficial
 $market.didShrineIntro",ShowDefaultVisual,"El oficial de aspecto sospechoso recibe tu lanzadera en la plataforma de aterrizaje. Detrás de él, divisas emplazamientos de armas provisionales y módulos de escudo estampados con el escudo del Diktat de Sindria. Reclutas pálidos con armaduras maltrechas te miran con recelo mientras inhalan humo narcótico.
 
-«¡Atención!», grita el oficial a los reclutas mientras se acerca a saludarte, «¡Este es un oficial de la Auxiliar Espacial del Ejecutor Supremo!».
+«¡Atención!», grita el oficial a los reclutas mientras se acerca a saludarte, «¡Este es un oficial auxiliar espacial del Ejecutor Supremo!».
 
-Tú aguantas la charla obsequiosa mientras te acompaña a través del puesto de control y hasta las pesadas puertas que conducen al santuario.",lpp_volturnShrineRevisit1:Continue,
+Soportas una charla obsequiosa mientras se te acompaña a través del puesto de control y hasta las pesadas puertas que conducen al santuario.",lpp_volturnShrineRevisit1:Continue,
 lppVolturnRevisitLied,DialogOptionSelected,"$option == lpp_volturnVisitStart2
 $faction.id == sindrian_diktat
 $market.didShrineIntro
 $market.liedShrineOfficial",ShowDefaultVisual,"El oficial de aspecto sospechoso recibe tu lanzadera en la plataforma de aterrizaje. Detrás de él, divisas emplazamientos de armas provisionales y módulos de escudo estampados con el escudo del Diktat de Sindria. Reclutas pálidos con armaduras maltrechas te miran con recelo mientras aspiran humo narcótico.
 
-«¡Atención!», grita el oficial a los reclutas mientras se acerca a saludarte. «No se lo he dicho», susurra, acercándose demasiado. «Y si necesitas algo, cualquier cosa, para acabar con esos terroristas luddies...», deja la frase en el aire, buscando tu aprobación en tus ojos. 
+«¡Atención!», grita el oficial a los reclutas mientras se acerca a saludarte. «No se lo he dicho», susurra, acercándose demasiado. «Y si necesitas algo, cualquier cosa, para acabar con esos terroristas luditas…», deja la frase en el aire, buscando tu aprobación en tus ojos. 
 
-Soportas una charla obsequiosa mientras te acompaña a través del puesto de control y hasta las pesadas puertas que conducen al santuario.",lpp_volturnShrineRevisit1:Continue,
+Soportas una charla obsequiosa mientras se te acompaña a través del puesto de control y hasta las pesadas puertas que conducen al santuario.",lpp_volturnShrineRevisit1:Continue,
 lppVolturnFirstVisit2Diktat,DialogOptionSelected,"$option == lpp_volturnVisitStart2
 !$market.didShrineIntro","ShowDefaultVisual
 ShrineCMD addIntel
-FireAll LPPVolturnOfficialConvo","Un funcionario de aspecto sospechoso recibe a tu lanzadera en la plataforma de aterrizaje. Detrás de él, divisas emplazamientos de armas provisionales y módulos de escudo estampados con el escudo del Diktat de Sindria. Reclutas pálidos con armaduras maltrechas te miran con recelo mientras aspiran humo narcótico.
+FireAll LPPVolturnOfficialConvo","Un oficial de aspecto sospechoso recibe tu lanzadera en la plataforma de aterrizaje. Detrás de él, divisas emplazamientos de armas provisionales y módulos de escudo estampados con el escudo del Diktat de Sindria. Reclutas pálidos con armaduras maltrechas te miran con recelo mientras aspiran humo narcótico.
 
-El funcionario esboza una especie de sonrisa temblorosa y te mira de arriba abajo. 
+El oficial esboza una especie de sonrisa temblorosa y te mira de arriba abajo. 
 
 «¿Eres un peregrino?», pregunta sin mucha convicción. «Me temo que el santuario está cerrado hoy. Y mañana. Por motivos de seguridad. La situación ha sido... inestable».",,
 lppVolturnOfficialResponseVisit,LPPVolturnOfficialConvo,!$saidVisit,,,"lpp_volturnOfficialVisit:""I would like to visit the shrine.""",
@@ -4772,41 +4772,41 @@ FireAll PopulateOptions","Vuelves a tu lanzadera, respirando por última vez el 
 
 El vuelo de regreso en tu lanzadera transcurre sin incidentes.",,
 lppVolturnOfficialVisit,DialogOptionSelected,$option == lpp_volturnOfficialVisit,"$saidVisit = true 1
-FireAll LPPVolturnOfficialConvo","«Ya veo», dice el funcionario, con los brazos cruzados. «Me duele informarte de que una visita es... bastante imposible».
+FireAll LPPVolturnOfficialConvo","«Ya veo», dice el oficial, con los brazos cruzados. «Me duele informarte de que una visita es... bastante imposible».
 
 Reflexionas sobre el hecho de que no parece especialmente afligido, y parece bastante posible si simplemente te dejara pasar por las puertas.",,
-lppVolturnOfficialDevout1,DialogOptionSelected,$option == lpp_volturnOfficialDevout1,$saidDevout = true 1,"«Hrm», el funcionario se frota las manos, «tu devoción por esa pintoresca religión no está en duda. Es simplemente que, ah, el Ejecutor Supremo debe estar... seguro de la lealtad de los miembros más, más... luditas de su imperio antes de permitirles regresar aquí».
+lppVolturnOfficialDevout1,DialogOptionSelected,$option == lpp_volturnOfficialDevout1,$saidDevout = true 1,"«Hrm», el oficial se frota las manos, «tu devoción por esa pintoresca religión no está en duda. Es simplemente que, ah, el Ejecutor Supremo debe estar... seguro de la lealtad de los miembros más, más... luditas de su imperio antes de permitirles regresar aquí».
 
-Los ojos del funcionario están húmedos, pero no por ninguna compasión que puedas percibir: «Anhela permitir el culto libre, pero cada vez que el León deja que su compasión guíe su juicio, esta es, es abusada». El funcionario abre las manos en señal de disculpa.","lpp_volturnOfficialDevout1disagree:""That's heavy-handed oppression.""
+Los ojos del oficial están húmedos, pero no por ninguna compasión que puedas percibir: «Anhela permitir el culto libre, pero cada vez que el León deja que su compasión guíe su juicio, esta es, es abusada». El oficial abre las manos en señal de disculpa.","lpp_volturnOfficialDevout1disagree:""That's heavy-handed oppression.""
 lpp_volturnOfficialDevout1respect:""If only these people would respect law and order.""
 lpp_volturnOfficialDevout1collective1:""So it's collective punishment.""
 lpp_volturnOfficialDevout1agree:""Yes, that makes sense.""",
 lppVolturnOfficialDevout1respect,DialogOptionSelected,$option == lpp_volturnOfficialDevout1respect,"$option = lpp_volturnOfficialDevout1collective 0
-FireBest DialogOptionSelected","«En efecto», dice el funcionario, sacudiendo la cabeza con una expresión que no parece tristeza.",,
+FireBest DialogOptionSelected","«En efecto», dice el oficial, sacudiendo la cabeza con una expresión que no parece tristeza.",,
 lppVolturnOfficialDevout1collective0,DialogOptionSelected,$option == lpp_volturnOfficialDevout1collective1,"$option = lpp_volturnOfficialDevout1collective 0
-FireBest DialogOptionSelected","«¡Exactamente!», dice el funcionario, asintiendo con la cabeza en señal de acuerdo contigo.",,
+FireBest DialogOptionSelected","«¡Exactamente!», dice el oficial, asintiendo con la cabeza en señal de acuerdo contigo.",,
 lppVolturnOfficialDevout1agree,DialogOptionSelected,$option == lpp_volturnOfficialDevout1agree,"$option = lpp_volturnOfficialDevout1collective 0
-FireBest DialogOptionSelected","«¡Sí, por supuesto!», dice el funcionario, asintiendo con la cabeza.",,
+FireBest DialogOptionSelected","«¡Sí, por supuesto!», dice el oficial, asintiendo con la cabeza.",,
 lppVolturnOfficialDevout1disagree,DialogOptionSelected,$option == lpp_volturnOfficialDevout1disagree,"$option = lpp_volturnOfficialDevout1collective 0
-FireBest DialogOptionSelected","«Quizás pueda parecer así», dice el funcionario, mientras parece examinarte en busca de elementos subversivos. «Pero es por tu bien».",,
+FireBest DialogOptionSelected","«Quizás pueda parecer así», dice el oficial, mientras parece examinarte en busca de elementos subversivos. «Pero es por tu bien».",,
 lppVolturnOfficialDevout1collective,DialogOptionSelected,$option == lpp_volturnOfficialDevout1collective,FireAll LPPVolturnOfficialConvo,"«Una comunidad debe aprender, aprender juntos a respetar la visión del Ejecutor Supremo. Y una vez que lo hagan, podrán estar seguros de que su glorioso plan podrá seguir adelante, ¡en beneficio de todos!».",,
-lppVolturnOfficialLie1,DialogOptionSelected,$option == lpp_volturnOfficialLie1,,"Te inclinas hacia él, endureciendo tu expresión. El funcionario, confundido pero intrigado, sigue tu ejemplo y se inclina hacia ti.
+lppVolturnOfficialLie1,DialogOptionSelected,$option == lpp_volturnOfficialLie1,,"Te inclinas hacia él, endureciendo tu expresión. El funcionario, confundido pero intrigado, sigue tu ejemplo y se acerca a ti.
 
-Le exiges, bajo pena de muerte, que te diga si es un verdadero seguidor del almirante Philip Andrada, el Ejecutor Supremo; el León de Sindria; el líder de un gran movimiento para purgar la degeneración del sistema mientras se construye un nuevo y orgulloso pueblo perseo que pueble el Sector Perseo.
+Le exiges, bajo pena de muerte, que te diga si es un verdadero seguidor del almirante Philip Andrada, el Ejecutor Supremo; el León de Sindria; el líder de un gran movimiento para purgar la degeneración del sistema mientras se construye un nuevo y orgulloso pueblo que pueble el Sector Perseo.
 
 «S-sí, por supuesto», dice, temblando.
 
 Entonces debe dejarte, a ti, un agente secreto de la Guardia del León, llevar a cabo tu misión.
 
 «Tendré que... confirmarlo...» Empieza a buscar a tientas su datapad.","lpp_volturnOfficialLie1b:""That would be a terrible error.""",
-lppVolturnOfficialLie1b,DialogOptionSelected,$option == lpp_volturnOfficialLie1b,,"Extiendes una mano y le bajas con firmeza la tableta mientras mantienes el contacto visual.
+lppVolturnOfficialLie1b,DialogOptionSelected,$option == lpp_volturnOfficialLie1b,,"Extiendes una mano y le bajas con firmeza el datapad mientras mantienes contacto visual.
 
-«Eso informaría a los traidores que se han infiltrado», le escupes a los pies, «en lo que se hace pasar por seguridad local. Debería ordenar que te fusilaran».",lpp_volturnOfficialLie1c:Loosen your sidearm,
+«Eso informaría a los traidores que se han infiltrado», le escupes a los pies, «en lo que se hace pasar por seguridad local. Debería ordenar que te fusilen».",lpp_volturnOfficialLie1c:Loosen your sidearm,
 lppVolturnOfficialLie1c,DialogOptionSelected,$option == lpp_volturnOfficialLie1c,,"«¡Soy leal, soy leal!», grita, con el sudor resbalándole por la cara, «¡Lo juro!».
 
 Casi solloza, reprime la reacción y luego pregunta en voz baja: «¿Esto es... una prueba? ¿Quién ha enviado...?» ","lpp_volturnOfficialLie2:""From the top. The very top. Essential mission. Need-to-know.""",
 lppVolturnOfficialLie2,DialogOptionSelected,$option == lpp_volturnOfficialLie2,"$market.liedShrineOfficial = true
-$global.lpp_liedToVolturnShrineOfficial = true","El funcionario palidece y luego susurra: «El Supremo...» 
+$global.lpp_liedToVolturnShrineOfficial = true","El oficial palidece y luego susurra: «El Supremo...» 
 
 Le interrumpes levantando un dedo.
 
@@ -4814,50 +4814,50 @@ Le interrumpes levantando un dedo.
 
 «Sí. Sí, por supuesto. Necesitas acceder... pero claro. Ocuparse del problema ludita, los terroristas y... ¡Lo sabía, sabía que había un plan! No se lo diré a nadie. Puedes contar conmigo».",lpp_volturnOfficialLie3:Continue,
 lppVolturnOfficialLie3,DialogOptionSelected,$option == lpp_volturnOfficialLie3,"$option = lpp_volturnShrineFirstVisit1
-FireBest DialogOptionSelected","El oficial asiente con la cabeza, se alisa el uniforme y luego se vuelve hacia los reclutas. «¡Fijos!», grita, lo que los sumerge en un torbellino de actividad: dejan caer los bastones narcóticos y se apresuran a coger las armas de fuego.
+FireBest DialogOptionSelected","El oficial asiente con la cabeza, se endereza el uniforme y luego se vuelve hacia los reclutas. «¡Atención!», grita, lo que desata un torbellino de actividad, dejando caer los narco-palos y se apresuran a coger las armas de fuego.
 
-A continuación, marcha con orgullo hacia la entrada del santuario, se detiene con un chasquido de tacones y gira sobre sí mismo, todo ello con una forma de desfile bastante aceptable.",,
-lppVolturnOfficialCommission1,DialogOptionSelected,$option == lpp_volturnOfficialCommission1,$market.usedCommissionOnShrineOfficial = true,"Aparece una tableta en la mano del funcionario y este mira, entrecerrando los ojos, varias veces entre tú y ella.
+A continuación, el oficial marcha con orgullo hacia la entrada del santuario, se detiene con un repiqueteo de sus botas y gira sobre sí mismo, todo ello en un desfile aceptable.",,
+lppVolturnOfficialCommission1,DialogOptionSelected,$option == lpp_volturnOfficialCommission1,$market.usedCommissionOnShrineOfficial = true,"Aparece un datapad en la mano del oficial y te mira, entrecerrando los ojos, varias veces entre tú y él.
 
-«M-mis más humildes disculpas, $playerSirOrMadam», tartamudea el funcionario, «deberían haberme avisado, haber hecho los preparativos», mira a su alrededor de forma dispersa hasta que su mirada se posa en los reclutas.",lpp_volturnOfficialCommission2:Continue,
+«M-mis más humildes disculpas, $playerSirOrMadam», tartamudea el oficial, «deberían haberme avisado, haber hecho los preparativos», mira a su alrededor de forma dispersa hasta que su mirada se posa en los reclutas.",lpp_volturnOfficialCommission2:Continue,
 lppVolturnOfficialCommission2,DialogOptionSelected,$option == lpp_volturnOfficialCommission2,"$option = lpp_volturnShrineFirstVisit1
-FireBest DialogOptionSelected","«¡Atención!», grita, lo que desata una oleada de actividad: dejan caer los narco-palos y levantan las armas en señal de saludo.
+FireBest DialogOptionSelected","«¡Atención!», grita, lo que desata un torbellino de actividad, dejando caer los narco-palos y levantan las armas en señal de saludo.
 
-«Por favor, por favor», dice el funcionario, guiándote más allá de los reclutas, ahora en posición de atención, y a través del puesto de control. Mientras pasas, el funcionario habla en voz alta sobre el respeto que se le debe a un oficial, ya sea simplemente en la guardia municipal o luchando en las flotas auxiliares.",,
-lppVolturnOfficialBribe1,DialogOptionSelected,$option == lpp_volturnOfficialBribe1,,"Aparece una tableta en la mano del oficial y te mira, entrecerrando los ojos para evaluarte. ¿Eres un infiltrado de seguridad interna, un terrorista infiltrado? Las opciones se debaten en su rostro contra su codicia.
+«Por favor, por favor», dice el oficial, guiándote más allá de los reclutas atentos y a través del puesto de control. Mientras pasas, el oficial habla en voz alta sobre el respeto que se le debe a un oficial, ya sea simplemente en la guardia municipal o luchando en las flotas auxiliares.",,
+lppVolturnOfficialBribe1,DialogOptionSelected,$option == lpp_volturnOfficialBribe1,,"Aparece un datapad en la mano del oficial y te mira, entrecerrando los ojos para evaluarte. ¿Serás un infiltrado de seguridad interna, un terrorista infiltrado? Las opciones se debaten en su rostro contra su codicia.
 
 No hay duda.",lpp_volturnOfficialBribe2:Continue,
 lppVolturnOfficialBribe2,DialogOptionSelected,$option == lpp_volturnOfficialBribe2,"SetTextHighlights 1,000
-DoCanAffordCheck 1000 lpp_volturnOfficialBribe2offer1k false","«Oh, oh, oh, es tan difícil. Los terroristas realizan un asalto sin previo aviso, contra mujeres y niños y... oh, estoy agradecido al León. Un hombre menos noble simplemente bombardearía este planeta hasta someterlo, pero ¿el Ejecutor Supremo? Estos son sus hijos, y él es como un padre. Pero incluso un padre solo tiene t-tantos recursos a su disposición... ¿por qué, si tuviéramos los créditos para comprar mejor armadura para nuestros valientes jóvenes soldados?», señala a los reclutas humeantes, que ahora están haciendo un concurso de escupir desde el costado de la plataforma de aterrizaje.
+DoCanAffordCheck 1000 lpp_volturnOfficialBribe2offer1k false","«Oh, oh oh, es tan difícil. Los terroristas realizan un asalto sin previo aviso, contra mujeres y niños y... oh, estoy agradecido al León. Un hombre menos noble simplemente bombardearía este planeta hasta someterlo, pero ¿el Ejecutor Supremo? Estos son sus hijos, y él es como un padre. Pero incluso un padre solo tiene t-tantos recursos a su disposición... ¿por qué, si tuviéramos créditos para comprar mejores armaduras para nuestros valientes jóvenes soldados?», señala a los reclutas humeantes, que ahora están haciendo un concurso de escupir desde el costado de la plataforma de aterrizaje.
 
 «Imagina cómo se sentirían sus madres si resultaran heridos por una bomba terrorista...»","lpp_volturnOfficialBribe2offer1k:""Would 1,000 credits be enough?""
 lpp_volturnOfficialBribe2naw:""Heartbroken, I'm sure. I'll be leaving now.""",
 lppVolturnOfficialBribe2offer1k,DialogOptionSelected,$option == lpp_volturnOfficialBribe2offer1k,"SetTextHighlights 5,000
 DoCanAffordCheck 5000 lpp_volturnOfficialBribe2offer5k false
-DoCanAffordCheck 2000 lpp_volturnOfficialBribe2offer2k","«5.000 créditos», replica el funcionario.","lpp_volturnOfficialBribe2offer5k:""5k, Done.""
+DoCanAffordCheck 2000 lpp_volturnOfficialBribe2offer2k","«5.000 créditos», replica el oficial.","lpp_volturnOfficialBribe2offer5k:""5k, Done.""
 lpp_volturnOfficialBribe2offer2k:""I can do 2,000, no more.""
 lpp_volturnOfficialBribe2naw:""What are you feeding those kids, Volturnian lobster?""",
-lppVolturnOfficialBribe2offer5k,DialogOptionSelected,$option == lpp_volturnOfficialBribe2offer5k,AddCredits -5000,"«Trato hecho», dice el funcionario, esbozando una sonrisa forzada, y te ofrece su tableta para que confirmes el pago.",lpp_volturnOfficialBribe3:Confirm the bribe,
-lppVolturnOfficialBribe2offer2k,DialogOptionSelected,$option == lpp_volturnOfficialBribe2offer2k,AddCredits -2000,"«Trato hecho», dice el funcionario, esbozando una sonrisa forzada, y te ofrece su tableta para que confirmes el pago.",lpp_volturnOfficialBribe3:Confirm the bribe,
-lppVolturnOfficialBribe2naw,DialogOptionSelected,$option == lpp_volturnOfficialBribe2naw,FireAll LPPVolturnOfficialConvo,"Su datapad desaparece en su abrigo. «Responder a esos comentarios c. está por debajo de mi dignidad», dice el funcionario con poco entusiasmo.",,
+lppVolturnOfficialBribe2offer5k,DialogOptionSelected,$option == lpp_volturnOfficialBribe2offer5k,AddCredits -5000,"«Trato hecho», dice el oficial, esbozando una sonrisa forzada, y te ofrece su datapad para que confirmes el pago.",lpp_volturnOfficialBribe3:Confirm the bribe,
+lppVolturnOfficialBribe2offer2k,DialogOptionSelected,$option == lpp_volturnOfficialBribe2offer2k,AddCredits -2000,"«Trato hecho», dice el oficial, esbozando una sonrisa forzada, y te ofrece su datapad para que confirmes el pago.",lpp_volturnOfficialBribe3:Confirm the bribe,
+lppVolturnOfficialBribe2naw,DialogOptionSelected,$option == lpp_volturnOfficialBribe2naw,FireAll LPPVolturnOfficialConvo,"Su datapad desaparece en su abrigo. «Responder a esos c-comentarios está por debajo de mi dignidad», dice el oficial con poco entusiasmo.",,
 lppVolturnOfficialBribe3,DialogOptionSelected,$option == lpp_volturnOfficialBribe3,"$market.bribedShrineOfficial = true
 $option = lpp_volturnShrineFirstVisit1
-FireBest DialogOptionSelected","Una vez entregado el soborno, el funcionario asiente y te guía a través del control de seguridad mientras entabla una conversación obsequiosa.
+FireBest DialogOptionSelected","Una vez entregado el soborno, el oficial asiente y te guía a través del control de seguridad mientras entabla una conversación obsequiosa.
 
-«¡Atención!», grita, lo que provoca una oleada de actividad entre los reclutas, que dejan caer los palos narcóticos y empuñan las armas de fuego.",,
+«¡Atención!», grita, lo que provoca un torbellino de actividad entre los reclutas, que dejan caer los narco-palos y empuñan las armas de fuego.",,
 lppVolturnShrineFirstVisit1,DialogOptionSelected,$option == lpp_volturnShrineFirstVisit1,$justVisitedShrine = true 0,"Satisfecho, el funcionario hace un gesto con la mano y el rugido de los potentes motores que se ponen en marcha precede a la apertura de las puertas del santuario, lo justo para permitir tu entrada.",lpp_volturnShrineFirstVisit2:Walk through the doors,
 lppVolturnShrineFirstVisit2,DialogOptionSelected,$option == lpp_volturnShrineFirstVisit2,"ShowImageVisual volturn_shrine_fake
 ShrineCMD playMusic
-$market.didShrineIntro = true","La sala de recepción está vacía de peregrinos y casi a oscuras. Los estandartes cosidos a mano cuelgan flácidos, sus colores vivos apagados en la penumbra. Los bancos y las mesas están vacíos.
+$market.didShrineIntro = true","La sala de recepción está vacía de peregrinos y casi a oscuras. Los estandartes cosidos a mano cuelgan lánguidos, sus colores vivos apagados en la penumbra. Los bancos y las mesas están vacíos.
 
-Divisas una luz a través de una pequeña puerta. Es la humilde oficina de la sacristana y, en su interior, una anciana duerme detrás de una taza de té, aún humeante, colocada sobre el escritorio.","lpp_volturnShrineFirstVisit3a:Cough, scuff your boot; wake her up unobtrusively
+Divisas una luz a través de una pequeña puerta. Es la humilde oficina del cura sacro y, en su interior, una anciana duerme detrás de una taza de té, aún humeante, colocada sobre el escritorio.","lpp_volturnShrineFirstVisit3a:Cough, scuff your boot; wake her up unobtrusively
 lpp_volturnShrineFirstVisit3b:""Hello! I'd like the see the shrine!""
 lpp_volturnShrineFirstVisit3c:Pour yourself some tea
 lpp_volturnShrineFirstVisit3d:""If the tea is that hot, you can't really be asleep.""",
 lppVolturnShrineFirstVisit3a,DialogOptionSelected,$option == lpp_volturnShrineFirstVisit3a,"BeginConversation standfast False False
 SetPersonHidden standfast false
 $player.metStandfast = true
-FireAll LPPVolturnCurateResponses1","Al entrar, ella abre los ojos y, tras mirarte bien, saca una pistola de donde la llevaba, bajo su manto tejido a mano, y la coloca en una funda.
+FireAll LPPVolturnCurateResponses1","Al entrar, ella abre los ojos y, tras mirarte bien, saca una pistola que llevaba escondida bajo su manto tejido a mano y la coloca en una funda.
 
 «No podría disparar a alguien que intenta ser tan educado al acercarse sigilosamente a una anciana», dice, examinando tu uniforme.",,
 lppVolturnShrineFirstVisit3b,DialogOptionSelected,$option == lpp_volturnShrineFirstVisit3b,"BeginConversation standfast False False
@@ -4869,7 +4869,7 @@ FireAll LPPVolturnCurateResponses1","Suspira ante tu arrebato y abre los ojos �
 lppVolturnShrineFirstVisit3c,DialogOptionSelected,$option == lpp_volturnShrineFirstVisit3c,"BeginConversation standfast False False
 SetPersonHidden standfast false
 $player.metStandfast = true
-FireAll LPPVolturnCurateResponses1","Mientras te acercas al escritorio y te sirves una taza, ella abre los ojos y saca una pistola de su bolso de mano. 
+FireAll LPPVolturnCurateResponses1","Mientras te acercas al escritorio y te sirves una taza, ella abre los ojos y saca una pistola de su manto tejido de mano. 
 
 La coloca en una funda.
 
@@ -4877,7 +4877,7 @@ La coloca en una funda.
 lppVolturnShrineFirstVisit3d,DialogOptionSelected,$option == lpp_volturnShrineFirstVisit3d,"BeginConversation standfast False False
 SetPersonHidden standfast false
 $player.metStandfast = true
-FireAll LPPVolturnCurateResponses1","Sonríe mientras saca la pistola que llevaba bajo su velo, abre los ojos y luego la coloca en una funda.
+FireAll LPPVolturnCurateResponses1","Sonríe mientras saca la pistola que llevaba bajo su manto, abre los ojos y luego la coloca en una funda.
 
 «Qué observador. Si eres un matón, debo decir que eres de una categoría superior a la habitual. ¿En qué puedo servirte?».",,
 lppVolturnCurateResponses0,DialogOptionSelected,$option == lpp_volturnCurateResponses,FireAll LPPVolturnCurateResponses1,,,
@@ -4905,7 +4905,7 @@ FireAll LPPVolturnCurateResponses1","Te mira fijamente durante un largo rato.
 
 «No, agente. Solo voy armada para proteger el santuario de saqueadores y terroristas. Ya sabe cómo están las cosas. La autoridad del Ejecutor Supremo está... muy mermada».
 
-Detectas más que un atisbo de desaprobación en sus ojos, pero ella sabe cuándo no decir lo que piensa.",,
+Detectas algo más que un atisbo de desaprobación en sus ojos, pero ella sabe cuándo no decir lo que piensa.",,
 lppVolturnCurateAskInsurgency,DialogOptionSelected,$option == lpp_volturnCurateAskInsurgency,,"Te mira fijamente durante un largo rato.
 
 «Hace mucho tiempo, antes de... muchas cosas, el-que-sería-Ludd fue perseguido por las autoridades del Dominio. Tenían ojos electrónicos por todas partes y oídos ocultos. Pero su multitud de pequeños demonios no encontró al-que-sería, que se ocultaba entre amigos y compañeros de viaje».
@@ -4914,17 +4914,17 @@ lppVolturnCurateAskInsurgency,DialogOptionSelected,$option == lpp_volturnCurateA
 lppVolturnCurateAskInsurgency2,DialogOptionSelected,$option == lpp_volturnCurateAskInsurgency2,"$global.lpp_askedVolturnCurateAboutInsurgency = true
 FireAll LPPVolturnCurateResponses1","«OPSEC», dice ella, dando una patada a la pata de una mesa, haciendo que el juego de té traquetee. «Ludd acabó siendo traicionado, por supuesto, pero ¿qué se le va a hacer? Todas las cosas buenas y eso».
 
-Suspirando, continúa con voz de animada obediencia: «No, agente, nunca he oído hablar de esta insurgencia. Suena horrible».",,
+Suspirando, continúa con voz de animada obediencia: «No, agente, nunca he oído hablar de esa insurgencia. Suena horrible».",,
 lppVolturnCurateAskBlessing,DialogOptionSelected,$option == lpp_volturnCurateAskBlessing,"$global.lpp_receivedVolturnCurateBlessing = true
 $didBlessOption = true 0
-FireAll LPPVolturnCurateResponses1","Levanta una ceja. «Podría organizar una bendición si eso es lo que quieres».
+FireAll LPPVolturnCurateResponses1","Levanta una ceja. «Podría disponer una bendición, si eso es lo que quieres».
 
-Moja dos dedos en una taza de té y te lanza las gotas. «Bendito sea este peregrino que tengo ante mí, que encuentre la gracia en el Camino de Ludd. Que la Providencia sea misericordiosa en la adversidad y, si no es así, que incline la cabeza en humilde oración ante su Creador, quien hizo las estrellas que lo rodean, suplicando perdón por sus pecados y guía en su camino».
+Moja dos dedos en una taza de té y te lanza las gotas. «Bendito sea este peregrino que tengo ante mí, que encuentre la gracia en el camino de Ludd. Que la Providencia sea misericordiosa en la adversidad y, si no es así, que incline la cabeza en humilde oración ante su Creador, quien hizo las estrellas que lo rodean, suplicando perdón por sus pecados y guía en su camino».
 
 «Ya está», dice, posando una mano sobre la mesa. «Estás bendecido».","lpp_volturnCurateResponses:""Thanks, I think.""",
 lppVolturnCurateAskBlessingSD,DialogOptionSelected,"$option == lpp_volturnCurateAskBlessing
 $player.fcm_faction == sindrian_diktat","$didBlessOption = true 0
-FireAll LPPVolturnCurateResponses1","«Supongo que podría organizar una bendición», dice lentamente. 
+FireAll LPPVolturnCurateResponses1","«Supongo que podría disponer una bendición», dice lentamente. 
 
 «Pero el santuario está cerrado, ¿no lo has oído? Me parecería», finge buscar las palabras, «desleal».
 
@@ -4932,17 +4932,17 @@ La mujer se encoge de hombros, con las manos abiertas.",,
 lppVolturnCurateDrinkTea,DialogOptionSelected,$option == lpp_volturnCurateDrinkTea,"$drankTea = true 0
 FireAll LPPVolturnCurateResponses1","El té tiene un intenso sabor umami. Menos vegetal, más salino.
 
-«Una humilde variedad local», dice la mujer. «El Tartessian Brown es difícil de conseguir, con la ocupación y todo eso».",,
+«Una humilde variedad local», dice la mujer. «El Tartessian Brown es difícil de conseguir, con el trabajo y todo eso».",,
 lppVolturnCurateAskSeeShrine,DialogOptionSelected,$option == lpp_volturnCurateAskSeeShrine,$player.luddicAttitudeAgnostic++,"«Entonces», dice ella, «estoy aquí para mostrártelo». 
 
-«¿Simon?», le dice a alguien detrás de ti, «tú también puedes guardar tu cañón».
+«¿Simon?», le dice a alguien detrás de ti, «tú también puedes guardar tu arma».
 
-Te giras para mirar y Simon hace lo que ella le pide, haciéndote un pequeño saludo a modo de disculpa. La curada sonríe y, con las manos abiertas, te muestra el camino hacia el santuario interior.",lpp_volturnShrineFirstVisit4:Continue,
+Te giras para mirar y Simon hace lo que ella le pide, haciéndote un pequeño saludo a modo de disculpa. El cura sonríe y, con las manos abiertas, te muestra el camino hacia el santuario interior.",lpp_volturnShrineFirstVisit4:Continue,
 lppVolturnCurateAskPilgrim,DialogOptionSelected,$option == lpp_volturnCurateAskPilgrim,$player.luddicAttitudeFaithful++,"«Entonces», dice ella, «estoy aquí para acompañarte hasta allí». 
 
 «¿Simon?», le dice a alguien detrás de ti, «tú también puedes guardar tu arma».
 
-Te giras para mirar y Simon hace lo que le pide, haciéndote un pequeño saludo a modo de disculpa. La curada sonríe y, con las manos abiertas, te indica el camino hacia el santuario interior.",lpp_volturnShrineFirstVisit4:Continue,
+Te giras para mirar y Simon hace lo que ella le pide, haciéndote un pequeño saludo a modo de disculpa. El cura sonríe y, con las manos abiertas, te muestra el camino hacia el santuario interior.",lpp_volturnShrineFirstVisit4:Continue,
 lppVolturnCurateAskPilgrimSD,DialogOptionSelected,"$option == lpp_volturnCurateAskPilgrim
 $player.fcm_faction == sindrian_diktat","$option = lpp_volturnCurateAskSeeShrine 0
 FireBest DialogOptionSelected",«¿Un peregrino? ¿Tú?» Parece perpleja.,lpp_volturnShrineFirstVisit4:Continue,
@@ -4954,17 +4954,17 @@ lppVolturnCurateSeeShrineSDlecture,DialogOptionSelected,$option == lpp_volturnCu
 FireBest DialogOptionSelected","«Por supuesto que no», dice ella. «No es mi trabajo».",,
 lppVolturnCurateSeeShrineSDlearn,DialogOptionSelected,$option == lpp_volturnCurateSeeShrineSDlearn,"$option = lpp_volturnCurateSeeShrineSDjustDoIt 0
 FireBest DialogOptionSelected","«Interesante», miente ella. «Tendrás que contarme más después de visitar el santuario».",,
-lppVolturnCurateSeeShrineSDjustDoIt,DialogOptionSelected,$option == lpp_volturnCurateSeeShrineSDjustDoIt,AdjustRepPerson standfast SUSPICIOUS -10,"El coadjutor sonríe superficialmente y, con las manos abiertas, te indica el camino hacia el santuario interior.",lpp_volturnShrineFirstVisit4:Continue,
+lppVolturnCurateSeeShrineSDjustDoIt,DialogOptionSelected,$option == lpp_volturnCurateSeeShrineSDjustDoIt,AdjustRepPerson standfast SUSPICIOUS -10,"El cura sonríe superficialmente y, con las manos abiertas, te muestra el camino hacia el santuario interior.",lpp_volturnShrineFirstVisit4:Continue,
 lppVolturnShrineFirstVisit4SD,DialogOptionSelected,"$option == lpp_volturnShrineFirstVisit4
 $player.fcm_faction == sindrian_diktat","HideFirstPerson
 ShowImageVisual volturn_shrine_fake
-FireAll LPPVolturnCurateResponses2SD","El coadjutor te conduce al fondo de un vestíbulo y corre una pesada cortina. Los anillos metálicos que la sujetan a un riel en lo alto traquetean, dejando caer copos de óxido.
+FireAll LPPVolturnCurateResponses2SD","El cura te conduce al fondo de un vestíbulo y corre una pesada cortina. Los anillos metálicos que la sujetan a una barra en lo alto traquetean, dejando caer copos de óxido.
 
 ¿Quizás se trate de un santuario de la humildad?
 
 Es un lugar pequeño situado al fondo de una trastienda, con hileras de velas dispuestas alrededor de un centro de mesa de madera tallado con imágenes de las tribulaciones de Ludd. Las velas están todas apagadas, pero el lugar está iluminado por tenues rayos de luz que se cuelan por unos ojos de buey mugrientos.
 
-«Verás, no recibimos muchos visitantes», dice el coadjutor.",,
+«Verás, no recibimos muchos visitantes», dice el cura.",,
 lppVolturnCurateResponses2SDa,LPPVolturnCurateResponses2SD,!$didHumble ,,,"lpp_volturnCurateSDdisappointing:""This is a bit disappointing.""",
 lppVolturnCurateResponses2SDa2,LPPVolturnCurateResponses2SD,!$didHumble ,,,"lpp_volturnCurateSDhumble:""It's... nice. Humble.""",
 lppVolturnCurateResponses2SDb,LPPVolturnCurateResponses2SD,"!$didCriticism
@@ -4987,7 +4987,7 @@ FireAll LPPVolturnCurateResponses2SD","Ella mira a su alrededor, como si fuera l
 lppVolturnCurateSDcriticism,DialogOptionSelected,$option == lpp_volturnCurateSDcriticism,"$didCriticism = true 0
 FireAll LPPVolturnCurateResponses2SD","«¿Ah, sí?». Te mira levantando una ceja. «Ah, vale. Mentir es un pecado, y la redención debe empezar por algún lado».
 
-Levanta la barbilla y te mira. «El santuario ha sido prácticamente arrasado por vuestro Diktat de Sindria. Los soldados y la MuniSec hostigan a los peregrinos y arrestan a los fieles, y luego nos roban los diezmos».
+Levanta la barbilla y te mira. «El santuario ha sido prácticamente arrasado por vuestro Diktat de Sindria. Los soldados y MuniSec hostigan a los peregrinos y arrestan a los fieles, y luego nos roban los diezmos».
 
 «Sin embargo, siempre que dejen el santuario intacto, la Iglesia está dispuesta a poner la otra mejilla».",,
 lppVolturnCurateSDcriticism2,DialogOptionSelected,$option == lpp_volturnCurateSDchurch,"$didChurch = true 0
@@ -4995,7 +4995,7 @@ FireAll LPPVolturnCurateResponses2SD","«Mi fe no es la Iglesia», dice con vehe
 lppVolturnCurateSDcompromise,DialogOptionSelected,$option == lpp_volturnCurateSDcompromise,"$didCompromise = true 0
 FireAll LPPVolturnCurateResponses2SD","«Esto», señala el destartalado santuario que la rodea, «es el compromiso. Tal y como dictó vuestro Ejecutor».
 
-«Si seguimos adelante, habremos abandonado por completo el Camino de las enseñanzas de Ludd. Así que aquí me quedo».",,
+«Si seguimos adelante, habremos abandonado por completo el camino de las enseñanzas de Ludd. Así que aquí me quedo».",,
 lppVolturnCurateSDaccepted,DialogOptionSelected,$option == lpp_volturnCurateSDaccepted,"$didAcceptSass = true 0
 FireAll LPPVolturnCurateResponses2SD","«Tengo una sugerencia», dice con falsa alegría. «Podríamos colocar uno de esos retratos holográficos de Andrada justo... aquí», señala con la mano el centro del santuario. «Para centrar bien nuestras oraciones y hacer algo de bien».",,
 lppVolturnCurateSDstubborn,DialogOptionSelected,$option == lpp_volturnCurateSDstubborn,"$didStubborn = true 0
@@ -5003,16 +5003,16 @@ $player.heardRumorsAboutCruor = true
 FireAll LPPVolturnCurateResponses2SD","«Consideraré tu postura una vez que pueda plantear esa misma pregunta a aquellos de mi rebaño que fueron enviados a Cruor», dice.
 
 «Hasta que puedas devolvérmelos», sus ojos brillan con lágrimas, «haré lo que hago».",,
-lppVolturnCurateSDstubborn2,DialogOptionSelected,$option == lpp_volturnCurateSDstubborn2,$global.lpp_willTalkToSomeoneOnCruor = true,"«Hazlo...», dice el coadjutor con vacilación, sin mirarte.
+lppVolturnCurateSDstubborn2,DialogOptionSelected,$option == lpp_volturnCurateSDstubborn2,$global.lpp_willTalkToSomeoneOnCruor = true,"«Hazlo...», dice el cura con vacilación, sin mirarte.
 
 «Ahora, por favor, vete».",lpp_volturnShrineFirstLeave1:Leave,
 lppVolturnShrineFirstVisit4,DialogOptionSelected,$option == lpp_volturnShrineFirstVisit4,"HideFirstPerson
 ShowImageVisual volturn_shrine
-FireAll LPPVolturnCurateResponses2","Apenas una hora después, te encuentras en el fondo del mar, en el santuario ludita de Volturn. Se trata de un módulo de inspección chirriante y inquietantemente húmedo situado al final de una chimenea de extracción modificada; una probóscide metálica que realiza un empuje en las profundidades de Volturn.
+FireAll LPPVolturnCurateResponses2","Apenas una hora después, te encuentras en el fondo del mar, en el santuario ludita de Volturn. Se trata de un módulo de inspección chirriante e inquietantemente húmedo situado al final de una torre de extracción modificada; una probóscide metálica ensartada en las profundidades de Volturn.
 
-También está repleto de cañones, explosivos, granadas y cargadores. Las cajas y estantes se apilan en altura, haciendo que el pequeño espacio resulte aún más estrecho. Un pequeño santuario se encuentra en un espacio abierto bajo una ventana redonda con matriz de diamantes que contiene una titánica masa de agua. Unas pocas velas luchan por mantener siquiera un parpadeo decente entre las filas de sus compañeros caídos.
+También está repleto de armas, explosivos, granadas y cargadores. Las cajas y estantes se apilan en altura, haciendo que el pequeño espacio resulte aún más estrecho. Un pequeño santuario se encuentra en un espacio abierto bajo una escotilla redonda que retiene a una titánica masa de agua. Unas pocas velas luchan por mantener siquiera un parpadeo decente entre las filas de sus compañeras caídas.
 
-Aquí hay peregrinos, de algún tipo. Sus cuerpos sin lavar huelen a sudor y humo; hablan y rezan en voz baja. El curate sacraria vuelve a encender una vela con otra que está ardiendo y te ofrece una para que hagas lo mismo.",,
+Aquí hay peregrinos, de algún tipo. Sus cuerpos sin lavar huelen a sudor y humo; hablan y rezan en voz baja. El cura sacro vuelve a encender una vela con otra que está ardiendo y te ofrece una para que hagas lo mismo.",,
 lppVolturnCurateResponses2a,LPPVolturnCurateResponses2,"!$commentedOnWeapons
 !$confirmedInsurgent",,,"lpp_volturnCurateConfirmed:""This seems to confirm your part in the insurgency.""",
 lppVolturnCurateResponses2b,LPPVolturnCurateResponses2,!$commentedOnWeapons,,,"lpp_volturnCurateTroubling:""This is a... troubling arsenal.""",
@@ -5033,13 +5033,13 @@ lpp_volturnCurateTroubleHeavier:""Lack of heavy weapons. How will you fight armo
 lppVolturnCurateTroublingViolent,DialogOptionSelected,$option == lpp_volturnCurateTroubleViolent,"$option = lpp_volturnCurateTroubleShrine 0
 FireBest DialogOptionSelected",,,
 lppVolturnCurateLuddicPath,DialogOptionSelected,$option == lpp_volturnCurateAreYouPath,"$askedIfPath = true 0
-FireAll LPPVolturnCurateResponses2","«No. En absoluto». Te lanza una mirada de cierto disgusto. «Soy una curada de la Iglesia de la Redención Galáctica. Lo que yo hago y lo que ellos hacen son cosas muy diferentes. Espero, de verdad espero, que puedas verlo».
+FireAll LPPVolturnCurateResponses2","«No. En absoluto». Te lanza una mirada de cierto disgusto. «Soy un cura de la Iglesia de la Redención Galáctica. Lo que yo hago y lo que ellos hacen son cosas muy diferentes. Espero, de verdad espero, que puedas entenderlo».
 
 Su mirada se dirige hacia las armas: «Lo admito, ha habido... contacto. Cada día es una prueba. Rezo para que no nos alejemos demasiado de Ludd».",,
 lppVolturnCurateTroublingShrine,DialogOptionSelected,$option == lpp_volturnCurateTroubleShrine,"$commentedOnWeapons = true 0
 $canLeave = true 0
 $player.heardRumorsAboutCruor = true
-FireAll LPPVolturnCurateResponses2","«El libro nos dice: 'Bienaventurados los pacificadores', sin embargo», la curada te mira con ojos severos, «la paz no se hace sola».
+FireAll LPPVolturnCurateResponses2","«El libro nos dice: 'Bienaventurados los pacificadores', sin embargo», el cura te mira con ojos severos, «la paz no se hace sola».
 
 «Ludd no era un belicista, pero sabía cuándo luchar. ¿Acaso no consiguió Ludd la victoria mediante el sacrificio personal, mediante el martirio?».
 
@@ -5049,7 +5049,7 @@ $confirmedInsurgent = true 0
 AdjustRepPerson standfast FRIENDLY 1
 FireAll LPPVolturnCurateResponses2",Una sonrisa duplica las arrugas de su rostro. «Creo que nos entendemos».,,
 lppVolturnCurateConfirmed,DialogOptionSelected,$option == lpp_volturnCurateConfirmed,"$confirmedInsurgent = true 0
-FireAll LPPVolturnCurateResponses2","«Te he convertido en creyente», sonríe el coadjutor. «Bien».",,
+FireAll LPPVolturnCurateResponses2","«Te he convertido en creyente», sonríe el cura. «Bien».",,
 lppVolturnCurateChurchThink,DialogOptionSelected,$option == lpp_volturnCurateChurchThink,"$churchThink = true 0
 $canLeave = true 0
 FireAll LPPVolturnCurateResponses2","«La Iglesia no es una sola mente, sino el cuerpo de muchos reunidos en concilio», dice ella. «Algunos apoyan nuestro trabajo aquí con fervor, y otros se contentan simplemente con rezar».
@@ -5057,13 +5057,13 @@ FireAll LPPVolturnCurateResponses2","«La Iglesia no es una sola mente, sino el 
 Una mirada sombría se apodera de ella: «Yo, sin embargo, rezo para que el rostro unido de la Iglesia no se aparte de ser testigo de nuestro sufrimiento. Se dice que Ludd lloró sin pestañear; ojalá los Padres y las Madres de nuestra Iglesia hicieran lo mismo».",,
 lppVolturnCurateLightTheCandle,DialogOptionSelected,$option == lpp_volturnCurateCandle,"$litCandle = true 0
 $canLeave = true 0
-FireAll LPPVolturnCurateResponses2","«Así se pasa la antorcha», dice la curada. «Luz de la llama, luz de la fe».
+FireAll LPPVolturnCurateResponses2","«Así se pasa la antorcha», dice el cura. «Luz de la llama, luz de la fe».
 
 Te lanza una mirada pícara: «O simplemente es una vela».",,
 lppVolturnCurateNotJustCandle,DialogOptionSelected,$option == lpp_volturnCurateNotJustCandle,"$notJustCandle = true 0
 $player.luddicAttitudeFaithful++
 AdjustRepPerson standfast FRIENDLY 5
-FireAll LPPVolturnCurateResponses2","«El Pneuma habita en estas palabras».
+FireAll LPPVolturnCurateResponses2","«El Espíritu habita en estas palabras».
 
 Ella está mirando con tristeza, te parece, las velas que tienes delante.",,
 lppVolturnCurateIsJustCandle,DialogOptionSelected,$option == lpp_volturnCurateIsJustCandle,"$notJustCandle = true 0
@@ -5071,37 +5071,37 @@ $player.luddicAttitudeAtheistic++
 $player.luddicAttitudeCynical++
 FireAll LPPVolturnCurateResponses2","Por una vez, ella no responde.
 
-Está mirando con tristeza, piensas, las velas que tienes delante.",,
+Ella está mirando con tristeza, te parece, las velas que tienes delante.",,
 lppVolturnShrineWindow,DialogOptionSelected,$option == lpp_volturnCurateWindow,"$lookedWindow = true 0
 $canLeave = true 0
 FireAll LPPVolturnCurateResponses2","Las motas flotan sobre el azul-negro como estrellas en el espacio, en la luz que se proyecta hacia las profundidades abrumadoras. Es una anomalía casi inquietante en una imagen familiar. Partículas de algo o de otra cosa revolotean de un lado a otro.
 
-«La vida prevalece incluso aquí, bajo una opresión inimaginable», dice la curada. «Demos gracias también por el ingenio que nos ha concedido la Providencia», dice mientras da un golpecito al casco de presión, que resuena sordo. «¿Ves? No odiamos toda la tecnología».",,
+«La vida prevalece incluso aquí, bajo una presión inimaginable», dice el cura. «Demos gracias también por el ingenio que nos ha concedido la Providencia», dice mientras da un golpecito al casco de presión, que resuena sordo. «¿Ves? No odiamos toda la tecnología».",,
 lppVolturnShrineFirstLeave1,DialogOptionSelected,$option == lpp_volturnShrineFirstLeave1,"EndConversation DO_NOT_FIRE
 ShrineCMD setVisited
 FireAll LPPShrineVisitXP",,shrineDoLeave:Continue,
 #lppVolturnShrineRevisit1,DialogOptionSelected,"$option == lpp_volturnVisitStart
 $global.lpp_missionCompleted",ShowLargePlanet,"Tu lanzadera sigue las instrucciones del servicio de navegación orbital, atravesando la atmósfera en un largo arco de descenso hacia el mar de Volturn.
 
-La lanzadera reduce la velocidad hasta la velocidad de enfoque final cerca de las coordenadas de destino, un banco de espesa niebla iluminado por el sol de Askonia. Lo que al principio parece un castillo etéreo se revela, al acercarse, como una sombría y agitada acumulación de barcazas y naves que rodean la plataforma de extracción retirada que alberga el santuario.",lpp_volturnVisitStart2:Continue,
-lppVolturnShrineRevisit2,DialogOptionSelected,$option == lpp_volturnShrineRevisit1,$justVisitedShrine = true 0,"El cura Sacraria Standfast te recibe con un té en el resonante salón de recepción antes de acompañarte hasta el santuario interior.
+La lanzadera reduce la velocidad hasta acercarse a las coordenadas de destino, un banco de espesa niebla iluminado por la estrella principal de Askonia. Lo que al principio parece un castillo etéreo se revela, al acercarse, como una sórdida y agitada acumulación de barcazas adheridas a una plataforma de extracción en desuso.",lpp_volturnVisitStart2:Continue,
+lppVolturnShrineRevisit2,DialogOptionSelected,$option == lpp_volturnShrineRevisit1,$justVisitedShrine = true 0,"El cura sacro Standfast te recibe con un té en el resonante salón de recepción antes de acompañarte hasta el santuario interior.
 
 Entras en el módulo de inspección, húmedo y chirriante, situado al final de una torre de extracción modificada donde se aloja el santuario, contra toda lógica. Cajas y estantes de armas y municiones se apilan en altura, agobiando a los peregrinos/insurgentes. Sus cuerpos sin lavar huelen a sudor y humo. Hablan y rezan en voz baja. 
 
-La pieza central del pequeño santuario se encuentra en un espacio abierto bajo una ventana redonda con matriz de diamantes que contiene las profundidades aplastantes del mar. Unas pocas velas parpadean entre las filas de sus compañeros caídos. Como antes, el curate sacraria vuelve a encender una vela con otra que ya está encendida y te ofrece una para que hagas lo mismo.","lpp_volturnShrineRevisitCandle:Light a candle
+La pieza central del pequeño santuario se encuentra en un espacio abierto bajo una escotilla redonda que retiene las profundidades aplastantes del mar. Unas pocas velas parpadean entre las filas de sus compañeras caídas. Como antes, el cura vuelve a encender una vela con otra que ya está encendida y te ofrece una para que hagas lo mismo.","lpp_volturnShrineRevisitCandle:Light a candle
 shrineDoLeave:Leave",
-lppVolturnShrineRevisitCandle,DialogOptionSelected,$option == lpp_volturnShrineRevisitCandle,,"Enciendes la vela con una que aún arde, devolviendo la vida a uno de sus compañeros y perpetuando su llama.",shrineDoLeave:Leave,
+lppVolturnShrineRevisitCandle,DialogOptionSelected,$option == lpp_volturnShrineRevisitCandle,,"Enciendes la vela con una que aún arde, devolviendo la vida a una de sus compañeras y perpetuando su llama.",shrineDoLeave:Leave,
 lppVolturnShrineRevisitSD2,DialogOptionSelected,"$option == lpp_volturnShrineRevisit1
-$player.commissionFactionId == sindrian_diktat",$justVisitedShrine = true 0,"La curada Sacraria Standfast reconoce tu presencia con frialdad. Va armada con una pequeña pistola, guardada educadamente en su funda, pero con el broche descaradamente desabrochado.
+$player.commissionFactionId == sindrian_diktat",$justVisitedShrine = true 0,"El cura sacro Standfast reconoce tu presencia con frialdad. Va armada con una pequeña pistola, guardada educadamente en su funda, pero con el cierre descaradamente abierto.
 
 Se muestra a partes iguales perpleja y molesta cuando le pides ver el santuario, pero corre las cortinas polvorientas para ti y se hace a un lado.
 
-El santuario parece tan abandonado como siempre en esta trastienda. Filas de velas apagadas se alinean alrededor del centro de mesa de madera tallado con imágenes de las tribulaciones de Ludd. El lugar solo está iluminado por tenues rayos de luz que se cuelan por los sucios ojos de buey.",shrineDoLeave:Leave,
+El santuario parece tan abandonado como siempre en esta trastienda. Filas de velas apagadas se alinean alrededor del centro de mesa de madera tallado con imágenes de las tribulaciones de Ludd. El lugar solo está iluminado por tenues rayos de luz que se cuelan por ojos de buey sucios.",shrineDoLeave:Leave,
 lppVolturnShrineRevisitRazed,DialogOptionSelected,"$option == lpp_volturnShrineRevisit1
 $global.lpp_volturnShrineRazed
 $faction.id == sindrian_diktat","$justVisitedShrine = true 0
 FireAll LPPVolturnShrineRazedTea","El santuario está vacío, la sala de recepción está acribillada y chamuscada por las armas. Charcos oxidados de agua húmeda en el suelo se mezclan con sospechosas manchas de óxido. Aquí huele a sal, a podredumbre y a humo.",shrineDoLeave:Leave,# note: currently inaccessible
-lppVolturnShrineRazedTea,LPPVolturnShrineRazedTea,$player.metStandfast,,Un fragmento de una tetera familiar cruje bajo tu bota.,,# note: currently inaccessible
+lppVolturnShrineRazedTea,LPPVolturnShrineRazedTea,$player.metStandfast,,Un fragmento de una tetera familiar cruje bajo tus pies.,,# note: currently inaccessible
 ,,,,,,
 # Killa shrine,,,,,,
 killaOverride,OpenInteractionDialog,$id == killa score:100,"ShowDefaultVisual
@@ -5115,25 +5115,25 @@ $global.lpp_inProgress
 lppShrineKillaVisitOptionAgain,PopulateKillaOptions,"$id == killa
 $tag:luddic_shrine
 $global.lpp_visitedShrineKilla",,,1:lpp_killaVisitStartAgain:Take a shuttle to the Luddic shrine,
-lppShrineKillaVisitAgainStart,DialogOptionSelected,$option == lpp_killaVisitStartAgain,ShowLargePlanet,"Tu lanzadera desciende hacia la superficie de Killa, siguiendo la baliza de aterrizaje hasta el emplazamiento del santuario. Un descuidado amasijo de cascos destrozados y fríos rovers de transporte forma el cementerio de una masacre ocurrida hace mucho tiempo...
+lppShrineKillaVisitAgainStart,DialogOptionSelected,$option == lpp_killaVisitStartAgain,ShowLargePlanet,"Tu lanzadera desciende hacia la superficie de Killa, siguiendo la baliza de aterrizaje hasta el emplazamiento del santuario. Un descuidado amasijo de cascos destrozados y fríos vehículos de transporte forma el cementerio de una masacre ocurrida hace mucho tiempo.
 
-Sigues las huellas polvorientas de peregrinos anteriores hasta una humilde esclusa de aire encajada en un acantilado de regolito desmoronado.",lpp_killaShrineVisitAgain1:Enter the airlock,
+Sigues las huellas polvorientas de anteriores peregrinos hasta una humilde esclusa de aire encajada en un acantilado de regolito desmoronado.",lpp_killaShrineVisitAgain1:Enter the airlock,
 lppKillaVisitStart,DialogOptionSelected,$option == lpp_killaVisitStart,ShowLargePlanet,"Tu lanzadera desciende hacia la superficie de Killa, siguiendo la baliza de aterrizaje hasta un antiguo mar de lava salpicado de cráteres.
 
-Los sistemas tácticos registran el breve pitido del radar de puntería, pero la señal sugiere un sistema portátil demasiado rudimentario como para suponer una amenaza para tus contramedidas.
+Los sistemas tácticos registran el breve pitido del radar de fijación, pero la señal sugiere un sistema demasiado rudimentario como para suponer una amenaza para tus contramedidas.
 
-El lugar de aterrizaje está lejos de cualquier ruina o punto de referencia evidente. Solo hay un montón de habitaciones temporales desmoronadas y vehículos de transporte fríos y destrozados.",lpp_killaVisitStart2:Continue,
+El lugar de aterrizaje está lejos de cualquier ruina o punto de referencia evidente. Solo hay un montón de habitáculos temporales desmoronados y vehículos de transporte fríos y destrozados.",lpp_killaVisitStart2:Continue,
 lppKillaVisitStart2,DialogOptionSelected,$option == lpp_killaVisitStart2,,"Tu lanzadera se detiene en la plataforma de aterrizaje, descendiendo suavemente en la microgravedad. 
 
-Los restos y escombros no son tan caóticos como parecían desde la órbita. Un enjambre de huellas polvorientas conduce hacia una esclusa de aire enterrada en un acantilado a cierta distancia.
+Los restos y escombros no son tan caóticos como parecían desde la órbita. Una multitud de huellas polvorientas conduce hacia una esclusa de aire enterrada en un acantilado a cierta distancia.
 
 Parece que otros han estado utilizando este lugar en los ciclos transcurridos desde la devastación de la guerra.","lpp_killaVisitStartFollow:Follow the footprints
 lpp_killaVisitStartScan:Request an active scan of the area
 lpp_killaVisitStart2Leave:Leave",
-lppKillaVisitStart2Scan,DialogOptionSelected,$option == lpp_killaVisitStartScan,,Tu oficial de sensores realiza un escaneo activo de la zona desde tu $shipOrFleet mientras esperas en la plataforma de aterrizaje. Tu datapad apenas parpadea mientras uno de los potentes haces barre tu posición.,lpp_killaVisitStart2Scan2:Continue,
-lppKillaVisitStart2Scan2,DialogOptionSelected,$option == lpp_killaVisitStart2Scan2,,"Tu tableta emite un pitido al recibir los resultados.
+lppKillaVisitStart2Scan,DialogOptionSelected,$option == lpp_killaVisitStartScan,,Tu oficial de sensores realiza un escaneo activo de la zona desde tu $shipOrFleet mientras esperas en la plataforma de aterrizaje. Tu datapad apenas parpadea mientras uno de los potentes rayos barre tu posición.,lpp_killaVisitStart2Scan2:Continue,
+lppKillaVisitStart2Scan2,DialogOptionSelected,$option == lpp_killaVisitStart2Scan2,,"Tu datapad emite un pitido al recibir los resultados.
 
-Hay vacíos de baja densidad bajo la superficie; patrones de densidad artificiales. Cuevas, búnkeres o túneles. Metales férricos y no férricos, algo de actividad electromagnética, algo de radiactividad. Se lee tan normal como cualquier informe que hayas visto sobre la mancha y la dispersión de la civilización humana en ruinas por todo el Sector Perseo.
+Hay vacíos de baja densidad bajo la superficie; patrones de densidad artificiales. Cuevas, búnkeres o túneles. Metales férricos y no férricos, algo de actividad electromagnética, algo de radiactividad. Se lee tan normal como cualquier informe que hayas visto sobre la dispersión y el desmoronamiento de la civilización humana por todo el Sector Perseo.
 
 El rastro de huellas te lleva hacia lo que parece una esclusa de aire incrustada en un acantilado cercano.","lpp_killaVisitStartFollow:Follow the footprints
 lpp_killaVisitStart2Leave:Leave",
@@ -5141,47 +5141,47 @@ lppKillaVisitStart2Leave,DialogOptionSelected,$option == lpp_killaVisitStart2Lea
 PrintDescription 3
 FireAll PopulateKillaOptions",Tu lanzadera regresa a tu $shipOrFleet en órbita.,,
 lppKillaVisitStart2Follow,DialogOptionSelected,$option == lpp_killaVisitStartFollow,"HideVisual
-ShrineCMD playMusic",Sigues el camino trazado por otros hasta la esclusa de aire. Los controles manuales te permiten abrirla para revelar un enorme agujero negro.,lpp_killaOssuary1:Step inside,
-lppKillaOssuary1,DialogOptionSelected,$option == lpp_killaOssuary1,,"No hay atmósfera en el interior, al menos ninguna digna de mención. Velo fantasmal de polvo se flexiona y retuerce en los campos electrostáticos del santuario, lo suficientemente fuertes como para vencer la baja gravedad del planeta y flotar en el casi vacío.
+ShrineCMD playMusic",Sigues el camino trazado por otros hasta la esclusa de aire. Los controles manuales te permiten abrirla para revelar un enorme hueco oscuro.,lpp_killaOssuary1:Step inside,
+lppKillaOssuary1,DialogOptionSelected,$option == lpp_killaOssuary1,,"No hay atmósfera en el interior, al menos ninguna digna de mención. Velos fantasmales de polvo se flexionan y retuercen en los campos electrostáticos del santuario, lo suficientemente fuertes como para vencer la baja gravedad del planeta y flotar en el casi vacío.
 
-Las instrucciones las da un sacerdote ludita anónimo que recita sus palabras a través de unos rudimentarios repetidores activados por tu actividad:
+Las instrucciones las da un sacerdote ludita anónimo que recita sus palabras a través de unos rudimentarios repetidores despertados por tu actividad:
 
-«Entra solo en paz. Deja descansar a los muertos. Oramos ahora con las palabras reveladas a Ludd...»",lpp_killaOssuary2:Look around,
+«Entra solo en paz. Deja descansar a los muertos. Oremos ahora con las palabras reveladas a Ludd...»",lpp_killaOssuary2:Look around,
 lppKillaOssuary2,DialogOptionSelected,$option == lpp_killaOssuary2,ShowImageVisual killa_shrine,"El osario está construido con cascos enterrados, soldados a grandes rasgos en una arquitectura caótica pero no carente de arte. Ninguna superficie está del todo nivelada, y los iconos y letras originales —descoloridos y desmoronados— delatan funciones olvidadas. «Alojamientos de la tripulación», «punto de fijación», «purgar antes del ciclo».
 
-En la penumbra empiezas a distinguir huecos oculares vacíos, jaulas torácicas, innumerables fémures y columnas vertebrales. Se agrupan en huecos, esquinas y espacios de almacenamiento con las escotillas retiradas.
+En la penumbra empiezas a distinguir huecos oculares vacíos, cajas torácicas, innumerables fémures y columnas vertebrales. Se agrupan en huecos, esquinas y espacios de almacenamiento con las escotillas retiradas.
 
 Te das cuenta de que el polvo que hay en el aire proviene de los cuerpos, de los huesos, que se desmoronan lentamente a tu alrededor.",lpp_killaOssuary3:Continue,
 lppKillaOssuary3,DialogOptionSelected,$option == lpp_killaOssuary3,,"Las palabras del sacerdote desconocido llenan los canales de radio, distorsionadas y metálicas por la baja potencia de los repetidores.
 
 «...cayeron de la órbita como hojas ardientes / arrastradas por el viento y el lamento / el aliento de la vida robado a madre e hijo...»
 
-Los indicadores de un traje muerto parpadean de gris-negro a verde. Se acerca hacia ti.",lpp_killaOssuary4:Continue,
+Las luces de un traje inerte parpadean, pasando del gris oscuro al verde. Se acerca a ti.",lpp_killaOssuary4:Continue,
 lppKillaOssuary4,DialogOptionSelected,$option == lpp_killaOssuary4,,"Instintivamente, te echas hacia atrás, con la mano en tu arma.
 
 La figura se detiene, se ajusta algo en su traje maltrecho y el casco enciende su iluminación automática. Sus manos indican un identificador de canal, al que tú cambias rápidamente.
 
 «Tenemos pocos visitantes», dice la misma voz que las oraciones de la emisión, áspera por la edad y el desuso.
 
-Así que este es el que hace las veces de cura local de Sacraria.","lpp_killaOssuarySeeShrine:""I've come to see the shrine.""
+Así que este es el que hace las veces de cura sacro local.","lpp_killaOssuarySeeShrine:""I've come to see the shrine.""
 lpp_killaOssuaryWalkPilgrim:""I walk the Pilgrim's Path.""
 lpp_killaOssuaryThousands:""There must be thousands of the dead here.""
 lpp_killaOssuarySpooky:""What's with the spooky show?""",
-lppKillaOssuarySeeShrine,DialogOptionSelected,$option == lpp_killaOssuarySeeShrine,$saidShrine = true 0,"«Te encuentras en su interior, el espacio sagrado», el coadjutor sacraria extiende los brazos, «Sé testigo de la ira».
+lppKillaOssuarySeeShrine,DialogOptionSelected,$option == lpp_killaOssuarySeeShrine,$saidShrine = true 0,"«Te encuentras en su interior, el espacio sagrado», el cura sacro extiende los brazos, «Sé testigo de la ira».
 
 Se gira y se aleja, como si esperara que lo siguieras.",lpp_killaOssuaryBridge:Follow,
 lppKillaOssuarySpooky,DialogOptionSelected,$option == lpp_killaOssuarySpooky,"$saidSpooky = true 0
 $player.ethosSarcastic++","Durante una larga pausa, los ojos vacíos de ese traje-casco oscuro te examinan. El cura parece, en todo caso, cansado, con su viejo y gastado traje.
 
-Se gira y se aleja, como si esperara que lo sigas.",lpp_killaOssuaryBridge:Follow,
-lppKillaOssuaryWalkPilgrim,DialogOptionSelected,$option == lpp_killaOssuaryWalkPilgrim,$saidWalk = true 0,"El coadjutor emite un sonido con la garganta; un gesto de reconocimiento. Alcanzas a ver unos ojos tristes y oscuros. «Entonces camina conmigo. Ven. Un camino oscuro. La compañía es bienvenida».
+Se gira y se aleja, como si esperara que lo siguieras.",lpp_killaOssuaryBridge:Follow,
+lppKillaOssuaryWalkPilgrim,DialogOptionSelected,$option == lpp_killaOssuaryWalkPilgrim,$saidWalk = true 0,"El cura emite un sonido con la garganta; un gesto de reconocimiento. Alcanzas a ver unos ojos tristes y oscuros. «Entonces camina conmigo. Ven. Un camino oscuro. La compañía es bienvenida».
 
 Se da la vuelta y camina sin vacilar hacia las ruinas.",lpp_killaOssuaryBridge:Follow,
-lppKillaOssuaryThousands,DialogOptionSelected,$option == lpp_killaOssuaryThousands,$saidThousands = true 0,"Los ojos vacíos del coadjutor entrecierran los párpados, inmóviles por un momento. «No», dice con una voz que apenas se calienta por encima del medio interestelar. «Los muertos son innumerables», dice el traje, encogido.
+lppKillaOssuaryThousands,DialogOptionSelected,$option == lpp_killaOssuaryThousands,$saidThousands = true 0,"Los ojos vacíos del cura entrecierran los párpados, inmóviles por un momento. «No», dice con una voz que apenas se calienta por encima del medio interestelar. «Los muertos son innumerables», dice, encogido.
 
-Entonces, con un gruñido, se da la vuelta y camina como si esperara que lo sigas.",lpp_killaOssuaryBridge:Follow,
+Entonces, con un gruñido, se da la vuelta y camina como si esperara que lo siguieras.",lpp_killaOssuaryBridge:Follow,
 lppKillaOssuaryBridge,DialogOptionSelected,$option == lpp_killaOssuaryBridge,"$option = lpp_killaOssuaryBridge2 0
-FireBest DialogOptionSelected","Adentrándote más, entre salas y cascos, eres testigo de galerías de muertos, huesos y cráneos apilados con cuidado y arte. De vez en cuando vislumbras a peregrinos, solos o en parejas, por los indicadores activos de sus trajes espaciales. El coadjutor los deja a sus contemplaciones.",,
+FireBest DialogOptionSelected","Adentrándote más, entre salas y cascos, eres testigo de galerías de muertos, huesos y cráneos apilados con cuidado y arte. De vez en cuando vislumbras a peregrinos, solos o en parejas, por las luces activas de sus trajes espaciales. El cura los deja a sus contemplaciones.",,
 lppKillaOssuarySeeShrine2,DialogOptionSelected,"$option == lpp_killaOssuaryBridge2
 $saidShrine == true",,"«Están olvidados», dice el cura, con la mirada recorriendo los huesos. Haciendo balance, de alguna manera. «Pero yo no los olvidaré. Y todos los que visitan este lugar me ayudarán a recordar que aquellos que murieron pueden vivir eternamente».
 
@@ -5194,9 +5194,9 @@ lppKillaOssuaryHelpRememberB,DialogOptionSelected,$option == lpp_killaHelpRememb
 FireBest DialogOptionSelected
 $player.luddicAttitudeAgnostic++",,,
 lppKillaOssuarySpooky2,DialogOptionSelected,"$option == lpp_killaOssuaryBridge2
-$saidSpooky == true",$player.luddicAttitudeCynical++,"El curato sacraria se detiene ante un pedestal, un ramo de espinas coronado por fragmentos de cráneo. Ves el destello de un implante craneal entre los fragmentos. El curato levanta con cuidado un fragmento, del que cuelga un hilo de oro.
+$saidSpooky == true",$player.luddicAttitudeCynical++,"El cura sacro se detiene ante un pedestal, un ramo de espinas coronado por fragmentos de cráneo. Ves el destello de un implante craneal entre los fragmentos. El cura levanta con cuidado un fragmento, del que cuelga un hilo de oro.
 
-«La muerte llega para todos. Cada señor de la guerra, Alto Hegemón, director ejecutivo, astronauta. Cada profeta, cada ladrón, cada amigo». 
+«La muerte llega para todos. Todo señor de la guerra, Alto Hegemón, director ejecutivo, astronauta. Todo profeta, todo ladrón, todo amigo». 
 
 Te mira con ojos repentinamente penetrantes: «Incluso tú, viajero estelar, capitán de flota. La muerte llegará».","lpp_killaDeathComesA:""That remains to be seen.""
 lpp_killaDeathComesB:""Not for me.""
@@ -5213,7 +5213,7 @@ $player.luddicAttitudeCynical++",,,
 lppKillaOssuaryWalkPilgrim2,DialogOptionSelected,"$option == lpp_killaOssuaryBridge2
 $saidWalk == true",$player.luddicAttitudeFaithful++,"«Están olvidados», dice, «todos olvidados, convertidos en polvo por la guerra. Pero yo recordaré que una vez existieron. Es todo lo que puedo ofrecer».
 
-El casco del coadjutor se inclina hacia ti: «Y tú también lo recordarás, ahora».
+El casco del cura se inclina hacia ti: «Y tú también lo recordarás, ahora».
 
 «Y entonces vivirán eternamente. ¿Lo entiendes?».","lpp_killaWillRememberA:""I think so.""
 lpp_killaWillRememberB:""I don't understand.""
@@ -5247,15 +5247,15 @@ lppKillaOssuaryHelpAvenge,DialogOptionSelected,$option == lpp_killaHelpAvenge,"$
 $option = lpp_killaOssuaryOutSad 0
 FireBest DialogOptionSelected",,,
 lppKillaOssuaryOutHappy,DialogOptionSelected,$option == lpp_killaOssuaryOutHappy,"$option = lpp_killaOssuaryOutDone 0
-FireBest DialogOptionSelected","«Sí», dice el coadjutor, y te pone una mano en el hombro para apretarlo, «Sí», repite, y puedes oír la sonrisa en su voz.
+FireBest DialogOptionSelected","«Sí», dice el cura, y te pone una mano en el hombro para apretarlo, «Sí», repite, y puedes oír la sonrisa en su voz.
 
 Luego, sin decir nada, desaparece en un pasillo en penumbra.",,
 lppKillaOssuaryOutMiddling,DialogOptionSelected,$option == lpp_killaOssuaryOutMiddling,"$option = lpp_killaOssuaryOutDone 0
-FireBest DialogOptionSelected","El coadjutor reflexiona un momento y luego llega a una conclusión. «Lo harás», dice, y te pone una mano en el hombro para apretarlo. «Sí», repite, y puedes percibir el inicio de una sonrisa en su voz.
+FireBest DialogOptionSelected","El cura reflexiona un momento y luego llega a una conclusión. «Lo harás», dice, y te pone una mano en el hombro para apretarlo. «Sí», repite, y puedes percibir el inicio de una sonrisa en su voz.
 
 Luego, sin decir nada, desaparece en un pasillo en penumbra.",,
 lppKillaOssuaryOutSad,DialogOptionSelected,$option == lpp_killaOssuaryOutSad,"$option = lpp_killaOssuaryOutDone 0
-FireBest DialogOptionSelected","El coadjutor se limita a mirarte y, según te parece, niega con la cabeza. «Reflexiona», dice finalmente.
+FireBest DialogOptionSelected","El cura se limita a mirarte y, según te parece, niega con la cabeza. «Reflexiona», dice finalmente.
 
 Dicho esto, y sin añadir nada más, desaparece por un pasillo en penumbra.",,
 lppKillaOssuaryOutDone,DialogOptionSelected,$option == lpp_killaOssuaryOutDone,,Te quedas solo entre los muertos. Las telarañas de ceniza que cuelgan en el aire se agitan y fluyen a medida que el movimiento en otras partes del laberinto provoca pequeñas fluctuaciones en la carga electrostática acumulada.,"lpp_killaShrineStayAWhile:Stay a while
@@ -5264,19 +5264,19 @@ lppKillaOssuaryWait,DialogOptionSelected,$option == lpp_killaShrineStayAWhile,,"
 
 Los ojos vacíos mantienen una vigilia silenciosa. Pilas, alas, arcos y bosques de huesos humanos adornan cada superficie.
 
-El flux de polvo late lentamente, como el aliento de una criatura titánica.",lpp_killaShrineFirstLeaveStart:Return to your shuttle,
+El flujo de polvo late lentamente, como el aliento de una criatura titánica.",lpp_killaShrineFirstLeaveStart:Return to your shuttle,
 lppKillaShrineVisitAgain1,DialogOptionSelected,$option == lpp_killaShrineVisitAgain1,"ShrineCMD playMusic
-ShowImageVisual killa_shrine","Velo de polvo se flexiona y retuerce lentamente en los campos electrostáticos del santuario, lo suficientemente fuertes como para vencer la baja gravedad de este planeta y flotar en el casi vacío.
+ShowImageVisual killa_shrine","Velos de polvo se flexionan y retuercen lentamente en los campos electrostáticos del santuario, lo suficientemente fuertes como para vencer la baja gravedad de este planeta y flotar en el casi vacío.
 
 Las instrucciones las da una ludita sin nombre que recita sus palabras a través de toscos repetidores activados por tu actividad:
 
 «Venid solo en paz. Dejad descansar a los muertos. Oramos ahora con las palabras reveladas a Ludd...»",lpp_killaShrineVisitAgain2:Continue,
-lppKillaShrineVisitAgain2,DialogOptionSelected,$option == lpp_killaShrineVisitAgain2,,"En la penumbra empiezas a distinguir cuencas oculares vacías, jaulas torácicas, innumerables fémures y columnas vertebrales. Se agrupan en huecos, rincones y espacios de almacenamiento, con sus compuertas retiradas.
+lppKillaShrineVisitAgain2,DialogOptionSelected,$option == lpp_killaShrineVisitAgain2,,"En la penumbra empiezas a distinguir cuencas oculares vacías, cajas torácicas, innumerables fémures y columnas vertebrales. Se agrupan en huecos, rincones y espacios de almacenamiento, con sus compuertas retiradas.
 
-Versos grabados rondan por los coms.
+Versos grabados rondan por los canales de com.
 
 «... las ciudades caen de la órbita como hojas ardientes / arrastradas por el viento y gimiendo / el aliento de la vida arrancado de la madre y el niño...»",lpp_killaShrineVisitAgain3:Continue,
-lppKillaShrineVisitAgain3,DialogOptionSelected,$option == lpp_killaShrineVisitAgain3,,"Deambulando por los pasillos, acabas encontrando al sacristán del osario. Es, como antes, un hombre de pocas palabras, y te saluda solo con un gesto de la cabeza y el atisbo de una sonrisa triste.
+lppKillaShrineVisitAgain3,DialogOptionSelected,$option == lpp_killaShrineVisitAgain3,,"Deambulando por los pasillos, acabas encontrando al cura del osario. Es, como antes, un hombre de pocas palabras, y te saluda solo con un gesto de la cabeza y el atisbo de una sonrisa triste.
 
 Te quedas entre los muertos. Las telarañas de ceniza que cuelgan en el aire se agitan y fluyen a medida que los movimientos en otras partes del laberinto provocan pequeñas fluctuaciones en la carga electrostática presente.","lpp_killaShrineStayAWhile:Stay a while
 lpp_killaShrineLeaveStart:Return to your shuttle",
@@ -5301,9 +5301,9 @@ $menuState == main
 #$tag:station
 $global.isDevMode",SetOptionColor lpp_jangalaProtestDevStart gray,,180:lpp_jangalaProtestDevStart:DEV check out the Luddic protest,
 lppJangalaShrineProtestDev,DialogOptionSelected,$option == lpp_jangalaProtestDevStart,"
-ShowImageVisual protest","El vestíbulo es un caos. Una multitud de manifestantes vestidos con los colores verdes de las luditas ha formado una barrera humana frente a la entrada principal. A su alrededor hay astronautas, oficiales y pasajeros enfadados, esperando para entrar en la zona comercial o volver a sus naves.
+ShowImageVisual protest","El vestíbulo es un caos. Una multitud de manifestantes vestidos con los colores verdes de los luditas ha formado una barrera humana frente a la entrada principal. A su alrededor hay astronautas, oficiales y pasajeros enfadados, esperando para entrar en la zona comercial o volver a sus naves.
 
-Un pequeño contingente de la MuniSec local mantiene a raya a la multitud que grita, aunque a duras penas.",pp_JangalaShrineProtestStart:Continue,
+Un pequeño contingente de MuniSec local mantiene a raya a la multitud que grita, aunque a duras penas.",pp_JangalaShrineProtestStart:Continue,
 lppJangalaShrineProtest,DialogOptionSelected,"$option == marketVisitBar
 !$global.lpp_didJangalaProtest
 $market.id == jangala
@@ -5318,9 +5318,9 @@ lppJangalaShrineProtestStart,DialogOptionSelected,$option == pp_JangalaShrinePro
 $option = pp_JangalaShrineProtestStart2
 FireBest DialogOptionSelected",,,
 lppJangalaShrineProtestStart2,DialogOptionSelected,$option == pp_JangalaShrineProtestStart2,"$global.lpp_didJangalaProtest = true
-FireAll PPJangalaProtestResponses","Reconoces al miembro de la Hegemonía, $post, $name, que da órdenes a una pequeña unidad de comunicaciones. $HeOrShe se fija en ti y te hace un gesto con la cabeza para que te acerques.
+FireAll PPJangalaProtestResponses","Reconoces al $post de la Hegemonía, $name dando órdenes a una pequeña unidad de comunicaciones. $HeOrShe se fija en ti y te hace un gesto con la cabeza para que te acerques.
 
-«Las luditas protestan por los incendios en la superficie del planeta», explica. «Esto ocurre cada dos semanas debido a los peregrinos. Lo consideran una especie de rito de iniciación». 
+«Los luditas protestan por los incendios en la superficie del planeta», explica. «Esto ocurre cada dos semanas debido a los peregrinos. Lo consideran una especie de rito de iniciación». 
 
 $HeOrShe se encoge de hombros con un solo brazo para indicar que no cree que el asunto merezca tanta preocupación, y luego dicta otra serie de jerga táctica en $hisOrHer comunicador.",,
 lppJangalaProtestRespInfo,PPJangalaProtestResponses,!$askedProtestInfo,,,"lpp_jangalaProtestInfo:""Pilgrims? Is there some kind of shrine here?""",
@@ -5332,23 +5332,23 @@ lppJangalaProtestRespMarinesHelp,PPJangalaProtestResponses,"!$protestHelpRejecte
 $player.marines > 11",,,lpp_jangalaProtestMarinesHelp:Offer your marines to help clear the protest,
 lppJangalaProtestRespMarines,PPJangalaProtestResponses,$player.marines > 11,,,lpp_jangalaProtestMarines:Use your marines to muscle through right now,
 lppJangalaProtestWait,DialogOptionSelected,$option == lpp_jangalaProtestWait,"EndConversation DO_NOT_FIRE
-ShowImageVisual protest","Esperas. La multitud crece y se vuelve cada vez menos paciente: una minoría abuchea y grita, y algunos astronautas empiezan a lanzar basura. Las luditas entonan su canto-oración, pidiendo el fin de la propulsión orbital, con los brazos entrelazados. Por las peleas que estallan, queda claro que hay mucho apoyo a la causa ludita más allá de los manifestantes declarados.
+ShowImageVisual protest","Esperas. La multitud crece y se vuelve cada vez menos paciente: una minoría abuchea y grita, y algunos astronautas empiezan a lanzar basura. Los luditas entonan su canto-oración, pidiendo el fin de la quema orbital, con los brazos entrelazados. Por las peleas que suceden, queda claro que hay mucho apoyo a la causa ludita más allá de los manifestantes declarados.
 
-Parece que la situación está a punto de estallar cuando las cabezas comienzan a girarse y ves a un regimiento oscuro de soldados con armadura ligera desplegarse en forma de cuña. Los drones de seguridad zumban sobre nuestras cabezas, con sus láseres de puntería y sus cámaras de identificación parpadeando.",lpp_jangalaProtestWait2:Wait,
-lppJangalaProtestWait2,DialogOptionSelected,$option == lpp_jangalaProtestWait2,,"Un avance constante rompe la línea de protesta; las porras eléctricas suben y bajan para acallar gritos y alaridos. Es difícil ver a través del gas pacificador, pero se distinguen drones en curso de despliegue de espuma inmovilizante sobre las figuras que se debaten. Los puños, las pancartas e incluso los martillos de los luditas son inútiles contra la gendarmería con armaduras de poder.
+Parece que la situación está a punto de estallar cuando las cabezas comienzan a girarse y ves a un regimiento oscuro de soldados con armadura ligera desplegarse en forma de cuña. Drones de seguridad zumban sobre las cabezas, con sus láseres de puntería y sus cámaras de identificación parpadeando.",lpp_jangalaProtestWait2:Wait,
+lppJangalaProtestWait2,DialogOptionSelected,$option == lpp_jangalaProtestWait2,,"Un avance constante rompe la línea de protesta; las porras eléctricas suben y bajan para acallar gritos y alaridos. Es difícil ver a través del gas pacificador, pero se distinguen drones desplegando espuma inmovilizante sobre las figuras que se debaten. Los puños, las pancartas e incluso los martillos de los luditas son inútiles contra la gendarmería con servoarmaduras.
 
 «Puede pasar sin peligro, ciudadano», te dice un dron con voz agradable.
 
-Al avanzar hacia el paseo principal, te das la vuelta y ves que has dejado un rastro cada vez más tenue de manchas de sangre. Un par de rozaduras con el tacón sobre la placa de la cubierta solucionan el problema.",lpp_jangalaProtestEndGeneric:Continue,
+Al avanzar hacia el paseo principal, te das la vuelta y ves que has pasado un rastro cada vez más tenue de manchas de sangre. Un par de rozaduras de la bota sobre la cubierta solucionan el problema.",lpp_jangalaProtestEndGeneric:Continue,
 lppJangalaProtestMarinesHelp,DialogOptionSelected,$option == lpp_jangalaProtestMarinesHelp,"$protestHelpRejected = true 0
-FireAll PPJangalaProtestResponses","El/la $faction $rank niega con la cabeza. «Agradezco el gesto patriótico, ciudadano, pero nosotros nos encargaremos de esto. Hay que actuar con delicadeza», dice con fastidio, «Es muy... político».",,
+FireAll PPJangalaProtestResponses","$hisOrHer $rank de $faction niega con la cabeza. «Agradezco el gesto patriótico, ciudadano, pero nosotros nos encargaremos de esto. Hay que actuar con delicadeza», dice con fastidio, «Es muy... político».",,
 lppJangalaProtestMarinesHelpHegDT,DialogOptionSelected,"$option == lpp_jangalaProtestMarinesHelp
 $player.fcm_faction == hegemony
 !$didDoubleTake","$didDoubleTake = true 0
 $option = lpp_jangalaProtestMarinesHelp 0
 FireBest DialogOptionSelected","De repente, el $rank se queda de piedra. «¿$playerName? Eres tú, ¿verdad? Auxiliar comisionado, ¿no? Me llegó una alerta cuando entraste en órbita».",,
 lppJangalaProtestMarinesHelpHeg,DialogOptionSelected,"$option == lpp_jangalaProtestMarinesHelp
-$player.fcm_faction == hegemony",,"$HeOrShe parece pensárselo un segundo y luego echa un vistazo a una pequeña tableta. 
+$player.fcm_faction == hegemony",,"$HeOrShe parece pensárselo un segundo y luego echa un vistazo a un pequeño datapad. 
 
 «Te diré una cosa: trae a tus marines aquí en tres minutos y ponlos bajo mi mando; aquí tienes el código de comunicación. Quiero fuerza mínima, cero disparos y cero destellos; armas bloqueadas hasta que yo lo autorice».","lpp_jangalaProtestMarinesHelp2:""Agreed. I'll give the order.""
 lpp_jangalaProtestMarinesHelpNo:""On second thought, I'll let you handle this.""",
@@ -5357,17 +5357,17 @@ AdjustRep luddic_church SUSPICIOUS -2
 AdjustRep luddic_path VENGEFUL -3
 AdjustRepActivePerson FRIENDLY 4
 EndConversation DO_NOT_FIRE
-$player.ethosOrder++","Coordinas una respuesta conjunta: un escuadrón de tus marines capaz de realizar un despliegue rápido en el muelle y coordinarse con la gendarmería de la Hegemonía en el costado opuesto de la protesta. Un avance constante rompe la línea de protesta con un uso mínimo de la fuerza: los puños, martillos y pancartas de los luditas resultan inútiles contra las tropas con armadura asistida.
+$player.ethosOrder++","Coordinas una respuesta conjunta: un escuadrón de tus marines capaz de realizar un despliegue rápido en el muelle y coordinarse con la gendarmería de la Hegemonía en el costado opuesto de la protesta. Un avance constante rompe la línea de protesta con un uso mínimo de fuerza: los puños, martillos y pancartas de los luditas resultan inútiles contra las tropas con servoarmadura.
 
 $Rank $personName está ocupado coordinando las detenciones tras los disturbios, pero consigue llamar tu atención y te hace un rápido medio saludo mientras te alejas hacia el paseo comercial.",lpp_jangalaProtestEndGeneric:Continue,
 lppJangalaProtestMarinesHelpHegNo,DialogOptionSelected,$option == lpp_jangalaProtestMarinesHelpNo,FireAll PPJangalaProtestResponses,"El $rank asiente, distraído. «Como quiera, capitán».",,
 lppJangalaProtestInfo,DialogOptionSelected,$option == lpp_jangalaProtestInfo,"$askedProtestInfo = true 0
 ShrineCMD addIntel
-FireBest PPJangalaProtestInfoAsked","«Aquí no», dice $heOrShe, sin apartar la vista de los manifestantes. «En la superficie. Por apreciar la flora local. No entiendo por qué, no te creerías lo tóxica que es esa cosa. La desintoxicación tras la exposición es como una semana de resaca comprimida en un día o dos».
+FireBest PPJangalaProtestInfoAsked","«Aquí no», dice $heOrShe, sin apartar la vista de los manifestantes. «En la superficie. Para apreciar la flora local. No entiendo por qué, no te creerías lo tóxica que es. La desintoxicación tras la exposición es como una semana de resaca comprimida en un día o dos».
 
-$HeOrShe niega con la cabeza. «Al menos eso es lo que me pareció a mí. Supongo que les gusta sufrir. Típico de los luditas. Los mandamás dicen que tenemos que seguirles la corriente. Política, ¿no?».
+$HeOrShe niega con la cabeza. «Al menos eso es lo que me pareció a mí. Supongo que les gusta sufrir. Típico de los luditas. Los mandamás dicen que tenemos que seguirles la corriente. Política, ¿eh?».
 
-Una ráfaga de interferencias codificadas llega por las comunicaciones, y el $post da una breve respuesta. «La Gendarmería estará aquí pronto si quieres quedarte a ver el espectáculo», dice $heOrShe.",,
+Una ráfaga de interferencias codificadas llega por las comunicaciones, y el $post da una breve respuesta. «La Gendarmería llegará aquí pronto si quieres quedarte a ver el espectáculo», dice $heOrShe.",,
 lppJangalaProtestInfoHegComDT1,PPJangalaProtestInfoAsked,"$player.fcm_faction == hegemony
 !$didDoubleTake","$didDoubleTake = true 0
 $option = lpp_jangalaProtestInfoHegCom 0
@@ -5378,20 +5378,20 @@ lppJangalaProtestInfoHegCom,DialogOptionSelected,$option == lpp_jangalaProtestIn
 lpp_jangalaProtestInfoHegComWait:""Thanks, but I'll wait.""",
 lppJangalaProtestInfoHegComNo,PPJangalaProtestInfoAsked,,FireAll PPJangalaProtestResponses,,,
 lppJangalaProtestInfoHegComWait,DialogOptionSelected,$option == lpp_jangalaProtestInfoHegComWait,"EndConversation DO_NOT_FIRE
-ShowDefaultVisual",El $rank asiente con la cabeza y vuelve a las comunicaciones con una actitud más profesional; la gendarmería no debe de estar muy lejos. ,lpp_jangalaProtestWait:Wait,
+ShowDefaultVisual",El $rank asiente con la cabeza y vuelve a las com. con una actitud más profesional; la gendarmería no debe de estar muy lejos. ,lpp_jangalaProtestWait:Wait,
 lppJangalaProtestInfoHegCom2,DialogOptionSelected,$option == lpp_jangalaProtestInfoHegCom2,"EndConversation DO_NOT_FIRE
 ShowDefaultVisual","El $rank hace señas a un cadete para que se acerque y le da instrucciones para que os guíe a ti, a tus guardias y a algunos miembros de tu tripulación con permiso para bajar a tierra —que parecen cada vez más impacientes— por una ruta alternativa hasta el paseo comercial.",lpp_jangalaProtestEndGeneric:Continue,
 lppJangalaProtestChurch1,DialogOptionSelected,$option == lpp_jangalaProtestChurch1,"EndConversation DO_NOT_FIRE
-ShowDefaultVisual","Te enfocas con calma en los manifestantes luditas y pides hablar con un organizador. Se muestran reacios a identificar a un líder que se convertiría en un objetivo obvio para los guardias de MuniSec, pero pronto te reconoce uno de los luditas mejor vestidos. Parece que tu reputación te precede.
+ShowDefaultVisual","Te acercas con calma a los manifestantes luditas y pides hablar con un organizador. Se muestran reacios a identificar a un líder que se convertiría en un objetivo obvio para los guardias de MuniSec, pero pronto te reconoce uno de los luditas mejor vestidos. Parece que tu reputación te precede.
 
 Te respaldan con entusiasmo, calificándote de «verdadero amigo de la Iglesia», y logran persuadir a los manifestantes para que os abran camino a ti y a tu grupo de desembarco.
 
 Al entrar en el paseo comercial, pasando junto a comerciantes y astronautas molestos por tu trato especial, empiezas a oír órdenes amplificadas de la gendarmería de la Hegemonía para que os disperséis.",lpp_jangalaProtestEndGeneric:Continue,
 lppJangalaProtestJoin,DialogOptionSelected,$option == lpp_jangalaProtestJoin,"AdjustRep hegemony SUSPICIOUS -1
-$player.ethosOrder--","Das un paso al frente y proclamas que deseas unirte a la protesta. Al principio, los luditas se muestran incrédulos, pero cuando te giras para enfrentarte a los desconcertados guardias de MuniSec y te unes al canto-oración ludita, estalla un pequeño vítor.
+$player.ethosOrder--","Das un paso al frente y proclamas que deseas unirte a la protesta. Al principio, los luditas se muestran incrédulos, pero cuando te giras para enfrentarte a los desconcertados guardias de MuniSec y te unes al canto-oración ludita, se produce un pequeño vitoreo.
 
 Ves a $PersonRank $personLastName sacudir la cabeza con incredulidad.",lpp_jangalaProtestJoin2:Continue,
-lppJangalaProtestJoin2,DialogOptionSelected,$option == lpp_jangalaProtestJoin2,,"Más tarde, comparas moratones y cortes con tus compañeros manifestantes. Tus guardaespaldas, reaccionando admirablemente ante la inusual situación, lograron protegerte de lo peor de las palizas de los gendarmes, el gas pacificador y la espuma inmovilizante. Pero recibiste tus golpes y has demostrado tu valía ante estos peregrinos luditas. Aprovechas la oportunidad para explicar que...","lpp_jangalaProtestJoinSupport:Despite being a non-believer, you support their rights
+lppJangalaProtestJoin2,DialogOptionSelected,$option == lpp_jangalaProtestJoin2,,"Más tarde, comparas moratones y cortes con tus compañeros manifestantes. Tus guardaespaldas, reaccionando admirablemente ante la inusual situación, lograron protegerte de lo peor de las palizas de los gendarmes, el gas pacificador y la espuma inmovilizante. Pero recibiste golpes y has demostrado tu valía ante estos peregrinos luditas. Aprovechas la oportunidad para explicar que...","lpp_jangalaProtestJoinSupport:Despite being a non-believer, you support their rights
 lpp_jangalaProtestJoinFaith:This shared experience brings you all closer to Ludd
 lpp_jangalaProtestJoinPather:In due time, the heretics will pay for these beatings ten-fold
 lpp_jangalaProtestJoinWeird:You just wanted to feel what it was like to lose a fight
@@ -5399,27 +5399,27 @@ lpp_jangalaProtestJoinWeird:You just wanted to feel what it was like to lose a f
 lppJangalaProtestJoinSupport,DialogOptionSelected,$option == lpp_jangalaProtestJoinSupport,"$player.luddicAttitudeAgnostic++
 $player.joinedJangalaProtest = true
 AdjustRep luddic_church FRIENDLY 1
-ShrineCMD addIntel","Los peregrinos te dan la bienvenida como a un forastero respetable, prometiéndote hospitalidad si visitas sus hogares y congregaciones.
+ShrineCMD addIntel","Los peregrinos te dan la bienvenida como forastero honorable, prometiéndote hospitalidad si visitas sus hogares y congregaciones.
 
 Te hablan del santuario de Jangala y de haber estado expuestos a la vida xenobiótica tóxica, algo mucho más doloroso, según afirman, que cualquier cosa que MuniSec pudiera hacerles.
 
-Te llaman por tu nombre desde la pantalla de comunicaciones.",lpp_jangalaProtestWrapup1:Continue,
+Te llaman por tu nombre desde el intercomunicador.",lpp_jangalaProtestWrapup1:Continue,
 lppJangalaProtestJoinFaith,DialogOptionSelected,$option == lpp_jangalaProtestJoinFaith,"AdjustRep luddic_church FRIENDLY 2
 ShrineCMD addIntel
 $player.joinedJangalaProtest = true
-$player.luddicAttitudeFaithful++","Los peregrinos te dan la bienvenida como a uno de los suyos, te ofrecen su hospitalidad si visitas sus hogares y te prometen un asiento en primera fila en el servicio de su congregación para dar la bienvenida a los peregrinos que regresan.
+$player.luddicAttitudeFaithful++","Los peregrinos te dan la bienvenida como uno de los suyos, prometiéndote hospitalidad si visitas sus hogares y un lugar al frente del servicio de su congregación para acoger a los peregrinos que regresan.
 
-Te hablan del santuario de Jangala y de la exposición a la vida alienígena tóxica, algo mucho más doloroso, según afirman, que cualquier cosa que MuniSec pueda hacerles.
+Te hablan del santuario de Jangala y de haber estado expuestos a la vida xenobiótica tóxica, algo mucho más doloroso, según afirman, que cualquier cosa que MuniSec pudiera hacerles.
 
-Tu nombre aparece en el panel de comunicaciones.",lpp_jangalaProtestWrapup1:Continue,
+Te llaman por tu nombre desde el intercomunicador.",lpp_jangalaProtestWrapup1:Continue,
 lppJangalaProtestJoinPather,DialogOptionSelected,$option == lpp_jangalaProtestJoinPather,"$player.luddicAttitudePather++
 AdjustRep luddic_path FRIENDLY 2
 $player.joinedJangalaProtest = true
 ShrineCMD addIntel","La mayoría de los manifestantes se alarman ante tu retórica, mirando nerviosamente hacia dispositivos de observación invisibles y alejándose de tu rincón de la celda de detención. Aunque un par de peregrinos más jóvenes y uno mucho mayor, con cicatrices que demuestran su compromiso, permanecen cerca de ti, con la mirada desafiando a los demás a expresar sus críticas en voz alta.
 
-«Te escuchamos, $playerBrotherOrSister. El fin del Camino está cerca», susurra, y te habla del Santuario de Jangala, de la mortificación de la carne mediante la exposición a la vida xenológica —peor que cualquier cosa que MuniSec pudiera infligir—.
+«Te escuchamos, $playerBrotherOrSister. El fin del Camino está cerca», susurra, y te habla del Santuario de Jangala, de la mortificación de la carne mediante la exposición a la vida xenobiótica —peor que cualquier cosa que MuniSec pudiera infligir.
 
-Te llaman por tu nombre desde la pantalla de comunicación.",lpp_jangalaProtestWrapup1:Continue,
+Te llaman por tu nombre desde el intercomunicador.",lpp_jangalaProtestWrapup1:Continue,
 lppJangalaProtestJoinWeird,DialogOptionSelected,$option == lpp_jangalaProtestJoinWeird,"$player.luddicAttitudeCynical++
 AdjustRep luddic_church SUSPICIOUS -1",Los manifestantes luditas están confundidos e incluso un poco alarmados por tu explicación; parece que se han quedado encerrados con un loco. Se alejan físicamente de tu rincón de la celda de detención hasta que te llaman por el intercomunicador.,lpp_jangalaProtestWrapup1:Continue,
 lppJangalaProtestWrapup1,DialogOptionSelected,$option == lpp_jangalaProtestWrapup1,"BeginConversation POST:supplyOfficer
@@ -5429,18 +5429,18 @@ lppJangalaProtestWrapup2,DialogOptionSelected,$option == lpp_jangalaProtestWrapu
 
 «Las reglas son sencillas, capitán», dice con frialdad, «y hemos sido muy, muy indulgentes contigo. Pero parece que hay un problema de comunicación, así que déjame explicarte con palabras muy sencillas cómo funcionan las cosas por aquí».
 
-Un guardia coloca una bandeja de plástico con tus pertenencias personales sobre la mesa maltrecha de la sala de tramitación. El $rank de la Hegemonía continúa, lentamente; enfatizando cada palabra. «Paga tus aranceles. No interrumpas el trabajo».
+Un guardia coloca una bandeja de plástico con tus pertenencias personales sobre la mesa maltrecha de la sala de tramitación. El $rank de la Hegemonía continúa, lentamente; enfatizando cada palabra. «Paga tus aranceles. No interrumpas el negocio».
 
 $HeOrShe se gira y hace un gesto a algunos guardias: «Ahora, fuera de mi vista».",lpp_jangalaProtestWrapup3:Continue,
 lppJangalaProtestWrapup3,DialogOptionSelected,$option == lpp_jangalaProtestWrapup3,"EndConversation DO_NOT_FIRE
 ShowDefaultVisual
 FireAll PopulateOptions","Te empujan, entrecerrando los ojos, hacia la luz brillante de la plaza situada fuera del centro municipal de tramitación de seguridad. 
 
-Con tu dignidad prácticamente intacta, te colocas el arma (te han confiscado el cargador), echas un vistazo rápido a tu tableta personal y asientes con la cabeza a tu segundo oficial, que ha estado esperando pacientemente con dos bebidas calientes.",,
+Con tu dignidad prácticamente intacta, te colocas el arma (te han confiscado el cargador), echas un vistazo rápido a tu datapad personal y asientes con la cabeza a tu segundo oficial, que ha estado esperando pacientemente con dos bebidas calientes.",,
 lppJangalaProtestMarines,DialogOptionSelected,$option == lpp_jangalaProtestMarines,,"Ordenas a un pequeño escuadrón de tus propios marines, a los que se les han retirado las armas y municiones debido a las regulaciones portuarias, que se suban a una lanzadera rápida desde tu $shipOrFleet.
 
-Los marines, con sus armaduras de poder completas, forman una vanguardia delante de ti y simplemente se adentran entre las luditas que protestan.",lpp_jangalaProtestMarines2:Continue,
-lppJangalaProtestMarines2,DialogOptionSelected,$option == lpp_jangalaProtestMarines2,,"La línea de manifestantes es fácilmente rota por tus marines blindados, al igual que no pocas extremidades. Los guardias de MuniSec logran aprovechar la situación y acorralar a los manifestantes —que ahora lloran, gritan y te lanzan insultos a ti en particular— en grupos ineficaces.
+Los marines, con sus servoarmaduras completas, forman una vanguardia delante de ti y simplemente se adentran entre los luditas que protestan.",lpp_jangalaProtestMarines2:Continue,
+lppJangalaProtestMarines2,DialogOptionSelected,$option == lpp_jangalaProtestMarines2,,"La línea de manifestantes es fácilmente rota por tus marines blindados, al igual que no pocas extremidades. Los guardias de MuniSec logran aprovechar la situación y acorralan a los manifestantes —que ahora lloran, gritan y te lanzan insultos a ti en particular— en grupos ineficaces.
 
 El oficial de la Hegemonía que supervisa la respuesta oficial no parece simplemente molesto, sino furioso.",lpp_jangalaProtestMarines3:Continue,
 lppJangalaProtestMarines3,DialogOptionSelected,$option == lpp_jangalaProtestMarines3,"$player.ethosRuthless++
@@ -5453,7 +5453,7 @@ EndConversation DO_NOT_FIRE
 ShowDefaultVisual","«¡Debería hacer que te arrestaran!», grita, y luego, ignorando a tus marines blindados —que no se atreven a tocar a un oficial de la Hegemonía en su propia estación—, se acerca a tu cara: «Tu pequeña payasada les acaba de dar un holograma propagandístico que reclutará a cientos de terroristas Caminantes», espeta furiosa. 
 
 «Quita a tus matones de mi vista antes de que llame a los marines de verdad».",lpp_jangalaProtestMarines4:Continue,
-lppJangalaProtestMarines4,DialogOptionSelected,$option == lpp_jangalaProtestMarines4,FireAll PopulateOptions,"Al salir al paseo comercial, ves que tanto la tripulación como los lugareños te señalan y te miran fijamente. Algunos sostienen datapads, grabando hologramas...",,
+lppJangalaProtestMarines4,DialogOptionSelected,$option == lpp_jangalaProtestMarines4,FireAll PopulateOptions,"Al entrar al paseo comercial, ves que tanto tripulantes como lugareños te señalan y te miran fijamente. Algunos sostienen datapads, grabando hologramas...",,
 lppJangalaProtestEndGeneric,DialogOptionSelected,$option == lpp_jangalaProtestEndGeneric,FireAll PopulateOptions,,,
 # Jangala protest post-incident bar events,,# $global.jangalaProtestIncident ,,,,
 ,,,,,,
@@ -5484,23 +5484,23 @@ $global.lpp_didJangalaProtest
 !$justVisitedShrine",,,3:lpp_jangalaVisitStart:Take a shuttle to visit the Luddic shrine,# mission in progress
 lppJangalaVisitAgain,DialogOptionSelected,"$option == lpp_jangalaVisitStart
 $market.didFirstShrineVisit","ShowLargePlanet
-ShrineCMD playMusic","Tu lanzadera desciende hacia continentes verdes coronados por sistemas de tormentas que se agitan lánguidamente. Los láseres de propulsión orbital parpadean desde la chispa de la estación Jangala, invisibles hasta que trazan líneas de plasma a través de la atmósfera.
+ShrineCMD playMusic","Tu lanzadera desciende hacia continentes verdes coronados por sistemas de tormentas que se agitan letárgicamente. Los láseres de quema orbital parpadean desde la chispa de la estación Jangala, invisibles hasta que trazan líneas de plasma a través de la atmósfera.
 
-Atraviesas una capa de nubes cegadoras, y la luz lleva a bordo un tono verdoso enfermizo. Tu ventanilla se ve salpicada por gotas de agua cargadas de esporas a medida que la lanzadera reduce la velocidad para posarse suavemente en la plataforma de aterrizaje, casi oculta entre la exuberante vegetación de Jangala.",lpp_JangalaEnter1:Enter the shrine complex,
+Atraviesas una capa de nubes cegadoras, y la luz lleva un tono verdoso enfermizo. Tu ventanilla se ve salpicada por gotas de agua cargadas de esporas a medida que la lanzadera reduce la velocidad para posarse suavemente en la plataforma de aterrizaje, casi oculta entre la exuberante vegetación de Jangala.",lpp_JangalaEnter1:Enter the shrine complex,
 lppJangalaFirstVisit1,DialogOptionSelected,$option == lpp_jangalaVisitStart,"$market.didFirstShrineVisit = true
 ShowLargePlanet
 ShrineCMD playMusic","Los verdes continentes de Jangala se extienden bajo ti, coronados por enormes sistemas meteorológicos que se agitan letárgicos y majestuosos. 
 
-Líneas abrasadoras de láseres de propulsión orbital brotan de la estación de Jangala, invisibles hasta que trazan cortes de plasma a través de la densa atmósfera. El resplandor de la combustión compite con las tormentas eléctricas desenfrenadas para iluminar las formaciones nubosas montañosas desde abajo.",lpp_JangalaFirstVisit2:Continue,
+Líneas abrasadoras de láseres de quema orbital brotan de la estación de Jangala, invisibles hasta que trazan cortes de plasma a través de la densa atmósfera. El resplandor de la combustión compite con las tormentas eléctricas desenfrenadas para iluminar las formaciones nubosas montañosas desde abajo.",lpp_JangalaFirstVisit2:Continue,
 lppJangalaFirstVisit2,DialogOptionSelected,$option == lpp_JangalaFirstVisit2,,"El zumbido de tu lanzadera cambia de tono al alcanzar el límite de la atmósfera propiamente dicha, pasando rápidamente a la capa de nubes. Más allá de los ventanales, la visibilidad para el ojo humano se incapacita casi por completo. A medida que la lanzadera enciende los retropropulsores para el aterrizaje, descendiendo muy por debajo de la velocidad del sonido por exigencia tanto de las normas de navegación como de las buenas costumbres, tu ventanilla comienza a cubrirse de gotitas de humedad.  
 
-Las gotas tienen una extraña coloración ocre, y las nubes de arriba un tinte verde enfermizo. Has oído hablar de este efecto: esporas de grano fino en la atmósfera.","lpp_JangalaFirstVisit3:Continue
+Las gotas tienen una extraña coloración ocre, y las nubes de arriba un tinte verde enfermizo. Has oído hablar de este fenómeno: esporas de tamaño diminuto presentes en la atmósfera.","lpp_JangalaFirstVisit3:Continue
 lpp_JangalaFirstVisit2b:Look up the long term effects of the spores",
-lppJangalaFirstVisit2b,DialogOptionSelected,$option == lpp_JangalaFirstVisit2b,,"Una rápida búsqueda en la tableta de datos revela que, estadísticamente, la actividad humana dentro de la biosfera de Jangala es relativamente segura siempre que se sigan los procedimientos adecuados de filtración de aire y descontaminación. Los medicamentos desintoxicantes para exposiciones accidentales están fácilmente disponibles, aunque pueden tener efectos secundarios desagradables.
+lppJangalaFirstVisit2b,DialogOptionSelected,$option == lpp_JangalaFirstVisit2b,,"Una rápida búsqueda en el datapad revela que, estadísticamente, la actividad humana dentro de la biosfera de Jangala es relativamente segura siempre que se sigan los procedimientos adecuados de filtración de aire y descontaminación. Los medicamentos desintoxicantes para exposiciones accidentales están fácilmente disponibles, aunque pueden tener efectos secundarios desagradables.
 
 Hay informes de personas cuya mala suerte y falta de planes de contingencia, combinadas con fallos en el vehículo durante condiciones meteorológicas verdaderamente pésimas, han dado lugar a casos de exposición prolongada a la biosfera de Jangala durante días, semanas y, en un caso, más de un mes. Los crecimientos e infecciones resultantes parecen provocar una muerte singularmente tortuosa.","lpp_JangalaFirstVisit3:That's enough, shut it off
 lpp_JangalaFirstVisit2c:Look at the pictures",
-lppJangalaFirstVisit2c,DialogOptionSelected,$option == lpp_JangalaFirstVisit2c,,"-Al menos, a juzgar por los hologramas disponibles en la red de información pública, que son realmente espantosos.
+lppJangalaFirstVisit2c,DialogOptionSelected,$option == lpp_JangalaFirstVisit2c,,"—Al menos, a juzgar por los hologramas disponibles en la red de información pública, que son realmente espantosos.
 
 Una parte cínica de ti se pregunta si las autoridades permiten la distribución de estos relatos gráficos para promover el cumplimiento del protocolo.",lpp_JangalaFirstVisit3:Continue,
 lppJangalaFirstVisit3,DialogOptionSelected,$option == lpp_JangalaFirstVisit3,,"Tu lanzadera desciende hacia la plataforma de aterrizaje, mientras la vegetación de Jangala se abre paso a través de sus propias cenizas para recuperar el espacio.
@@ -5508,7 +5508,7 @@ lppJangalaFirstVisit3,DialogOptionSelected,$option == lpp_JangalaFirstVisit3,,"T
 Te tomas una dosis estándar de antixenoles y vuelves a examinar la calidad de tu máscara respiratoria mientras el túnel de acceso tarda un momento en realizar un ciclo de autolimpieza en las superficies expuestas. El aire no parece diferente, por ahora.
 
 Quizás un poco más cálido, un poco más denso por la humedad.",lpp_JangalaEnter1:Enter the shrine complex,
-lppJangalaShrineDesc1,DialogOptionSelected,$option == lpp_JangalaEnter1,ShowImageVisual luddic_shrine,"La sala de recepción está llena de grupos de luditas vestidos con trajes tradicionales tejidos a mano, guiados por subcurados en un ritual de lavado de manos. Una mirada hacia arriba revela la verdadera purificación: una batería de unidades de purificación de aire atrapadas en una maraña de conductos que murmuran.
+lppJangalaShrineDesc1,DialogOptionSelected,$option == lpp_JangalaEnter1,ShowImageVisual luddic_shrine,"La sala de recepción está llena de grupos de luditas vestidos con trajes tradicionales tejidos a mano, guiados por subcuras en un ritual de lavado de manos. Una mirada hacia arriba revela la verdadera purificación: una batería de unidades de purificación de aire atrapadas en una maraña de conductos que murmuran.
 
 El follaje se presiona casi sensualmente contra las ventanas exteriores, dejando entrar solo una luz tenue. La vegetación parece retorcerse, con líquidos que rezuman por los cristales desde grietas en vesículas y túbulos, dejando regueros que atraviesan incrustaciones descascarilladas. Entre el fervor del follaje y el encanto artesanal de la ingeniería ludita, el lugar resulta claramente inquietante en comparación con el control ambiental al que estás acostumbrado.",lpp_jangalaShrineDesc2:Continue,
 lppJangalaShrineDesc2Revisit,DialogOptionSelected,"$option == lpp_jangalaShrineDesc2
@@ -5520,7 +5520,7 @@ lpp_jangalaShrineLeave:Leave",
 lppJangalaShrineDesc2,DialogOptionSelected,"$option == lpp_jangalaShrineDesc2
 !$global.lpp_visitedShrineJangala",FireAll LPPJangalaAttendantResponses,"Uno de los asistentes del santuario se apresura a recibirte.
 
-«El complejo se mantiene sobrepresurizado», dice, siguiendo tu mirada, «así que, si hubiera una brecha, habría tiempo de sobra para encontrar y sellar la fuga».
+«La instalación se mantiene sobrepresurizada», dice, siguiendo tu mirada, «así que, si hubiera una brecha, habría tiempo de sobra para encontrar y sellar la fuga».
 
 El asistente esboza lo que debe de ser una sonrisa tranquilizadora. «¿En qué podemos ayudarte?»",,
 lppJangalaAttendantRespC,LPPJangalaAttendantResponses,,,,lpp_jangalaattendantVisit:Visit the shrine,
@@ -5533,9 +5533,9 @@ lpp_jangalaattendantVisit:""I would like to visit the shrine.""",
 lppJangalaShrineTerrible,DialogOptionSelected,$option == lpp_jangalaShrineTerrible,"$option = lpp_jangalaShrineDifficult 0
 FireBest DialogOptionSelected
 $player.luddicAttitudeCynical++",,,
-lppJangalaAttendantFoolish,DialogOptionSelected,$option == lpp_jangalaattendantFoolish,$wasAnnoying = true 1,"«Quizás». El asistente se calma un poco: «Como dijo Ludd: ""Mantener la fe en tu corazón, de forma plena y verdadera, invita a pequeñas crueldades del azote de la lengua""».
+lppJangalaAttendantFoolish,DialogOptionSelected,$option == lpp_jangalaattendantFoolish,$wasAnnoying = true 1,"«Quizás». El asistente se calma un poco: «Como dijo Ludd: 'Mantener la fe en el corazón, de forma íntegra y verdadera, atrae las pequeñas crueldades del latigazo de la lengua'».
 
-«¿Y sabes lo que dijo Ludd a continuación?», preguntan, retóricamente: «""Que la fe sea tu armadura; que los muros de la devoción te construyan una ciudadela, y allí estaremos siempre en unión espiritual""».
+«¿Y sabes lo que dijo Ludd a continuación?», preguntan, retóricamente: «'Que la fe sea tu armadura; que los muros de la devoción te construyan una ciudadela, y allí estaremos siempre en unión espiritual.'».
 
 El asistente parece satisfecho con la irrefutabilidad de esta afirmación y, deseando que te marches antes de que la situación se vuelva más incómoda, añade: «¿Hay algo más en lo que pueda ayudarte?».","lpp_jangalaattendantVisit:""I'd like to visit the shrine.""
 lpp_jangalaShrineLeaveNoHook:Leave",
@@ -5544,7 +5544,7 @@ lpp_jangalaattendantVisitOutsideB:""I am no sightseer. I wish to test my faith."
 lpp_jangalaattendantVisit:""Don't worry, I have no intention of going out there.""",
 lppJangalaattendantVisit,DialogOptionSelected,$option == lpp_jangalaattendantVisit,,"«Sí, por supuesto. Puedo acompañarle al lavabo donde pedimos a todos, peregrinos o no, que se sometan a una sencilla purificación antes de visitar el santuario interior».
 
-El asistente comienza a empujarle hacia un grupo de devotos.","lpp_jangalaVisitShrine:Continue
+El asistente comienza a empujarte hacia un grupo de devotos.","lpp_jangalaVisitShrine:Continue
 lpp_jangalaattendantVisitOutside:""I mean the outside. The real shrine.""
 lpp_jangalaShrineLeaveNoHook:Leave instead",
 lppJangalaattendantVisitOutside,DialogOptionSelected,$option == lpp_jangalaattendantVisitOutside,"$option = lpp_jangalaattendantOutsideChoice 0
@@ -5554,7 +5554,7 @@ FireBest DialogOptionSelected","El asistente te mira con escepticismo.
 
 El asistente te señala una fila de folletos en un elegante expositor de madera que, a simple vista, parecen mostrar una selección de afecciones cutáneas verdaderamente profanas.",,
 lppJangalaattendantVisitOutsideB,DialogOptionSelected,$option == lpp_jangalaattendantVisitOutsideB,"$option = lpp_jangalaattendantOutsideChoice 0
-FireBest DialogOptionSelected","El asistente te mira con un nuevo respeto.
+FireBest DialogOptionSelected","El asistente te mira con respeto.
 
 «¿Estás seguro de esto, peregrino? ¿Deseas esto con pleno conocimiento de lo que implica exponerte a Jangala, y eliges asumir este santo sufrimiento en tu cuerpo?»",,
 lppJangalaattendantOutsideChoice,DialogOptionSelected,$option == lpp_jangalaattendantOutsideChoice,,,"lpp_jangalaVisitShrine:""On second thought, show me the interior shrine.""
@@ -5563,25 +5563,25 @@ lpp_jangalaShrineLeave:Leave instead",
 lppJangalaattendantVisitOutsideC,DialogOptionSelected,"$option == lpp_jangalaattendantVisitOutside
 $wasAnnoying",,"«¿No sería una 'tontería', capitán, exponerse al exterior?», dice el asistente, evitando de alguna manera que el tono de sus palabras denote irritación, aunque no así sus palabras.
 
-Como si fuera una señal —o tal vez porque llevaban todo el tiempo merodeando por allí—, un coadjutor (supones) del santuario se acerca a ti y al asistente, con túnicas no precisamente resplandecientes, pero que transmiten una sensación de esmero y destreza que delata un estatus superior en la Iglesia.",lpp_jangalaattendantVisitOutsideC2:Continue,
-lppJangalaattendantVisitOutsideC2,DialogOptionSelected,$option == lpp_jangalaattendantVisitOutsideC2,,"«Ya es suficiente, hijo mío», dice el coadjutor con dureza oculta tras palabras suaves, «quizá deberías rezar una oración de contrición en la capilla mientras hablo con el capitán».
+Como si fuera una señal —o tal vez porque llevaban todo el tiempo merodeando por allí—, un cura (supones) del santuario se acerca a ti y al asistente, con túnicas no precisamente resplandecientes, pero que transmiten una sensación de esmero y destreza que delata un estatus superior en la Iglesia.",lpp_jangalaattendantVisitOutsideC2:Continue,
+lppJangalaattendantVisitOutsideC2,DialogOptionSelected,$option == lpp_jangalaattendantVisitOutsideC2,,"«Ya es suficiente, hijo mío», dice el cura con dureza oculta tras palabras suaves, «quizá deberías rezar una oración de contrición en la capilla mientras hablo con el capitán».
 
-Avergonzado, el asistente se inclina y huye. El coadjutor se vuelve hacia ti y dice: «Por favor, acepta mis disculpas. Yo mismo te mostraré el camino al santuario interior».",lpp_jangalaVisitShrine:Follow the curate,
-lppJangalaVisitShrine,DialogOptionSelected,$option == lpp_jangalaVisitShrine,ShowImageVisual jangala_shrine,"Te conducen más allá de unas pesadas cortinas. El murmullo de los peregrinos se amortigua y toda la luz artificial queda excluida.
+Avergonzado, el asistente se inclina y huye. El cura se vuelve hacia ti y dice: «Por favor, acepta mis disculpas. Yo mismo te mostraré el camino al santuario interior».",lpp_jangalaVisitShrine:Follow the curate,
+lppJangalaVisitShrine,DialogOptionSelected,$option == lpp_jangalaVisitShrine,ShowImageVisual jangala_shrine,"Te conducen más allá de unas pesadas cortinas. El murmullo de los peregrinos se amortigua y toda luz artificial queda excluida.
 
-Tus ojos se acostumbran a la sala del santuario, contemplando hileras de siluetas de peregrinos arrodillados ante paneles pulidos de matriz de diamantes, iluminados por la enfermiza capa de nubes amarillo verdosas que los cubre desde el exterior. 
+Tus ojos se acostumbran a la sala del santuario, contemplando hileras de siluetas de peregrinos arrodillados ante paneles pulidos de celosía, iluminados por la enfermiza capa de nubes amarillo-verdosas que los cubre desde el exterior. 
 
 Más allá de las ventanas, ves figuras humanas cubiertas de vegetación: un jardín de estatuas. Las formas están cubiertas de excrecencias, repletas de zarcillos, de las que brotan los cuerpos fructíferos de una vida alienígena. Algo se mueve; no es el viento, sino otro peregrino, expuesto y al aire libre. Hay gente ahí fuera, te das cuenta sobresaltado, vestida solo con túnicas ligeras. Fácilmente superada por la vegetación.",lpp_jangalaVisitShrine2:Continue,
 lppJangalaVisitShrine2,DialogOptionSelected,$option == lpp_jangalaVisitShrine2,"ShrineCMD setVisited
-FireAll LPPShrineVisitXP","A sus pies, se hacen visibles más formas; cubiertas por un manto de musgos y micelio, o lo que sea su equivalente alienígena, que oculta los pies de las estatuas. Huesos. ¿O son ramas caídas y rocas cubiertas de vegetación? ¿El último deseo de unos fanáticos devotos hasta la muerte, o tu imaginación desatada?
+FireAll LPPShrineVisitXP","A sus pies, se hacen visibles más formas; cubiertas por un manto de musgos y micelio, o lo que sea su equivalente alienígena, que oculta los pies de las estatuas. Huesos. ¿O son ramas caídas y rocas cubiertas de vegetación? ¿El último deseo de unos fanáticos crónicamente devotos, o tu imaginación desatada?
 
 El verde se agita de forma no del todo imperceptible mientras observas, devorándolo todo, ferozmente regenerativo, un ciclo de vida que podría haber nacido de la Tierra o de un planeta alienígena.",lpp_jangalaShrineLeave:Return to the reception hall,
 lppJangalaShrineVisitAgain,DialogOptionSelected,$option == lpp_jangalaShrineVisitAgain,ShowImageVisual jangala_shrine,"Te conducen más allá de pesadas cortinas que amortiguan el murmullo de los peregrinos y bloquean toda la luz artificial. Los peregrinos se arrodillan en la cámara del santuario, recortados contra los paneles luminosos, iluminados desde fuera por esa enfermiza capa de nubes de color amarillo verdoso.
 
-Más allá, ves el jardín de estatuas. Las formas están cubiertas de excrecencias, repletas de zarcillos, de las que brotan cuerpos fructíferos de vida xenológica. Entre ellas hay peregrinos, vestidos solo con túnicas ligeras. Fácilmente superados por la vegetación. A sus pies, cubiertos por un edredón de musgos y micelio o equivalentes alienígenas, hay huesos. ¿O son ramas caídas, rocas cubiertas de vegetación? ¿El último deseo de fanáticos devotos hasta la muerte, o tu imaginación?
+Más allá, ves el jardín de estatuas. Las formas están cubiertas de excrecencias, repletas de zarcillos, de las que brotan cuerpos fructíferos de vida xenológica. Entre ellas hay peregrinos, vestidos solo con túnicas ligeras. Fácilmente superados por la vegetación. A sus pies, cubiertos por un edredón de musgos y micelio o equivalentes alienígenas, hay huesos. ¿O son ramas caídas, rocas cubiertas de vegetación? ¿El último deseo de fanáticos crónicamente devotos, o tu imaginación?
 
 El verde se agita de forma no del todo imperceptible en el transcurso de los minutos que observas, devorándolo todo, ferozmente regenerativo, un ciclo de vida que podría haber nacido de la Tierra o de un planeta alienígena.",lpp_jangalaShrineLeave:Return to the reception hall,
-lppJangalaVisitOutside2,DialogOptionSelected,$option == lpp_jangalaattendantVisitOutside2,ShowImageVisual jangala_shrine,"El aire te golpea en la esclusa ambiental, cálido y húmedo, como espuma de choque de alta gravedad. Sales solo, porque así es como se hace.
+lppJangalaVisitOutside2,DialogOptionSelected,$option == lpp_jangalaattendantVisitOutside2,ShowImageVisual jangala_shrine,"El aire te golpea en la esclusa ambiental, cálido y húmedo, como espuma de choque de alto impacto. Sales solo, porque así es como se hace.
 
 Redes resbaladizas cuelgan del complejo del santuario; rizomas que brotan bulbos de colores chillones que brillan bajo lo que pasa por ser luz solar. Polvo, o diminutos insectos, o esporas flotan por ahí, moviéndose en remolinos contra el aire pesado y lánguido.","lpp_jangalaOutsideMaskOff:Take off your mask. Have faith.
 lpp_jangalaOutsideMaskOn:Keep it on, you're not an idiot.",
@@ -5610,19 +5610,19 @@ Hay otros. Peregrinos sin máscara, con lágrimas brotando de sus ojos rojos y m
 
 Respiras superficialmente. ¿Tu piel está más caliente, más seca; más húmeda? ¿Ese picor es algo que se está apoderando de ti? Pase lo que pase, sabes que no te matará al instante, y que cualquier cosa que ocurra es reversible. Ten fe.   ",lpp_jangalaOutsideMaskOn2:Continue,
 lppJangalaOutsideMaskOn2,DialogOptionSelected,$option == lpp_jangalaOutsideMaskOn2,"ShrineCMD setVisited
-FireAll LPPShrineVisitXP","Más allá, ves el jardín de estatuas. Las formas están cubiertas de excrecencias, repletas de zarcillos, de las que brotan cuerpos fructíferos de vida xenológica. Entre ellas hay peregrinos, expuestos en sus túnicas ligeras. Fácilmente superados por la vegetación. ¿Cuánto tiempo tardará? ¿Horas, días?
+FireAll LPPShrineVisitXP","Más allá, ves el jardín de estatuas. Las formas están cubiertas de excrecencias, repletas de zarcillos, de las que brotan cuerpos fructíferos de vida xenológica. Entre ellas hay peregrinos, expuestos en sus túnicas ligeras. Fácilmente superados por la vegetación. ¿Cuánto tiempo lleva esto, horas? ¿Días?
 
-A sus pies, cubiertos por un edredón de musgos y micelio o equivalentes alienígenas, hay huesos. OR son ramas caídas, rocas cubiertas de vegetación? ¿El último deseo de fanáticos devotos hasta la muerte, o tu imaginación?",lpp_jangalaOutsideMaskOn3:Continue,
+A sus pies, cubiertos por un edredón de musgos y micelio o equivalentes alienígenas, hay huesos. O son ramas caídas, rocas cubiertas de vegetación? ¿El último deseo de fanáticos crónicamente devotos, o tu imaginación?",lpp_jangalaOutsideMaskOn3:Continue,
 lppJangalaOutsideMaskOn3,DialogOptionSelected,$option == lpp_jangalaOutsideMaskOn3,"AddTextSmall ""Jangala xenolife: light exposure"" highlight
 $player.jangalaWentMaskOn = true","El verde se agita de forma casi imperceptible durante tu estancia, devorándolo todo, ferozmente regenerativo, un ciclo de vida que podría haber nacido en la Tierra o en un planeta alienígena.",lpp_jangalaShrineExtLeave:Return to the complex interior,
 lppJangalaShrineExteriorLeave,DialogOptionSelected,$option == lpp_jangalaShrineExtLeave,"ShowImageVisual luddic_shrine
-FireBest LPPJangalaOutsideReturnComment","Te sometes a una descontaminación rutinaria en una cámara manchada pero limpia construida para tal fin. Tras una ducha con un olor extraño, el parpadeo de los láseres y otra ronda de antixenoles, te devuelven tu ropa. Todo está abrasivamente seco y huele a desinfectante.",lpp_jangalaShrineLeave:Continue,
+FireBest LPPJangalaOutsideReturnComment","Te sometes a una descontaminación rutinaria en una cámara teñida pero limpia construida para tal fin. Tras una ducha con un olor extraño, el parpadeo de láseres y otra ronda de antixenoles, te devuelven tu ropa. Todo está abrasivamente seco y huele a desinfectante.",lpp_jangalaShrineLeave:Continue,
 lppJangalaShrineExteriorLeaveB,LPPJangalaOutsideReturnComment,$maskOff,,"Respirar sigue resultando extraño. Tienes que pensar en cada respiración, llenando los pulmones y luego vaciándolos.",,
-lppJangalaShrineVisitAgainOutside,DialogOptionSelected,$option == lpp_jangalaShrineVisitAgainOutside,ShowImageVisual jangala_shrine,"El aire te golpea, cálido y húmedo, como espuma de choque de alta gravedad. Sales y sigues el corto sendero; parece casi cubierto de maleza. Lo sigues, con hojas y tentáculos rozándote.
+lppJangalaShrineVisitAgainOutside,DialogOptionSelected,$option == lpp_jangalaShrineVisitAgainOutside,ShowImageVisual jangala_shrine,"El aire te golpea, cálido y húmedo, como espuma de choque de alto impacto. Sales y sigues el corto sendero; parece casi cubierto de maleza. Lo sigues, con hojas y tentáculos rozándote.
 
 Encuentras los jardines de estatuas, las formas cubiertas de vegetación, repletas de zarcillos, de las que brotan cuerpos fructíferos de vida xenológica. Entre ellas hay peregrinos, expuestos en sus ligeras túnicas. Fácilmente superados por la maleza. ¿Cuánto tiempo lleva? ¿Horas, días?
 
-A sus pies, cubiertos por un edredón de musgos y micelio o equivalentes alienígenas, hay huesos. O ramas caídas, rocas cubiertas de vegetación. O el último deseo de fanáticos devotos hasta la muerte.
+A sus pies, cubiertos por un edredón de musgos y micelio o equivalentes alienígenas, hay huesos. O ramas caídas, rocas cubiertas de vegetación. O el último deseo de fanáticos crónicamente devotos.
 
 El verde se agita de forma casi imperceptible durante tu estancia, lo devora todo, ferozmente regenerativo, un ciclo de vida que podría haber nacido de la Tierra o de un planeta alienígena.",lpp_jangalaShrineExtLeave:Return to the interior of the complex,
 lppJangalaShrineLeave,DialogOptionSelected,$option == lpp_jangalaShrineLeave,"ShowImageVisual luddic_shrine
@@ -5699,14 +5699,14 @@ lppHesperusShrineDeniedCancelShuttle,DialogOptionSelected,"$option == lpp_hesper
 $global.lpp_deniedHesperusShrineAccess","AddText ""You order the shuttle to stand down. It looks like Excubitor Oak is serious about denying you access to the shrine of Hesperus until you 'seek redemption', whatever that means.""
 FireAll PopulateOptions",,,
 lppHesperausGetMeExcubitor,DialogOptionSelected,$option == lpp_hesperusGetMeExcubitor,"BeginConversation oak
-FireBest PickGreeting","Nav conecta tu comunicador a la red local del sistema y, tras lo que parece una espera más larga de lo necesario, el enlace finalmente establece una conexión.",,
-lppHesperusShrineFirstTime1a,DialogOptionSelected,$option == lpp_hesperusVisitFirstTime1a,$global.lpp_didHesperusFirstShrineAttempt = true,"«Afirmativo», dice Nav. Una breve pausa. «Capitán, tengo a control de tráfico en las com.».
+FireBest PickGreeting","El oficial de navegación conecta tu comunicador a la red local del sistema y, tras lo que parece una espera más larga de lo necesario, el enlace finalmente establece una conexión.",,
+lppHesperusShrineFirstTime1a,DialogOptionSelected,$option == lpp_hesperusVisitFirstTime1a,$global.lpp_didHesperusFirstShrineAttempt = true,"«Afirmativo», dice el oficial. Una breve pausa. «Capitán, tengo a control de tráfico en las com.».
 
-Nav te conecta al circuito de com. y un Caballero ludita de aspecto joven, probablemente un iniciado, aparece ante ti.",lpp_hesperusVisitFirstTime2:Continue,
-lppHesperusShrineFirstTime1b,DialogOptionSelected,$option == lpp_hesperusVisitFirstTime1b,$global.lpp_didHesperusFirstShrineAttempt = true,"Nav te conecta al enlace, y un caballero ludita de aspecto joven —o quizá un iniciado— aparece ante ti.",lpp_hesperusVisitFirstTime2:Continue,
+El oficial te conecta al circuito de comunicación y un Caballero ludita de aspecto joven, probablemente un iniciado, aparece ante ti.",lpp_hesperusVisitFirstTime2:Continue,
+lppHesperusShrineFirstTime1b,DialogOptionSelected,$option == lpp_hesperusVisitFirstTime1b,$global.lpp_didHesperusFirstShrineAttempt = true,"El oficial te conecta al enlace, y un caballero ludita de aspecto joven —quizá un iniciado— aparece ante ti.",lpp_hesperusVisitFirstTime2:Continue,
 lppHesperusShrineFirstTime1c,DialogOptionSelected,$option == lpp_hesperusVisitFirstTime1c,"AddText ""You order the shuttle to stand down. Who knows what these Luddics are on about this time.""
 FireAll PopulateOptions",,,
-lppHesperusShrineFirstTime2,DialogOptionSelected,$option == lpp_hesperusVisitFirstTime2,,"«Que tenga un buen día, capitán», logran ocultar el temblor en su voz. «Le pedimos disculpas, pero su solicitud de aterrizaje ha sido denegada». 
+lppHesperusShrineFirstTime2,DialogOptionSelected,$option == lpp_hesperusVisitFirstTime2,,"«Que tenga un buen día, capitán», logra ocultar el temblor en su voz. «Le pedimos disculpas, pero su solicitud de aterrizaje ha sido denegada». 
 
 Mientras respiras hondo para responder, los ojos del iniciado se posan en una notificación y se abren como platos.
 
@@ -5730,16 +5730,16 @@ lppHesperusExcubitorDenied0b,DialogOptionSelected,$option == lpp_hesperusExcubit
 FireBest DialogOptionSelected",,,
 lppHesperusExcubitorWait1,DialogOptionSelected,$option == lpp_hesperusExcubitorWait1,FireAll LPPExcubitorWaitAside,"El silencio se prolonga, incómodo. Parpadea, lentamente.
 
-De verdad está haciendo esto. Algún tipo de prueba o desafío. ¿Vas a dejar que gane?
+Lo está haciendo a propósito. Algún tipo de prueba o desafío. ¿Vas a dejar que gane?
 
 No se rinde. Sigue mirándote fijamente, de forma absurda, sin decir nada. Notas un parpadeo casi imperceptible en la imagen mientras la pantalla corrige la fluctuación de la señal.","lpp_hesperusExcubitorDenied0a:""Why was my travel request denied?""
 lpp_hesperusExcubitorDenied0b:""I demand to know why my request was denied!""
 lpp_hesperusExcubitorDenied1:""Is there a problem, Excubitor?""
 lpp_hesperusExcubitorWait2:Keep strong. Keep silent.",
 lppHesperusExcubitorWaitAside,LPPExcubitorWaitAside,$player.waitedOutGargoyle,,"Ya has jugado a este juego antes, con Gargoyle. Sabes cómo ganar. Mantente fuerte.",,
-lppHesperusExcubitorWait2,DialogOptionSelected,$option == lpp_hesperusExcubitorWait2,,"El zumbido de tu nave crece en tus oídos, la sensación de habitar tu propio cuerpo en una lata que se precipita alrededor de un pozo gravitacional, las incomprensibles redes de influencia que te mantienen tanto en este lugar como en el dinamismo constante de la crisis.
+lppHesperusExcubitorWait2,DialogOptionSelected,$option == lpp_hesperusExcubitorWait2,,"El zumbido de tu nave crece en tus oídos, la sensación de habitar tu propio cuerpo en una lata que se precipita alrededor de un pozo gravitacional, las incomprensibles redes de influencia que te mantienen tanto en este lugar como en el dinamismo constante de una crisis.
 
-Las dimensiones inferiores y superiores se retuercen y vibran, una red que conspira para sostenerte —o retenerte—, cayendo y aferrándose justo así. Tus tecnologías aprovechan estas peculiaridades invisibles de la física para mantenerte caliente, para mantener tus pies en el suelo, para que el aire fluya siguiendo un ritmo, una métrica. De hecho, es como música. Si escuchas con atención...
+Las dimensiones inferiores y superiores se retuercen y vibran, una red que conspira para sostenerte —o retenerte—, cayendo y aferrándose justo así. Tus tecnologías aprovechan estas peculiaridades invisibles de la física para mantenerte caliente, para mantener tus pies en el suelo, para que el aire fluya siguiendo un ritmo, una métrica. De hecho, es como música. Si escuchas con atención…
 
 Ahora sería imposible hablar.",lpp_hesperusExcubitorWait3:Listen carefully... ,
 lppHesperusExcubitorWait3,DialogOptionSelected,$option == lpp_hesperusExcubitorWait3,"AdjustRepActivePerson FRIENDLY 1
@@ -5759,13 +5759,13 @@ lpp_hesperusExcubitorBribe:""Just tell me how many credits I need to 'tithe'.""
 lppHesperusExcubitorRisk,DialogOptionSelected,$option == lpp_hesperusExcubitorRisk,"$option = lpp_hesperusExcubitorJudge1 0
 FireBest DialogOptionSelected","Esa arruga de nuevo, la sonrisa más discreta del Sector. 
 
-«No malgastes tu tiempo en esta vida en tonterías; hasta nuestro iniciado más joven podría ver que llevas el riesgo como una insignia. Los procedimientos seculares que nos ocupan son solo una parte de mi competencia», dice.
+«No malgastes tu tiempo en esta vida en tonterías; hasta nuestro iniciado más joven podría ver que llevas el riesgo como una insignia. Los procedimientos laicos que nos ocupan son solo una parte de mi competencia», dice.
 
 «En este momento me preocupa más tu espíritu».",,
 lppHesperusExcubitorCrime,DialogOptionSelected,$option == lpp_hesperusExcubitorCrime,"$option = lpp_hesperusExcubitorJudge1 0
-FireBest DialogOptionSelected","De nuevo esa arruga, la sonrisa más sutil del Sector. 
+FireBest DialogOptionSelected","De nuevo esa arruga, la sonrisa más discreta del Sector. 
 
-«Sí, estoy bastante seguro de que has cometido muchos delitos. Sin embargo, la justicia secular es solo una parte de mi ámbito de competencia», dice con gravedad.
+«Sí, estoy bastante seguro de que has cometido muchos delitos. Sin embargo, la justicia laica es solo una parte de mi ámbito de competencia», dice con gravedad.
 
 «Hoy me preocupa más tu espíritu».",,
 lppHesperusExcubitorThreatCheck,LPPCheckCanThreatenExcubitor,$player.maxCombatHullSize < 4,"SetEnabled lpp_hesperusExcubitorForce false
@@ -5773,11 +5773,11 @@ SetTooltip lpp_hesperusExcubitorForce ""Requires a non-civilian capital ship in 
 lppHesperusExcubitorBribe,DialogOptionSelected,$option == lpp_hesperusExcubitorBribe,"$option = lpp_hesperusExcubitorJudge1 0
 FireBest DialogOptionSelected
 AdjustRepActivePerson SUSPICIOUS -5
-$triedBribe = true","Esa arruga de nuevo, la sonrisa más pequeña del Sector.
+$triedBribe = true","Esa arruga de nuevo, la sonrisa más discreta del Sector.
 
-«¿Tan degradada está nuestra devoción como para que pienses que decir esas palabras te abrirá el Camino?»
+«¿Tan degradada está nuestra devoción como para que pienses que decir esas palabras te abrirá el camino?»
 
-«Y», continúa, «¿tan degradado está tu ser espiritual como para pensar en complacerla?»",,
+«Y», continúa, «¿tan degradado está tu ser espiritual como para pensar en complacerlo?»",,
 lppHesperusExcubitorJudge1,DialogOptionSelected,$option == lpp_hesperusExcubitorJudge1,,"Deja caer una mano pesada como un mazo sobre su escritorio. «No me interesan más palabras. Escucha bien ahora, pues voy a pronunciar mi veredicto sobre este asunto».", lpp_hesperusExcubitorRepCheck:Continue,
 lppHesperusExcubitorDenyAccess,DialogOptionSelected,"$option == lpp_hesperusExcubitorRepCheck
 RepLTE luddic_church SUSPICIOUS score:50",$global.lpp_deniedHesperusShrineAccess = true,"«Tu reputación es sospechosa, capitán. Mi conciencia no me permite concederte acceso a nuestro santuario», dice el Excubitor Orbis. «Busca la redención. Si consigues alcanzar algún grado de ella, entonces podremos volver a discutir el asunto».
@@ -5787,7 +5787,7 @@ cutCommLink:Cut the comm link",
 lppHesperusExcubitorEndAllow,DialogOptionSelected,"$option == lpp_hesperusExcubitorRepCheck
 RepGTE luddic_church WELCOMING score:100",$market.allowedToVisitShrine = true,"Una larga pausa.
 
-«Ordenaré al control de tráfico que le dé permiso para aterrizar, capitán», dice finalmente el Excubitor Orbis. «Que su espíritu encuentre aquello que busca».","lpp_hesperusExcubitorAllowEndCutoff:""Wait, that's it?""
+«Ordenaré al control de tráfico que le dé permiso para aterrizar, capitán», dice finalmente el Excubitor Orbis. «Que tu espíritu encuentre aquello que busca».","lpp_hesperusExcubitorAllowEndCutoff:""Wait, that's it?""
 lpp_hesperusExcubitorAllowEndNice:""Thank you, Excubitor Orbis.""
 cutCommLink:Cut the comm link",
 lppHesperusExcubitorEndAllowWait,DialogOptionSelected,"$option == lpp_hesperusExcubitorRepCheck
@@ -5796,13 +5796,13 @@ $global.lpp_madeToWaitForHesperus = true","«Examinaré tu petición dentro de s
 
 Otra vez esa arruga.
 
-«Que la bendición te acompañe, capitán».","lpp_hesperusExcubitorAllowEndCutoff:""Why make me wait?""
+«Bendito seas, capitán».","lpp_hesperusExcubitorAllowEndCutoff:""Why make me wait?""
 lpp_hesperusExcubitorAllowEndNice:""And upon you, Excubitor Orbis.""
 0:cutCommLinkPolite:Cut the comm link",
 lppHesperusExcubitorAllowEndCutoff,DialogOptionSelected,$option == lpp_hesperusExcubitorAllowEndCutoff,"ShowDefaultVisual
-EndConversation NO_CONTINUE","Intentas hablar, pero él ya ha cortado la comunicación por su parte.",0:cutCommLinkPolite:Cut the comm link,
+EndConversation NO_CONTINUE","Intentas hablar, pero él ya ha cortado el enlace de com. por su parte.",0:cutCommLinkPolite:Cut the comm link,
 lppHesperusExcubitorAllowEndNice,DialogOptionSelected,$option == lpp_hesperusExcubitorAllowEndNice,"ShowDefaultVisual
-EndConversation NO_CONTINUE","Asiente con la cabeza en señal de reconocimiento, nada más, y luego corta su parte de la comunicación.",0:cutCommLinkPolite:Cut the comm link,
+EndConversation NO_CONTINUE","Asiente con la cabeza en señal de reconocimiento, nada más, y luego corta su parte del enlace de com.",0:cutCommLinkPolite:Cut the comm link,
 # LPP Gideon Oak shrine access convos,,,,,,# routed through defaultOakGreeting BTW
 lppExcubitorResponseSevenDaysA,PopulateOptions,"$id == oak
 !$global.lpp_hesperusWait
@@ -5842,7 +5842,7 @@ $market.allowedToVisitShrine = true","«Sí», dice, y una leve sonrisa se dibuj
 
 Una larga pausa.
 
-«Ordenaré al control de tráfico que le conceda permiso para aterrizar, capitán», dice finalmente el Excubitor Orbis. «Que su espíritu encuentre aquello que busca».","lpp_hesperusExcubitorAllowEndCutoff:""Wait, that's it?""
+«Ordenaré al control de tráfico que le dé permiso para aterrizar, capitán», dice finalmente el Excubitor Orbis. «Que tu espíritu encuentre aquello que busca».","lpp_hesperusExcubitorAllowEndCutoff:""Wait, that's it?""
 lpp_hesperusExcubitorAllowEndNice:""And upon you, Excubitor Orbis.""
 0:cutCommLinkPolite:Cut the comm link",
 lppExcubitorAllowAccess,DialogOptionSelected,"$option == lpp_excubitorAskToVisit
@@ -5851,7 +5851,7 @@ $global.lpp_madeToWaitForHesperus","unset $global.lpp_madeToWaitForHesperus
 unset $global.lpp_deniedHesperusShrineAccess
 $market.allowedToVisitShrine = true","Una larga pausa.
 
-«Ordenaré al control de tráfico que le dé permiso para aterrizar, capitán», dice finalmente el Excubitor Orbis. «Que su espíritu encuentre aquello que busca».","lpp_hesperusExcubitorAllowEndCutoff:""Wait, that's it?""
+«Ordenaré al control de tráfico que le dé permiso para aterrizar, capitán», dice finalmente el Excubitor Orbis. «Que tu espíritu encuentre aquello que busca».","lpp_hesperusExcubitorAllowEndCutoff:""Wait, that's it?""
 lpp_hesperusExcubitorAllowEndNice:""And upon you, Excubitor Orbis.""
 0:cutCommLinkPolite:Cut the comm link",
 lppExcubitorDenyAccessWait,DialogOptionSelected,"$option == lpp_excubitorAskToVisit
@@ -5859,11 +5859,11 @@ $global.lpp_hesperusWait
 $global.lpp_madeToWaitForHesperus","AdjustRepActivePerson SUSPICIOUS -1
 $global.lpp_hesperusWait = true 7","Una larga pausa.
 
-El excubitor Orbis Oak suspira. «Revisaré tu solicitud dentro de siete días», dice, «a partir de ahora».
+El Excubitor Orbis Oak suspira. «Revisaré tu solicitud dentro de siete días», dice, «a partir de ahora».
 
-Levanta un lápiz óptico y garabatea algo en una hoja de papel, con la mirada perdida en otro lugar. «Recuerda que la paciencia es hija de la humildad».
+Levanta un lápiz óptico y garabatea algo en una hoja de papel, con la mirada perdida en otro lugar. «Recuerda que la Paciencia es hija de la Humildad».
 
-«Que Dios te bendiga, capitán», concluye.","lpp_hesperusExcubitorAllowEndCutoff:""What about the time I've already waited?""
+«Bendito seas, capitán», concluye.","lpp_hesperusExcubitorAllowEndCutoff:""What about the time I've already waited?""
 lpp_hesperusExcubitorAllowEndNice:""And upon you, Excubitor Orbis.""
 0:cutCommLinkPolite:Cut the comm link","# yeah, don't be a pest!"
 lppExcubitorWhyDenyFallback,DialogOptionSelected,$option == lpp_excubitorWhyDeny,"$askedWhy = true 0
@@ -5872,14 +5872,14 @@ lppExcubitorWhyDenyB1,DialogOptionSelected,"$option == lpp_excubitorWhyDeny
 $global.lpp_deniedHesperusShrineAccess","$askedWhy = true 0
 FireAll PopulateOptions","«Porque eres un riesgo inaceptable; eliges pecado tras pecado, y tu camino descarriado te llevará a pecar seis veces más».
 
-«Ludd declaró que nadie está más allá de la redención», dice, «así que doy gracias porque sea el Creador, que todo lo perdona, quien juzgue tu alma, y no yo».",,
+«Ludd declaró que nadie está fuera de la redención», dice, «así que doy gracias porque sea el Creador, que todo lo perdona, quien juzgue tu alma, y yo no».",,
 lppExcubitorWhyDeny1,DialogOptionSelected,"$option == lpp_excubitorWhyDeny
-$global.lpp_madeToWaitForHesperus ",,"Sus ojos oscuros examinan los tuyos a través del enlace com. durante un largo momento antes de hablar.
+$global.lpp_madeToWaitForHesperus ",,"Sus ojos oscuros examinan los tuyos a través del enlace de com. durante un largo momento antes de hablar.
 
-«En primer lugar, para que puedas mejorar», dice. «La virtud de la paciencia se menciona a menudo, pero se practica poco».
+«En primer lugar, para que puedas mejorar», dice. «La virtud de la Paciencia se menciona a menudo, pero se practica poco».
 
 «En segundo lugar, por el bien común. Todos los que viven y pasan por aquí se benefician de una conducta ordenada y virtuosa. Incluso yo mismo mejoro al mantener la disciplina de buena fe».",lpp_excubitorWhyDeny2:Continue,
-lppExcubitorWhyDeny2,DialogOptionSelected,$option == lpp_excubitorWhyDeny2,,"«En tercer lugar, y de forma directa —pues no mentiré, ni siquiera por omisión, ante tu sincera pregunta—, esto le da tiempo a mi personal para investigar tus antecedentes y tu carácter. Para determinar, lo mejor que podamos, cuáles son tus intenciones».
+lppExcubitorWhyDeny2,DialogOptionSelected,$option == lpp_excubitorWhyDeny2,,"«En tercer lugar, y de forma directa —pues no mentiré, ni siquiera por omisión, ante tu sincera pregunta—, esto le da tiempo a mi personal para investigar tus antecedentes y tu carácter. Para determinar lo mejor que podamos cuáles son tus intenciones».
 
 Ahí está: una verificación de antecedentes. ¿De verdad los Caballeros usan registros en papel? ¿Es por eso que tarda tanto? Increíble.","lpp_excubitorWhyDenyHowGoing:""And how's that going?""
 lpp_hesperusExcubitorAllowEndNice:""I await your decision.""",
@@ -5887,7 +5887,7 @@ lpp_hesperusExcubitorAllowEndNice:""I await your decision.""",
 !$global.lpp_hesperusWait
 $global.lpp_madeToWaitForHesperus",FireAll PopulateOptions,"Una breve pausa. «La decisión ya está tomada».
 
-«Ordenaré al control de tráfico que le dé permiso para aterrizar, capitán», dice finalmente el Excubitor Orbis. «Que su espíritu encuentre aquello que busca».",,# denied temporarily
+«Ordenaré al control de tráfico que le dé permiso para aterrizar, capitán», dice finalmente el Excubitor Orbis. «Que tu espíritu encuentre aquello que busca».",,# denied temporarily
 lppExcubitorWhyDenyHowGoingA,DialogOptionSelected,"$option == lpp_excubitorWhyDenyHowGoing
 $global.lpp_madeToWaitForHesperus","$option = lpp_excubitorAskToVisit 0
 FireBest DialogOptionSelected",,,"# yup, you annoyed him."
@@ -5905,7 +5905,7 @@ unset $global.lpp_deniedHesperusShrineAccess","«Sí», dice, y una leve sonrisa
 
 Una larga pausa.
 
-«Ordenaré al control de tráfico que le conceda permiso para aterrizar, capitán», dice finalmente el Excubitor Orbis. «Que su espíritu encuentre aquello que busca».","lpp_hesperusExcubitorAllowEndNice:""Thank you.""
+«Ordenaré al control de tráfico que le dé permiso para aterrizar, capitán», dice finalmente el Excubitor Orbis. «Que tu espíritu encuentre aquello que busca».","lpp_hesperusExcubitorAllowEndNice:""Thank you.""
 lpp_hesperusExcubitorAllowEndCutoff:""Wait, that's it?""
 0:cutCommLinkPolite:Cut the comm link",
 lppExcubitorRedemptionCheckNo,DialogOptionSelected,$option == lpp_excubitorRedemptionCheck,"$askedRedemption = true 0
@@ -5923,12 +5923,12 @@ $global.lpp_deniedHesperusShrineAccess
 !$global.lpp_didHesperusShrineBribe
 !$global.lpp_visitedShrineHesperus","AddBarEvent lpp_hesperusShrine_barEvent ""Find someone bribable in local traffic control"" ""A motley crowd of distinctly non-Luddic spacer officers drink and talk. They can't all be honest traders. One of them might know how to sneak a shuttle past traffic control...""",,,
 lppHesperusBarEventSel,DialogOptionSelected,$option == lpp_hesperusShrine_barEvent,"SetTextHighlights 2,000
-DoCanAffordCheck 2000 lpp_hesperusShrineSneakBribe false","Te abres paso entre los marineros, comprando bebidas y hablando de trabajo. Soltar algunas quejas bienintencionadas pero directas sobre el régimen aduanero sin sentido del humor que gestiona la Iglesia te pone en el camino correcto, y en poco tiempo te encuentras en un conducto de evacuación lleno de humo detrás de la barra hablando con un técnico de la burocracia portuaria local.",lpp_hesperusShrine_barEvent2:Feel out the possibility of a bribe,
+DoCanAffordCheck 2000 lpp_hesperusShrineSneakBribe false","Te abres paso entre los astronautas, comprando bebidas y hablando de trabajo. Soltar algunas quejas, amables pero directas, sobre el régimen aduanero gestionado por la Iglesia —tan carente de sentido del humor— te pone en el camino correcto, y en poco tiempo te encuentras en un conducto de evacuación lleno de humo detrás de la barra hablando con un técnico de la burocracia portuaria local.",lpp_hesperusShrine_barEvent2:Feel out the possibility of a bribe,
 lppHesperusBarEventSel2,DialogOptionSelected,$option == lpp_hesperusShrine_barEvent2,"Highlight ""2,000""","«La gente como nosotros, solo tenemos que pasar desapercibidos. Rezar en público, sí, pero vivir tu propia vida en silencio, ¿sabes?». 
 
-Dan una calada a un porro de droga del mercado negro. «Di lo que quieras del Excubitor Orbis, al menos se toma la misericordia y el perdón tan en serio como todas esas otras ""virtudes caballerescas""».
+Dan una calada a un narco-palo del mercado negro. «Di lo que quieras del Excubitor Orbis, al menos se toma la misericordia y el perdón tan en serio como todas esas otras 'virtudes caballerescas'».
 
-Entre las quejas sobre la sociedad ludita, te das cuenta de que, por 2000 créditos, un vuelo no autorizado en lanzadera al santuario de Hesperus podría ser etiquetado por un no creyente servicial como un transporte regular de peregrinos.","lpp_hesperusShrineSneakBribe:Pay the bribe
+Entre las quejas sobre la sociedad ludita te das cuenta de que, por 2000 créditos, un vuelo no autorizado en lanzadera al santuario de Hesperus podría ser etiquetado por un no creyente amistoso como un transporte regular de peregrinos.","lpp_hesperusShrineSneakBribe:Pay the bribe
 lpp_hesperus_returnToBar:Go back to the bar",
 lppHesperus_barReturnToBar,DialogOptionSelected,$option == lpp_hesperus_returnToBar,BarCMD returnFromEvent false,,,
 lppHesperusShrineSneakBribe,DialogOptionSelected,$option == lpp_hesperusShrineSneakBribe,"RemoveCommodity credits 2000
@@ -5944,43 +5944,43 @@ Fieles a su palabra, los no creyentes etiquetan tu lanzadera con la identificaci
 Tu lanzadera comienza su descenso hacia la fría e implacable superficie de Hesperus.",lpp_hesperusVisitFirst2:Continue,
 "# LPP Hesperus Shrine, visiting for real.",,,,,,
 lppHesperusShrineVisitFirst1sneak,DialogOptionSelected,$option == lpp_hesperusSneakStart,"$global.lpp_snuckIntoHesperusShrine = true
-$market.snuckIntoHesperus = true 0","Una nube de radiación lanzada en el momento oportuno desde el cercano Daedaleon proporciona a tu lanzadera la cobertura necesaria para colarse a través de la red de sensores del control de tráfico local.
+$market.snuckIntoHesperus = true 0","Una nube de radiación oportuna desde el cercano Daedaleon proporciona a tu lanzadera la cobertura necesaria para colarse a través de la red de sensores del control de tráfico local.
 
 Tu lanzadera comienza su descenso hacia la fría e implacable superficie de Hesperus.",lpp_hesperusVisitFirst2:Continue,
 lppHesperusShrineVisitFirst1,DialogOptionSelected,$option == lpp_hesperusVisitFirst1,ShowLargePlanet,"El control de tráfico te da su bendición, por así decirlo, y tu lanzadera comienza su descenso hacia la fría e implacable superficie de Hesperus.",lpp_hesperusVisitFirst2:Continue,
 lppHesperusShrineVisitFirst2,DialogOptionSelected,$option == lpp_hesperusVisitFirst2,ShowImageVisual hesperus,"El planeta está surcado por glaciares, como una red de cicatrices en la piel maltrecha de un monstruo fosilizado.
 
-La ruta de vuelo lleva a tu lanzadera hacia un gran cañón de cañones, lleno de un caos de hielo y roca. La lanzadera se desvía hacia un ramal; las crestas de roca oscura se alzan cada vez más imponentes.
+La ruta de vuelo lleva a tu lanzadera hacia un gran barranco de desfiladeros, lleno de un caos de hielo y roca. La lanzadera se desvía hacia un ramal; las crestas de roca oscura se alzan cada vez más imponentes.
 
 De vez en cuando divisas los restos derruidos de instalaciones industriales y, entre ellos, las luces ocasionales de alguna empresa fletada por los Caballeros o de una comunidad monástica.",lpp_hesperusVisitFirst3:Continue,
-lppHesperusShrineVisitFirst3,DialogOptionSelected,$option == lpp_hesperusVisitFirst3,,"Tras una última curva del cañón, aparece el complejo del santuario, una brillante aguja de hábitats, torres y mástiles que se eleva de entre los restos brumosos de una titánica planta de procesamiento atmosférico.
+lppHesperusShrineVisitFirst3,DialogOptionSelected,$option == lpp_hesperusVisitFirst3,,"Tras una última curva del barranco, aparece el complejo del santuario, una brillante torre de hábitats y mástiles que se eleva de entre los restos brumosos de una titánica planta de procesamiento atmosférico.
 
 Tu ojo entrenado detecta las posibles ubicaciones de emplazamientos de armas pesadas: paredes de acantilado demasiado limpias en ángulos convenientes, los suelos sospechosamente nivelados de ciertos valles colgantes.",lpp_hesperusVisitToShrine:Continue,
 lppHesperusShrineOptions,DialogOptionSelected,$option == lpp_hesperusVisitToShrine,"ShowImageVisual luddic_shrine
 ShrineCMD playMusic
-FireAll HesperusShrineOptions","La antecámara de la bahía de aterrizaje es una exhibición barroca, gótica y militante de material de salvamento posindustrial. Trajes de armadura de poder inactivos permanecen firmes, con las armas orgullosamente expuestas. Brillando entre arcos incrustados de remaches hay escenas de batalla y martirio representadas en paneles de mosaico formados por gemas fracturadas; diamantes estructurales y lentes de colores recuperados de láseres mineros o puertos de inspección de reactores.
+FireAll HesperusShrineOptions","La antecámara de la bahía de aterrizaje es una exhibición barroca, gótica-militante de material de salvamento posindustrial. Trajes de servoarmadura inactivos permanecen firmes, con las armas orgullosamente expuestas. Brillando entre arcos incrustados de remaches hay escenas de batalla y martirio representadas en paneles de mosaico formados por gemas fracturadas; diamantes estructurales y lentes de colores recuperados de láseres mineros o puertos de inspección de reactores.
 
 La galería está llena de grupos de luditas vestidos con trajes tradicionales tejidos a mano que se reúnen con los asistentes del santuario.",,
 lppHesperusShrineVisitAgain1,DialogOptionSelected,$option == lpp_hesperusVisit1,ShowLargePlanet,"El control de tráfico te da su bendición y tu lanzadera desciende hacia la implacable superficie de Hesperus.
 
-El planeta está surcado por glaciares como una red de cicatrices en la piel maltrecha de alguna bestia ancestral. Tu trayectoria de vuelo te lleva hacia un gran cañón lleno de un caos de hielo y piedra, y luego hacia un ramal más pequeño sobre el que se ciernen paredes de roca oscura. De vez en cuando divisas los restos derruidos de la industria y, entre ellos, las luces ocasionales de empresas fletadas por los Caballeros y comunidades monásticas.",lpp_hesperusVisitFirst3:Continue,
+El planeta está surcado por glaciares como una red de cicatrices en la piel maltrecha de alguna bestia ancestral. Tu trayectoria de vuelo te lleva hacia un gran barranco lleno de un caos de hielo y piedra, y luego hacia un ramal más pequeño sobre el que se ciernen paredes de roca oscura. De vez en cuando divisas restos derruidos de industria y, entre ellos, las luces ocasionales de empresas fletadas por los Caballeros y comunidades monásticas.",lpp_hesperusVisitFirst3:Continue,
 lppHesperusShrineOptionSnuckIn,HesperusShrineOptions,"$market.snuckIntoHesperus
 !$market.bribedIntoHesperus","AddText ""A robed subcurate shuffles to meet you. \""Blessings upon you. Your arrival was... unexpected,\"" they say. \""But no matter. All who come in good faith are welcome to worship at this shrine.\""""",,,
 lppHesperusShrineOptionBribedIn,HesperusShrineOptions,$market.bribedIntoHesperus,"AddText ""A robed subcurate shuffles to meet you. \""Blessings upon you. Your arrival... ah, we expected a larger party of pilgrims,\"" they say, \""But no matter; the faith of one is the faith of all.\""""",,,
 lppHesperusShrineOptionVisit,HesperusShrineOptions,,,,lpp_hesperusDoVisit:Ask to visit the shrine,
 lppHesperusShrineOptionLeave,HesperusShrineOptions,$global.lpp_visitedShrineHesperus,,,shrineDoLeave:Leave now,"# If you haven't visited, you're going to be forced to. Because otherwise you can break the flow of logic -dgb"
-lppHesperusShrineDoVisit,DialogOptionSelected,$option == lpp_hesperusDoVisit,ShowImageVisual hesperus_shrine,"A petición tuya, el subcurado que te atiende te guía a través de un breve ritual de lavado de manos y, a continuación, por una larga galería.
+lppHesperusShrineDoVisit,DialogOptionSelected,$option == lpp_hesperusDoVisit,ShowImageVisual hesperus_shrine,"A petición tuya, el subcura que te atiende te guía a través de un breve ritual de lavado de manos y, a continuación, por una larga galería.
 
-La cola de la túnica del curado no llega a tocar el suelo; es un campo de placas de armadura soldadas entre sí, desgastadas hasta formar intrincados patrones por las diversas atmósferas de una veintena de planetas en los que los Caballeros han luchado y muerto. Los nichos a lo largo de las paredes están ocupados por yelmos vacíos.",lpp_hesperusShrineVisit1:Continue,
-lppHesperusShrineVisit1,DialogOptionSelected,$option == lpp_hesperusShrineVisit1,,"El santuario es una grandiosa tumba situada en un enorme conducto de ventilación. Las entrañas industriales se han transformado en una escultura barroca de miles de armas blancas alineadas como plumas de un ala, rayos de metal dentado reluciente que realizan un empuje audaz en arcos letales a través del vasto espacio.
+La túnica del cura no llega a tocar el suelo, un campo de placas de armadura soldadas y desgastadas hasta formar intrincados patrones por las diversas atmósferas de una veintena de planetas en los que los Caballeros han luchado y muerto. Los nichos a lo largo de las paredes están ocupados por cascos vacíos.",lpp_hesperusShrineVisit1:Continue,
+lppHesperusShrineVisit1,DialogOptionSelected,$option == lpp_hesperusShrineVisit1,,"El santuario es una grandiosa tumba situada en un enorme conducto de ventilación. Las entrañas industriales se han transformado en una escultura barroca de miles de armas blancas alineadas como plumas de un ala, rayos de metal dentado reluciente que se proyectan con audacia en arcos letales a través del vasto espacio.
 
-En el centro, rodeados por una galaxia de velas titilantes, yacen los ataúdes revestidos de plomo de un escuadrón de Caballeros martirizados. La forma en que murieron, explica el subcurado en susurros reverentes, dejó sus cuerpos irreconocibles e impregnados de material radiactivo que mataría a un observador directo incluso a día de hoy.
+En el centro, rodeados por una galaxia de velas titilantes, yacen los ataúdes revestidos de plomo de un escuadrón de Caballeros martirizados. La forma en que murieron, explica el subcura en susurros reverentes, dejó sus cuerpos irreconocibles e impregnados de material radiactivo que mataría a un observador directo incluso a día de hoy.
 
 Te quedas en un nicho de oración para contemplar el horror.",lpp_hesperusShrineVisit2:Continue,
 lppHesperusShrineVisit2,DialogOptionSelected,$option == lpp_hesperusShrineVisit2,"BeginConversation initiate False False
-FireAll HesperusInitiateResponses","En el nicho contiguo, un joven caballero novicio te lanza una mirada desafiante. Tiene la cabeza recién afeitada; debe de ser muy nuevo en la orden.
+FireAll HesperusInitiateResponses","En el nicho contiguo, un joven Caballero iniciado te lanza una mirada desafiante. Tiene la cabeza recién afeitada; debe de ser muy nuevo en la orden.
 
-«No eres un caballero», dice en voz baja, fingiendo examinar tu uniforme. «Ni uno de los nuestros. En realidad, no. ¿Qué haces aquí, astronauta?».",,
+«No eres un Caballero», dice en voz baja, fingiendo examinar tu uniforme. «Ni uno de los nuestros. Realmente que no. ¿Qué haces aquí, astronauta?».",,
 lppHesperusInitiateResponseAgnostic,HesperusInitiateResponses,,,,"lpp_hesperusInitiateReplyAgnostic:""I came here to perhaps find that out.""",
 lppHesperusInitiateResponseAtheistic,HesperusInitiateResponses,,,,"lpp_hesperusInitiateReplyAtheistic:""I am here only to see what is to be seen.""",
 lppHesperusInitiateResponseFaithful,HesperusInitiateResponses,,,,"lpp_hesperusInitiateReplyFaithful:""Despite appearances, I am a pilgrim, young knight.""",
@@ -5988,13 +5988,13 @@ lppHesperusInitiateResponseCynical,HesperusInitiateResponses,$player.luddicAttit
 lppHesperusInitiateResponsePather,HesperusInitiateResponses,$player.luddicAttitudePather > 0,,,"lpp_hesperusInitiateReplyPather:""I seek a Path not so different from yours.""",
 lppHesperusInitiateReplyAgnostic,DialogOptionSelected,$option == lpp_hesperusInitiateReplyAgnostic,"$player.luddicAttitudeAgnostic++
 $option = lpp_hesperusInitiateContinue1
-FireBest DialogOptionSelected",Tu introspección parece desconcertar al iniciado. Puedes ver cómo le pasa por la cabeza: «¿Te estás burlando de mí?». Pero lo descarta rápidamente y te clasifica como «no es una amenaza».,,
+FireBest DialogOptionSelected",Tu introspección parece desconcertar al iniciado. Puedes ver cómo le pasa por la cabeza: «¿Te estás burlando de mí?». Pero lo descarta rápidamente y te clasifica como 'no es una amenaza'.,,
 lppHesperusInitiateReplyFaithful,DialogOptionSelected,$option == lpp_hesperusInitiateReplyFaithful,"$player.luddicAttitudeFaithful++
 $option = lpp_hesperusInitiateContinue1
 FireBest DialogOptionSelected","«Claro», dice sacando un poco más el pecho, clasificándote sin dudar dentro de su teleología. «He jurado proteger a los tuyos, ya lo sabes».",,
 lppHesperusInitiateReplyAtheistic,DialogOptionSelected,$option == lpp_hesperusInitiateReplyAtheistic,"$player.luddicAttitudeAtheistic++
 $option = lpp_hesperusInitiateContinue1
-FireBest DialogOptionSelected",Se toma un momento para analizar tu respuesta. Se te nota en la cara: ¿te estás burlando de mí? Pero descarta esa idea y te clasifica como «no es una amenaza».,,
+FireBest DialogOptionSelected",Se toma un momento para analizar tu respuesta. Se le nota en la cara: '¿te estás burlando de mí?' Pero descarta esa idea y te clasifica como 'no es una amenaza'.,,
 lppHesperusInitiateReplyCynical,DialogOptionSelected,$option == lpp_hesperusInitiateReplyCynical,$player.luddicAttitudeCynical++,"«Soy un caballero, he jurado...» se da cuenta de que está alzando la voz y mira nerviosamente a su alrededor en busca de los guardianes del santuario, «...y miembro de la orden. Moriré al servicio de mi deber sagrado».
 
 Asiente bruscamente hacia el trío de ataúdes revestidos de plomo en el centro del santuario. «Como ellos, si es necesario. No tengo miedo».","lpp_hesperusInitiateReplyCynicalA:Nod and make an appropriately serious face
@@ -6015,7 +6015,7 @@ En ese miedo, parece olvidar su intento de provocarte y fija la mirada en el cen
 
 Quizá tenga lo que hace falta para convertirse algún día en un buen Caballero de Ludd.",lpp_hesperusShrineWrapUp:Continue,
 lppHesperusInitiateReplyPather,DialogOptionSelected,$option == lpp_hesperusInitiateReplyPather,"$player.luddicAttitudePather++
-FireAll LPPHesperusPatherReplies","Esa idea trastoca sus expectativas, y se le nota en el repentino entrecerrar de ojos. Mira a su alrededor, asegurándose de que ningún subcurate esté observando, y luego se inclina hacia ti.
+FireAll LPPHesperusPatherReplies","Esa idea trastoca sus expectativas, y se le nota en el repentino entrecerrar de ojos. Mira a su alrededor, asegurándose de que ningún subcura esté observando, y luego se inclina hacia ti.
 
 «¿Qué, como... el Camino?», susurra con fascinación horrorizada, «¿Conoces al hermano Cotton?».",,
 lppHesperusInitiateReplyPatherA,LPPHesperusPatherReplies,$player.metBrotherCotton,,,"lpp_hesperusInitiateCottonMaybe:""I've met him. His views are... unique.""
@@ -6025,11 +6025,11 @@ lppHesperusInitiateReplyPatherB,LPPHesperusPatherReplies,!$player.metBrotherCott
 lpp_hesperusInitiateNotMetCottonYes:""No. But I'd like to. Then do what must be done.""
 lpp_hesperusInitiateNotMetCottonNo:""No. I have my own Path to follow.""",
 lppHesperusInitiateCottonMaybe,DialogOptionSelected,$option == lpp_hesperusInitiateCottonMaybe,"$option = hpp_hesperusCottonOut 0
-FireBest DialogOptionSelected","Los ojos del iniciado están muy abiertos; está claramente impresionado. «No se lo digas a nadie, pero... Quiero decir, tienes que admitir que lo que ha hecho Cotton es astuto y valiente. El... el Creador le dio dones, y él los usa».",,
+FireBest DialogOptionSelected","Los ojos del iniciado están muy abiertos; está claramente impresionado. «No se lo digas a nadie, pero... quiero decir, tienes que admitir que lo que ha hecho Cotton es astuto y valiente. El... el Creador le dio un don, y él lo usa».",,
 lppHesperusInitiateMetCottonYes,DialogOptionSelected,$option == lpp_hesperusInitiateMetCottonYes,"$option = hpp_hesperusCottonOut 0
 FireBest DialogOptionSelected
 $player.luddicAttitudePather++
-$global.lpp_radicalizedKnightInitiate = true","El iniciado tiene los ojos muy abiertos; está claramente impresionado. «No se lo digas a nadie, pero... a mí también me gustaría conocerlo. Quizá unirme a él». 
+$global.lpp_radicalizedKnightInitiate = true","Los ojos del iniciado están muy abiertos; está claramente impresionado. «No se lo digas a nadie, pero... a mí también me gustaría conocerlo. Quizá unirme a él». 
 
 Lanza una mirada culpable hacia los guardianes del santuario. «Quizá».",,
 lppHesperusInitiateNotMetCottonYes,DialogOptionSelected,$option == lpp_hesperusInitiateNotMetCottonYes,"$option = hpp_hesperusCottonOut 0
@@ -6045,9 +6045,9 @@ lppHesperusInitiateNotMetCottonNo,DialogOptionSelected,$option == lpp_hesperusIn
 FireBest DialogOptionSelected
 $player.luddicAttitudePather--","El iniciado asiente con la cabeza, pero ahora no está seguro de cuál es tu opinión.
 
-«Quiero decir, digas lo que digas de Cotton», mira con aire culpable a los asistentes del santuario, «lucha por lo que cree. Al menos».",,
+«Quiero decir, digas lo que digas de Cotton», mira con aire culpable a los guardianes del santuario, «él lucha por lo que cree. Al menos».",,
 lppHesperusInitiateCottonOut,DialogOptionSelected,$option == hpp_hesperusCottonOut,"EndConversation DO_NOT_FIRE
-ShowImageVisual hesperus_shrine","Una expresión de preocupación se dibuja en su rostro. «Los Caballeros... a veces parece que les interesa más establecer normas por el simple hecho de hacerlo que luchar contra el mal».
+ShowImageVisual hesperus_shrine","Una expresión de preocupación se dibuja en su rostro. «Los Caballeros... a veces parece que les interesa más establecer normas por el simple hecho de mandar que luchar contra el mal».
 
 Con un suspiro, el iniciado vuelve la mirada hacia los mártires radiactivos.",lpp_hesperusShrineWrapUp:Continue,
 lppHesperusInitiateContinue1,DialogOptionSelected,$option == lpp_hesperusInitiateContinue1,"EndConversation DO_NOT_FIRE
@@ -6060,14 +6060,14 @@ ShowImageVisual hesperus_shrine","Asiente con la cabeza, convencido de que será
 lppHesperusShrineWrapUp,DialogOptionSelected,$option == lpp_hesperusShrineWrapUp,"ShrineCMD setVisited
 FireAll LPPShrineVisitXP
 unset $market.bribedIntoHesperus
-unset $global.lpp_hesperusWait","Un canto apagado, distorsionado por la extraña geometría de este espacio industrial de culto, se mezcla con los cicladores de aire. Las velas arden limpias y brillantes, reflejándose en la multitud de facetas afiladas que adornan cada superficie del interior del santuario, un monumento al derramamiento de sangre sagrada.",shrineDoLeave:Leave the shrine,
+unset $global.lpp_hesperusWait","Un canto apagado, distorsionado por la extraña geometría de este espacio industrial de culto, se mezcla con los recicladores de aire. Las velas arden limpias y brillantes, reflejándose en la multitud de facetas afiladas que adornan cada superficie del interior del santuario, un monumento al derramamiento de sangre sagrada.",shrineDoLeave:Leave the shrine,
 # LPP hesperus revisit track,,,,,,
 lppHesperusShrineDoVisitAgain,DialogOptionSelected,"$option == lpp_hesperusDoVisit
-$global.lpp_visitedShrineHesperus",ShowImageVisual hesperus_shrine,"A petición tuya, el subcurado que te atiende te guía a través de un breve ritual de lavado de manos, y luego bajáis por la galería con suelo de placas blindadas soldadas. Los nichos a lo largo de las paredes están ocupados por cascos vacíos.",lpp_hesperusShrineAgain2:Continue,
-lppHesperusShrineDoVisitAgain2,DialogOptionSelected,$option == lpp_hesperusShrineAgain2,,"El santuario es una grandiosa tumba situada en un enorme conducto de ventilación. Las vísceras industriales se han transformado en una escultura barroca de miles de armas blancas alineadas como plumas de un ala, rayos de metal dentado reluciente que realizan un empuje audaz en arcos letales a través del vasto espacio.
+$global.lpp_visitedShrineHesperus",ShowImageVisual hesperus_shrine,"A petición tuya, el subcura te guía a través de un breve ritual de lavado de manos, y luego bajáis por la galería con suelo de placas blindadas soldadas. Los nichos a lo largo de las paredes están ocupados por cascos vacíos.",lpp_hesperusShrineAgain2:Continue,
+lppHesperusShrineDoVisitAgain2,DialogOptionSelected,$option == lpp_hesperusShrineAgain2,,"El santuario es una grandiosa tumba situada en un enorme conducto de ventilación. Las entrañas industriales se han transformado en una escultura barroca de miles de armas blancas alineadas como plumas de un ala, rayos de metal dentado reluciente que se proyectan con audacia en arcos letales a través del vasto espacio.
 
-En el centro, rodeados por una galaxia de velas titilantes, yacen los ataúdes revestidos de plomo de un escuadrón de caballeros mártires. La forma en que murieron, explica el subcurado en susurros reverentes, dejó sus cuerpos irreconocibles e impregnados de material radiactivo que mataría a un observador directo incluso a día de hoy.",lpp_hesperusShrineAgain3:Continue,
-lppHesperusShrineDoVisitAgain3,DialogOptionSelected,$option == lpp_hesperusShrineAgain3,,"Un canto apagado, distorsionado por la extraña geometría de este espacio industrial de culto, se mezcla con el ruido de los cicladores de aire. Las velas arden limpias y brillantes, reflejándose en la multitud de facetas afiladas que adornan cada superficie del interior del santuario, un monumento al derramamiento de sangre sagrada.
+En el centro, rodeados por una galaxia de velas titilantes, yacen los ataúdes revestidos de plomo de un escuadrón de Caballeros martirizados. La forma en que murieron, explica el subcura en susurros reverentes, dejó sus cuerpos irreconocibles e impregnados de material radiactivo que mataría a un observador directo incluso a día de hoy.",lpp_hesperusShrineAgain3:Continue,
+lppHesperusShrineDoVisitAgain3,DialogOptionSelected,$option == lpp_hesperusShrineAgain3,,"Un canto apagado, distorsionado por la extraña geometría de este espacio industrial de culto, se mezcla con los recicladores de aire. Las velas arden limpias y brillantes, reflejándose en la multitud de facetas afiladas que adornan cada superficie del interior del santuario, un monumento al derramamiento de sangre sagrada.
 
 Te quedas en un nicho de oración para contemplar el horror.",shrineDoLeave:Leave the shrine,
 # LPP Shrine XP rewards,,,,,,
@@ -6123,7 +6123,7 @@ lkeJaspisMissionInfoOption,PopulateOptions,"$id == jaspis score:1000
 $global.jaspisMadeOffer
 !$global.lke_inProgress
 !$global.lke_missionCompleted",,,"lke_jaspisInfo1:""I want to talk about your proposal, about the missing agent.""",
-lkeJaspisInfoHub,DialogOptionSelected,$option == lke_jaspisInfo1,FireAll LKEJaspisInfoAsk,"La Arcicurada deja lo que está haciendo, junta las manos y mira vagamente hacia la pantalla de comunicación.
+lkeJaspisInfoHub,DialogOptionSelected,$option == lke_jaspisInfo1,FireAll LKEJaspisInfoAsk,"El Arzobispo deja lo que está haciendo, junta las manos y mira vagamente hacia la pantalla de com.
 
 «¿Sí?»",,
 lkeJaspisInfoAsk1,LKEJaspisInfoAsk,,,,"lke_jaspisInfoReply1:""You mentioned payment for the job.""",
@@ -6132,8 +6132,8 @@ lkeJaspisInfoAsk3,LKEJaspisInfoAsk,,,,"lke_jaspisInfoReply3:""This could be dang
 lkeJaspisInfoAsk4,LKEJaspisInfoAsk,,,,lke_jaspisInfoReply4:Ask about something else,
 lkeJaspisInfoAsk1reply,DialogOptionSelected,$option == lke_jaspisInfoReply1,"SetTextHighlights ""25,000"" ""50,000""
 RemoveOption lke_jaspisInfoReply1
-$toldCredits = true 0","«Lo hice», dice ella. «25 000 créditos al hacer tu promesa, 50 000 créditos cuando el novicio regrese a mí».",,
-lkeJaspisInfoAsk2reply,DialogOptionSelected,$option == lke_jaspisInfoReply2,RemoveOption lke_jaspisInfoReply2,"Esto hace que la arcicurada se detenga un momento. 
+$toldCredits = true 0","«Lo hice», dice ella. «25.000 créditos al hacer tu promesa, 50.000 créditos cuando el novicio regrese a mí».",,
+lkeJaspisInfoAsk2reply,DialogOptionSelected,$option == lke_jaspisInfoReply2,RemoveOption lke_jaspisInfoReply2,"Esto hace que el Arzobispo se detenga un momento. 
 
 «Rezo para que lo encuentres, y tengo fe en que la Providencia te mostrará el camino. Si fracasas, aceptaré los registros de tu investigación a cambio de una compensación justa».
 
@@ -6150,17 +6150,17 @@ SetTextHighlights ""Jethro Bornanew""","Cierra los ojos e inclina la cabeza, con
 Abre los ojos ciegos y te mira a través del enlace de comunicación.
 
 «Se llama Jethro Bornanew», dice.",lke_jaspisStart2:Continue,
-lkeJaspisStart2,DialogOptionSelected,$option == lke_jaspisStart2,"AddTextSmall ""Received Jethro Bornanew identity file"" highlight","«Es un novicio de iniciación tardía de los Caballeros Luditos. Mi asistente te proporcionará un archivo de identidad».
+lkeJaspisStart2,DialogOptionSelected,$option == lke_jaspisStart2,"AddTextSmall ""Received Jethro Bornanew identity file"" highlight","«Es un iniciado tardío de los Caballeros de Ludd. Mi asistente te proporcionará un archivo de identidad».
 
 «El novicio Bornanew se ha infiltrado en una célula de militantes heréticos afiliados al llamado Camino de Ludd. Hace tiempo que no tengo noticias suyas».
 
 «Ha pasado demasiado tiempo», añade en voz baja.","lke_jaspisStart3:""What was his last known position?""",
 lkeJaspisStart3,DialogOptionSelected,$option == lke_jaspisStart3,,"«Chalcedon, en el sistema Kumari Kandam. Iba a unirse a algún círculo interno del Camino; iba a reunirse con un líder, o algún tipo de reclutador. No he sabido nada de él desde entonces».
 
-Por un momento, la Arcicurada mira hacia arriba y sus labios se mueven en silencio, antes de volver a mirarte.",lke_jaspisStart4:Continue,
-lkeJaspisStart4,DialogOptionSelected,$option == lke_jaspisStart4,FireAll LKEJaspisStartHub,"«Si los herejes deben morir para asegurar su liberación», dice ella, «entonces haz lo que haya que hacer. Su sangre será lavada por la de los inocentes, los mares y ríos que estos «Caminantes» han derramado en el transcurso de su cruzada herética. Dios será tu juez».",,
+Por un momento, el Arzobispo mira hacia arriba y sus labios se mueven en silencio, antes de volver a mirarte.",lke_jaspisStart4:Continue,
+lkeJaspisStart4,DialogOptionSelected,$option == lke_jaspisStart4,FireAll LKEJaspisStartHub,"«Si los herejes deben morir para asegurar su liberación», dice ella, «entonces haz lo que tengas que hacer. Su sangre será lavada por la de los inocentes, los mares y ríos que estos 'Caminantes' han derramado en el transcurso de su cruzada herética. Dios será tu juez».",,
 lkeJaspisStart4credits,LKEJaspisStartHub,!$toldCredits,"SetTextHighlights ""25,000"" ""50,000""
-$toldCredits = true 0","«Por supuesto que se te pagará. Mi oficina te proporcionará un anticipo de 25 000 créditos, con 50 000 créditos adicionales tras... la resolución».",,
+$toldCredits = true 0","«Por supuesto que se te pagará. Mi oficina te proporcionará un anticipo de 25.000 créditos, con 50.000 créditos adicionales tras... la resolución».",,
 lkeJaspisStartHubOp1,LKEJaspisStartHub,,,,"lke_jaspisStartEnd1:""Then I will find Bornanew.""",
 lkeJaspisStartHubOp1b,LKEJaspisStartHub,,,,"lke_jaspisStartEnd1b:""I can promise only to try.""",
 lkeJaspisStartHubOp3,LKEJaspisStartHub,!$askedHisMission,,,"lke_jaspisStartHisMission:""Can you tell me more about his mission?""",
@@ -6173,39 +6173,39 @@ lkeJaspisStartHisMission,DialogOptionSelected,$option == lke_jaspisStartHisMissi
 
 «Se uniría a una rama concreta del Camino de Ludd y demostraría su valía mediante su aptitud y encanto para ganarse la confianza de los líderes más importantes. Nos enviaría información, recibiría órdenes a cambio y llevaría a cabo ciertos actos para influir en las decisiones de los herejes».","lke_jaspisStartHisMission1:""He is acting as your spy.""
 lke_jaspisStartHisMission2:""Is it possible he turned on you?""",
-lkeJaspisStartHisMission1,DialogOptionSelected,$option == lke_jaspisStartHisMission1,FireAll LKEJaspisStartHub,"«Sí», dice el arcicurado. «Es un buen hombre, y tan motivado, que llevaría a bordo esta pesada carga para aliviar el sufrimiento y combatir la heresia furiosa».",,
-lkeJaspisStartHisMission2,DialogOptionSelected,$option == lke_jaspisStartHisMission2,,"«No», responde el arcicurado sin dudar. «Es un buen hombre, y muy decidido».","lke_jaspisStartHisMission3:""I accept your view of him, but you must consider the possibility.""
+lkeJaspisStartHisMission1,DialogOptionSelected,$option == lke_jaspisStartHisMission1,FireAll LKEJaspisStartHub,"«Sí», dice el Arzobispo. «Es un buen hombre, y tan motivado, que llevaría a bordo esta pesada carga para aliviar el sufrimiento y combatir la herejía furiosa».",,
+lkeJaspisStartHisMission2,DialogOptionSelected,$option == lke_jaspisStartHisMission2,,"«No», responde el Arzobispo sin dudar. «Es un buen hombre, y muy decidido».","lke_jaspisStartHisMission3:""I accept your view of him, but you must consider the possibility.""
 lke_jaspisStartHisMission4:""Then he may be... in trouble.""
 lke_jaspisStartHisMission5:Speak of other matters",
 lkeJaspisStartHisMission3,DialogOptionSelected,$option == lke_jaspisStartHisMission3,FireAll LKEJaspisStartHub,"«No debo y no lo haré», dice con firmeza. «Y ahí se acaba todo».",,
 lkeJaspisStartHisMission4,DialogOptionSelected,$option == lke_jaspisStartHisMission4,FireAll LKEJaspisStartHub,"«Que así sea», dice ella en voz baja.",,
 lkeJaspisStartHisMission5,DialogOptionSelected,$option == lke_jaspisStartHisMission5,FireAll LKEJaspisStartHub,,,
 lkeJaspisStartBornanew,DialogOptionSelected,$option == lke_jaspisStartBornanew,"$askedBornanew = true 0
-FireAll LKEJaspisStartHub","«Es un alma gentil, aunque maltratada. Estaba en la Casa de los Penitentes cuando su caso me fue presentado, hace algunos años». El Arcicurado se gira ligeramente, como si evocara una visión de su memoria. «Prisión, como ustedes la llamarían».
+FireAll LKEJaspisStartHub","«Es un alma gentil, aunque maltratada. Estaba en la Casa de los Penitentes cuando su caso me fue presentado, hace algunos años». El Arzobispo se gira ligeramente, como si evocara una visión de su memoria. «Prisión, se podría decir».
 
-«Es mi deber, más que simple caridad, revisar las peticiones de absolución cuando mi agenda me lo permite. En Jethro encontré una mente brillante, contrita y ansiosa por aprender de nuevo. Sus delitos no fueron tan graves, y su participación se debió más a su deseo de complacer a sus compañeros que a alguna malicia innata. Hice de su arrepentimiento mi causa durante un tiempo y, al final, llevó a bordo un nuevo nombre y preguntó... cómo podía servir».
+«Es mi deber, más que simple caridad, revisar las peticiones de absolución cuando mi agenda me lo permite. En Jethro encontré una mente brillante, contrita y ansiosa por aprender de nuevo. Sus delitos no fueron tan graves, y su participación se debió más a su deseo de complacer a sus compañeros que a alguna malicia innata. Hice de su arrepentimiento mi causa durante un tiempo y, al final, tomó un nuevo nombre y preguntó... cómo podía servir».
 ",lke_jaspisStartBornanew2:Continue,
-lkeJaspisStartBornanew2,DialogOptionSelected,$option == lke_jaspisStartBornanew2,,"«Se necesitaba a alguien con su... experiencia. Lo envié a entrenarse con los Caballeros, donde se convirtió en iniciado, y al alcanzar el rango de novicio fue reasignado a mi Oficina de Archi-Curaduría para ganarse su título de caballero a través del servicio que le exigí».
+lkeJaspisStartBornanew2,DialogOptionSelected,$option == lke_jaspisStartBornanew2,,"«Se necesitaba de alguien con su... experiencia. Lo envié a entrenarse con los Caballeros, donde se convirtió en iniciado, y al alcanzar el rango de novicio fue reasignado a mi Oficina de Arzobispado para ganarse su título de Caballero a través del servicio que le exigí».
 
-«Lo confieso», dice ella en voz baja, «me temo que he vuelto a malgastar la vida de un buen hombre. Es mi orgullo...», Jaspis suelta una risita amarga. «Quizá realmente me ciega».","lke_jaspisStartBornanew3:""You don't know that he's dead.""
+«Lo confieso», dice ella en voz baja, «me temo que he vuelto a malgastar la vida de un buen hombre. Es mi orgullo...», Jaspis suelta una risa amarga. «Quizá realmente me ciega».","lke_jaspisStartBornanew3:""You don't know that he's dead.""
 lke_jaspisStartBornanew4:""... Again?""
 lke_jaspisStartHisMission5:Speak of other matters",
 lkeJaspisStartBornanew3,DialogOptionSelected,$option == lke_jaspisStartBornanew3,FireAll LKEJaspisStartHub,"«No. Pero el espectro de su muerte me oprime como si ya lo estuviera».
 
-Ella suspira. «Soy vieja, capitán, y quizá he ocupado este cargo durante demasiado tiempo. Hablemos de encontrar a Bornanew, no de mi culpa».",,
-lkeJaspisStartBornanew4,DialogOptionSelected,$option == lke_jaspisStartBornanew4,FireAll LKEJaspisStartHub,"«Sí». Suspira: «Soy vieja, capitán, y quizá he ocupado este cargo durante demasiado tiempo. Hablemos ahora de Bornanew, no de mi culpa».",,
+Ella suspira. «Soy vieja, capitán, y quizá he ocupado este cargo demasiado tiempo. Hablemos de encontrar a Bornanew, no de mi culpa».",,
+lkeJaspisStartBornanew4,DialogOptionSelected,$option == lke_jaspisStartBornanew4,FireAll LKEJaspisStartHub,"«Sí». Suspira: «Soy vieja, capitán, y quizá he ocupado este cargo demasiado tiempo. Hablemos ahora de Bornanew, no de mi culpa».",,
 lkeJaspisStartBlood1,DialogOptionSelected,$option == lke_jaspisStartBlood1,"$saidBloodthirsty = true 0
 FireAll LKEJaspisStartHub","Su expresión se endurece, multiplicando las arrugas de su rostro. «Esto no puedo negarlo».
 
-«Estos herejes me han atormentado durante más años de los que tú has vivido; han leído las palabras de Ludd a través de un cristal oscuro y han visto una visión aterradora. Un querido compañero de camino, ahora fallecido, dijo que es una visión que he contemplado durante demasiado tiempo».
+«Esos herejes me han atormentado durante más años de los que tú has vivido; han leído las palabras de Ludd a través de un cristal oscuro y han visto una visión aterradora. Un querido compañero de viaje, ahora fallecido, dijo que es una visión que he contemplado durante demasiado tiempo».
 
 Levanta las manos, con las palmas hacia arriba. «Dios pesará mi alma», dice mientras deja caer una mano. «Aceptaré ese juicio».",,
 lkeJaspisStartCotton,DialogOptionSelected,$option == lke_jaspisStartCotton,"$askedCotton = true 0
-FireAll LKEJaspisStartHub","Juraría que te lanza una mirada severa con sus ojos ciegos.
+FireAll LKEJaspisStartHub","Jurarías que te lanza una mirada severa con sus ojos ciegos.
 
 «No puedo responder ni con un sí ni con un no rotundos», dice. «En un momento dado, podría haberlo sido. Ahora no estoy tan segura».",,
 lkeJaspisStartCottonB,DialogOptionSelected,"$option == lke_jaspisStartCotton
-$player.jaspisCottonBook",$askedCotton = true 0,"Juraría que te lanza una mirada severa con sus ojos ciegos.
+$player.jaspisCottonBook",$askedCotton = true 0,"Jurarías que te lanza una mirada severa con sus ojos ciegos.
 
 «No puedo responder ni con un sí ni con un no rotundos», dice. «En un momento dado, podría haberlo sido. Ahora no estoy tan segura».","lke_jaspisStartCotton2:""And you still want me to deliver your 'message' to Cotton.""",
 lkeJaspisStartCottonB2,DialogOptionSelected,$option == lke_jaspisStartCotton2,FireAll LKEJaspisStartHub,"«Si aparece ese demonio», dice ella, «entonces dale lo que se merece».",,
@@ -6215,9 +6215,9 @@ lkeJaspisStartEnd1,DialogOptionSelected,$option == lke_jaspisStartEnd1,"EndConve
 ShowDefaultVisual
 BeginMission lke
 Call $global.lke_ref updateData
-AddCredits 25000","«Rezo para que así sea. Que una estrella amiga ilumine tu Camino».
+AddCredits 25000","«Rezo para que así sea. Que una estrella amiga ilumine tu camino».
 
-El arcicurador Jaspis se despide y un tímido novicio se pone al teléfono para transferir tu pago por adelantado. Te dicen en voz baja «Que tengas un día bendecido» antes de cerrar la comunicación.",cutCommLink:Cut the comm link,
+El Arzobispo Jaspis se despide y un tímido novicio abre el enlace para transferir tu pago por adelantado. Te dice en voz baja «Que tengas un día bendecido» antes de cerrar las com.",cutCommLink:Cut the comm link,
 ,,,,,,
 # LKE Chalcedon ,,,,,,
 lkeChalcedonPWgreetRaid,PickGreeting,"$market.id == chalcedon
@@ -6237,40 +6237,40 @@ $postId == administrator
 Call $global.lke_ref updateData
 $lke_stage == GO_TO_CHALCEDON","ShowPersonVisual
 FireAll MostLuddicEthosRefresh
-FireBest LKEChalcedonVIPStart","La conexión de comunicaciones se sincroniza con una rapidez inusual, mostrando el $personPost que tienes delante.",,
+FireBest LKEChalcedonVIPStart","La conexión de com. se sincroniza con una rapidez inusual, mostrando el $personPost que tienes delante.",,
 lkeChalcedonPWignore,PickGreeting,"$market.id == chalcedon
 $postId == portmaster
 $lke_ignorePlayer
-$global.lke_inProgress",,"El enlace de comunicación parpadea, pero no se conecta. Parece que te están ignorando, por ahora.",,
+$global.lke_inProgress",,"El enlace de com. parpadea, pero no se conecta. Parece que te están ignorando, por ahora.",,
 lkeChalcedonQMignore,PickGreeting,"$market.id == chalcedon
 $global.lke_inProgress
 $postId == supplyOfficer
-$lke_ignorePlayer",,"El enlace de comunicación parpadea, pero no se conecta. Parece que te están ignorando, por ahora.",,
+$lke_ignorePlayer",,"El enlace de com. parpadea, pero no se conecta. Parece que te están ignorando, por ahora.",,
 lkeChalcedonAdminIgnore,PickGreeting,"$market.id == chalcedon
 $global.lke_inProgress
 $postId == administrator
-$lke_ignorePlayer",,"El enlace de comunicación parpadea, pero no se conecta. Parece que te están ignorando, por ahora.",,
+$lke_ignorePlayer",,"El enlace de com. parpadea, pero no se conecta. Parece que te están ignorando, por ahora.",,
 # LKE Chalcedon VIP hostile,,,,,,
 lkeChalcedonGreetJangalaCrush,LKEChalcedonVIPStart,"$global.jangalaProtestIncident score:3
-!$market.lke_liedWithSP",$madAtPC = true 0,"«Bendito...» $heOrShe se queda en silencio, con la boca abierta, y parpadea. «$PlayerName.»
+!$market.lke_liedWithSP",$madAtPC = true 0,"«Bendicio…» $heOrShe se queda en silencio, con la boca abierta, y parpadea. «$PlayerName.»
 
-«¿Te atreves a asomar la cabeza por aquí después de atacar a los Fieles en Jangala? ¡Tú, que tienes la sangre de inocentes en tus manos!»
+«¿Te atreves a asomar la cabeza por aquí después de atacar a los Fieles en Jangala? ¡Tú, que tienes sangre de inocentes en tus manos!»
 OR
 $HeOrShe junta las manos. «La Providencia provee», y se queda callado mientras $heOrShe te mira.
 
 «Capitán $playerName», su boca se retuerce, como si pronunciara una maldición. «Tú. El bruto de Jangala. Tú, que aplastas a los Fieles que solo piden rezar en un lugar sagrado. Tu presencia es una ofensa».",lke_chalcedonGreetAlert:Continue,
 lkeChalcedonGreetLokeRaid,LKEChalcedonVIPStart,"$global.gaATG_gotLokeViaRaid score:3
-!$market.lke_liedWithSP",$madAtPC = true 0,"«Bendito...» $heOrShe se queda en silencio, con la boca abierta, y parpadea. «$PlayerName».
+!$market.lke_liedWithSP",$madAtPC = true 0,"«Bendicio…» $heOrShe se queda en silencio, con la boca abierta, y parpadea. «$PlayerName».
 
-«¿Te atreves a asomar la cabeza por aquí después de realizar un asalto a Epifanía? ¿Tú, que tienes la sangre de inocentes en tus manos? He rezado durante mucho tiempo por tu destrucción».
+«¿Te atreves a asomar la cabeza por aquí después de realizar un asalto a Epiphany? ¿Tú, que tienes sangre de inocentes en tus manos? He rezado durante mucho tiempo por tu destrucción».
 OR
-$HeOrShe junta las manos. «La Providencia provee», y deja la frase en el aire mientras $heOrShe te mira.
+$HeOrShe junta las manos. «La Providencia provee», y se queda callado mientras $heOrShe te mira.
 
-«Capitán $PlayerName», $hisOrHer boca se retuerce, como si pronunciara una maldición. «¡El invasor brutal, profanador de Epiphany! Tú, que asaltas a los Fieles y te llevas a quienes entregaron su corazón a Ludd a instancias de esa reina pirata empapada en sangre. Tu rostro es una ofensa para mis ojos».",lke_chalcedonGreetAlert:Continue,
+«Capitán $PlayerName», su boca se retuerce, como si pronunciara una maldición. «¡El invasor brutal, profanador de Epiphany! Tú, que asaltas a los Fieles y te llevas a quienes entregaron su corazón a Ludd a instancias de esa reina pirata empapada en sangre. Tu rostro es una ofensa para mis ojos».",lke_chalcedonGreetAlert:Continue,
 lkeChalcedonGreetAlert,DialogOptionSelected,$option == lke_chalcedonGreetAlert,"FireBest LKEChalcedonMakeFleetsHostile
-FireAll LKEChalcedonVIPoptionsHostile","«Capitán», te susurra al oído la voz de tu oficial de comunicaciones, «han enviado algún tipo de señal. Las flotas de Caminantes cercanas serán alertadas de nuestra posición».
+FireAll LKEChalcedonVIPoptionsHostile","«Capitán», te susurra al oído la voz de tu oficial de com., «han enviado algún tipo de señal. Las flotas de Caminantes cercanas serán alertadas de nuestra posición».
 
-Acusas recibo del informe y vuelves a centrar tu atención en el furioso Caminante al otro lado del enlace de comunicaciones.",,
+Tomas nota del informe y vuelves a centrar tu atención en el furioso Caminante al otro lado del enlace de com.",,
 lkeChalcedonVIPoptsHostile1,LKEChalcedonVIPoptionsHostile,"!$madeDemand
 !$demandedBornanew",,,"lke_chalVIPdemandBornanew:""I'm looking for a man named Jethro Bornanew.""",
 lkeChalcedonVIPoptsHostile2,LKEChalcedonVIPoptionsHostile,"!$madeDemand
@@ -7215,11 +7215,11 @@ FireBest DialogOptionSelected",,,
 LKEmazConvEnd,DialogOptionSelected,$option == lke_MazCutCommLink,"ShowDefaultVisual
 EndConversation
 $option = lke_mazFreebie0 0
-FireBest DialogOptionSelected",Has cortado el enlace com.,,
+FireBest DialogOptionSelected",Has cortado el enlace de com.,,
 LKEmazConvEndPolite,DialogOptionSelected,$option == lke_MazCutCommLinkPolite,"ShowDefaultVisual
 EndConversation
 $option = lke_mazFreebie0 0
-FireBest DialogOptionSelected",Cortas la com. tras intercambiar algunas palabras amables.,,
+FireBest DialogOptionSelected",Cortas las com. tras intercambiar algunas palabras amables.,,
 # LKE Mazalot portmaster,,,,,,
 LKEmazalotPortmasterSetLuddic,PopulateOptions,"$market.lke_searchForBornanew2
 $market.id == mazalot
