@@ -1,0 +1,10 @@
+{
+	id:"sleeper",
+	"displayName":"durmiente",
+	"displayNameWithArticle":"el durmiente",
+	"displayNameLong":"durmiente",
+	"displayNameLongWithArticle":"el durmiente",
+	"personNamePrefix":"durmiente",
+	"personNamePrefixAOrAn":"un",
+	"displayNameIsOrAre":"son",
+}

@@ -1,0 +1,7 @@
+{
+	"baseHullId":"falcon",
+	"skinHullId":"falcon_p",
+	"hullName":"Halcón (P)",
+	"descriptionId":"falcon",
+	"descriptionPrefix":"El sistema de propulsión de este Halcón ha sido objeto de «mejoras» poco prácticas pero llamativas por parte de una tripulación pirata entusiasta; el variopinto conjunto de componentes del motor, que de alguna manera se han conseguido hacer funcionar juntos, no cumple ninguna norma de seguridad.",
+}

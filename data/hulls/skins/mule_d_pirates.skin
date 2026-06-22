@@ -1,0 +1,7 @@
+{
+	"baseHullId":"mule",
+	"skinHullId":"mule_d_pirates",
+	"hullName":"Mula (P)",
+	"descriptionId":"mule",  # optional
+	"descriptionPrefix":"Esta nave ha sido objeto de importantes modificaciones —y un mantenimiento deficiente— por parte de su tripulación pirata.",
+}

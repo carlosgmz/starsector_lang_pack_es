@@ -1,0 +1,20 @@
+{
+	id:"mercenary",
+	"displayName":"mercenario",
+	"displayNameWithArticle":"los mercenarios",
+	"displayNameLong":"mercenarios",
+	"displayNameLongWithArticle":"los mercenarios",
+	"personNamePrefix":"mercenario",
+	"personNamePrefixAOrAn":"un",
+	"displayNameIsOrAre":"son",
+	"fleetTypeNames":{
+		"patrolSmall":"Escuadrón Mercenario",
+		"patrolMedium":"Flotilla Mercenaria",
+		"patrolLarge":"Compañía Mercenaria",
+		"mercScout":"Explorador Mercenario",
+		"mercBountyHunter":"Cazarrecompensas",
+		"mercPrivateer":"Corsario",
+		"mercPatrol":"Patrulla Mercenaria",
+		"mercArmada":"Flota Mercenaria",
+	},
+}

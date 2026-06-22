@@ -1,0 +1,30 @@
+{
+	"id":"luddic_path",
+	"displayName":"Camino de Ludd",
+	"displayNameWithArticle":"el Camino de Ludd",
+	"ranks":{
+		"ranks":{
+			"spaceCommander":{"name":"Caminante Sagrado"},
+		},
+		"posts":{
+			"patrolCommander":{"name":"Suplicante"},
+			"fleetCommander":{"name":"Martillo"},
+			"baseCommander":{"name":"Pastor-Militante"},
+			"administrator":{"name":"Pastor-Metropolitano"},
+			"portmaster":{"name":"Guardián de Puerto"},
+			"quartermaster":{"name":"Intendente"},
+			"stationCommander":{"name":"Pastor-Militante"},
+		},
+	},
+	"fleetTypeNames":{
+		"trade":"Convoy Fiel",
+		"smallTrader":"Comerciante Fiel",
+		"tradeLiner":"Peregrinaje",
+		"tradeSmuggler":"Contrabandista",
+		"patrolSmall":"Guardianes",
+		"patrolMedium":"Flotilla Justa",
+		"patrolLarge":"Armada Santa",
+		"inspectionFleet":"Árbitro Sagrado",
+		"taskForce":"Cruzada",
+	},
+}

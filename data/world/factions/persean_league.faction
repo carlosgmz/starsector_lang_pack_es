@@ -1,0 +1,34 @@
+{
+	id:"persean",
+	"displayName":"Liga Persea",
+	"displayNameWithArticle":"la Liga Persea",
+	"displayNameLong":"Liga Persea",
+	"displayNameLongWithArticle":"la Liga Persea",
+	"ranks":{
+		"ranks":{
+			"spaceCommander":{"name":"Navarco"},
+			"spaceAdmiral":{"name":"Primer Navarco"},
+			"houseLeader":{"name":"Patriarca de la Casa"},
+			"houseLeaderMale":{"name":"Patriarca de la Casa"},
+			"houseLeaderFemale":{"name":"Matriarca de la Casa"},
+		},
+		"posts":{
+			"patrolCommander":{"name":"Demi-Navarco"},
+			"fleetCommander":{"name":"Navarco"},
+			"baseCommander":{"name":"Arconte"},
+			"factionLeader":{"name":"Primer Demarco"},
+		},
+	},
+	"fleetTypeNames":{
+		"trade":"Convoy Mercante",
+		"tradeLiner":"Convoy de Línea",
+		"tradeSmuggler":"Contrabandista",
+		"smallTrader":"Comerciante",
+		"patrolSmall":"Piquete Rápido",
+		"patrolMedium":"Patrulla",
+		"patrolLarge":"Destacamento",
+		"inspectionFleet":"Flota de Inspección",
+		"taskForce":"Destacamento Especial",
+		"foodReliefFleet":"Convoy de Ayuda",
+	},
+}

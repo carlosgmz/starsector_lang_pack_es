@@ -1,0 +1,15 @@
+{
+	id:"omega",
+	"displayName":"Omega",
+	"displayNameWithArticle":"el Omega",
+	"displayNameLong":"Omega",
+	"displayNameLongWithArticle":"el Omega",
+	"personNamePrefixAOrAn":"un",
+	"displayNameIsOrAre":"son",
+	"fleetTypeNames":{
+		"patrolSmall":"Aparición Pequeña",
+		"patrolMedium":"Manifestación",
+		"patrolLarge":"Incursión Mayor",
+		"battlestation":"Incursión Estable",
+	},
+}

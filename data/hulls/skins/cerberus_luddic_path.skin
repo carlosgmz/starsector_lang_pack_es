@@ -1,0 +1,7 @@
+{
+	"baseHullId":"cerberus",
+	"skinHullId":"cerberus_luddic_path",
+	"hullName":"Cerbero (CL)",
+	"descriptionId":"cerberus",  # optional
+	"descriptionPrefix":"Los fanáticos del Camino de Ludd se han apoderado de esta nave, despojándola de todo equipamiento superfluo y transformándola en un vehículo improvisado para la guerra santa.",
+}

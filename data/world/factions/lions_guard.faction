@@ -1,0 +1,10 @@
+{
+	id:"lions_guard",
+	"displayName":"Guardia del León",
+	"displayNameWithArticle":"la Guardia del León",
+	"fleetTypeNames":{
+		"patrolSmall":"Reco. de la Guardia del León",
+		"patrolMedium":"Patrulla de la Guardia del León",
+		"patrolLarge":"Destacamento de la Guardia del León",
+	},
+}

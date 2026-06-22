@@ -1,0 +1,55 @@
+{
+	"local_comm":{
+		"type":"Com. Locales",
+		"shortType":"Com.",
+	},
+	"secure_comm":{
+		"type":"Canal de Com. Seguro",
+		"shortType":"Com.",
+	},
+	"player_intel_always":{
+		"name":"Análisis y Proyecciones",
+		"type":"Informe de Inteligencia",
+		"shortType":"Intel",
+	},
+	"player_intel":{
+		"name":"Análisis y Proyecciones",
+		"type":"Informe de Inteligencia",
+		"shortType":"Intel",
+	},
+	"player_comm_sniffer":{
+		"name":"Programa Interceptador de Com.",
+		"type":"Fuente de Datos Com.",
+		"shortType":"Datos",
+	},
+	"news":{
+		"name":"Boletín Local",
+		"type":"Informe de Noticias",
+		"shortType":"Noticias",
+	},
+	"hegemony_public":{
+		"name":"Servicio de Retransmisión de la Hegemonía",
+		"type":"Informe de Noticias",
+		"shortType":"Noticias",
+	},
+	"hegemony_internal":{
+		"name":"Inteligencia de la Hegemonía",
+		"type":"Informe de Inteligencia",
+		"shortType":"Intel",
+	},
+	"tritachyon_public":{
+		"name":"Red Tri-Tachyon",
+		"type":"Informe de Noticias",
+		"shortType":"Noticias",
+	},
+	"tritachyon_internal":{
+		"name":"Inteligencia de Tri-Tachyon",
+		"type":"Informe de Inteligencia",
+		"shortType":"Intel",
+	},
+	"sindrian_diktat_internal":{
+		"name":"Seguridad del Diktat de Sindria",
+		"type":"Informe de Inteligencia",
+		"shortType":"Intel",
+	},
+}

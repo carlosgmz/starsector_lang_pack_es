@@ -1,0 +1,7 @@
+{
+	"baseHullId":"kite",
+	"skinHullId":"kite_original",
+	"hullName":"Cometa (S)",
+	"descriptionId":"kite",  # optional
+	"descriptionPrefix":"Se trata de un modelo civil original sin modificar, en perfecto estado de fábrica; esta nave es una pieza de coleccionista de una época más civilizada.",
+}

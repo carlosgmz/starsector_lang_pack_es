@@ -1,0 +1,11 @@
+{
+    "baseHullId":"brawler",
+    "skinHullId":"brawler_tritachyon",
+    "hullName":"Luchador (TT)",
+    "descriptionId":"brawler",  # optional
+    "descriptionPrefix":"Esta nave ha sido sometida a una revisión exhaustiva por parte de la corporación Tri-Tachyon. Se han instalado parches de software compatibles con Tri-Tachyon, que están totalmente integrados con los protocolos de supervisión de estado TriPad (R); se han llevado a cabo mejoras de alta especificación en los conductos de flux y se han renovado los puntos de fijación para el montaje de armas de energía avanzadas.",
+}
+
+
+
+
