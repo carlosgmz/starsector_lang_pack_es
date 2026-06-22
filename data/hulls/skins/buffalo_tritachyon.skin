@@ -1,7 +1,0 @@
-{
-	"baseHullId":"buffalo",
-	"skinHullId":"buffalo_tritachyon",
-	"hullName":"Búfalo (TT)",
-	"descriptionId":"buffalo",  # optional
-	"descriptionPrefix":"Esta nave lleva insignias de Tri-Tachyon. Las modificaciones a los sistemas no son más que superficiales.",
-}

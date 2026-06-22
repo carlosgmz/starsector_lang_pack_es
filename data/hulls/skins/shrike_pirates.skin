@@ -1,7 +1,0 @@
-{
-	"baseHullId":"shrike",
-	"skinHullId":"shrike_pirates",
-	"hullName":"Shrike (P)",
-	"descriptionId":"shrike",  # optional
-	"descriptionPrefix":"Esta nave ha sido objeto de importantes modificaciones —y un mantenimiento deficiente— por parte de su tripulación pirata.",
-}

@@ -1,7 +1,0 @@
-{
-	"baseHullId":"buffalo",
-	"skinHullId":"buffalo_hegemony",
-	"hullName":"Búfalo (A)",
-	"descriptionId":"buffalo",  # optional
-	"descriptionPrefix":"Esta nave figura en la lista auxiliar de la Hegemonía y, como tal, sus sistemas se han adaptado a las normas militares y se le ha impuesto un riguroso calendario de mantenimiento, a la espera de que pueda ser requisada para el servicio militar en caso de emergencia.",
-}

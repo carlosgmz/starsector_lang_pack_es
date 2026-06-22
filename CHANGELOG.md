@@ -1,59 +1,171 @@
 # Changelog
 
+## [v2.0.15] - 2026-06-10
+
+> Remplace la v2.0.14 (taguée en interne, jamais publiée). QA validée : 3 sessions jeu consécutives depuis zéro avec Nexerelin 0.12.1e + LazyLib + MagicLib, zéro crash.
+
+### Corrigé — Crash au chargement avec Nexerelin (SecurityException)
+
+**Cause racine** : `setFieldByValue()` dans `FrenchLangModPlugin` utilisait `f.getType()` hors du bloc try-catch. Le SecurityManager de Starsector bloque `java.lang.reflect.Field` — la `SecurityException` n'était pas attrapée, crashait `onApplicationLoad()` et empêchait le chargement complet du mod.
+
+**Fix** : `f.getType()` déplacé à l'intérieur du try-catch existant — un seul caractère de décalage, zéro régression fonctionnelle.
+
+### Corrigé — Crash NPE Nexerelin à la création de partie (issue #148)
+
+**Cause racine** : `data/campaign/rules.csv` dans le tableau `replace` désactivait le merge inter-mods des rules. Les rules new-game de Nexerelin (`NGCGetExerelinDefaults`) ne s'exécutaient jamais → `QuestChainSkipEntry.getEntries()` null → NPE fatal dans `ExerelinModPlugin.onNewGame()`. Symptôme visible : les écrans new game Nexerelin (choix de faction, Configure the Sector) n'apparaissaient pas.
+
+**Fix** : `rules.csv` retiré de `replace` — le merge CSV par id conserve les traductions FR des rules vanilla tout en laissant les autres mods injecter leurs propres rules.
+
+Closes #144, closes #148
+
+---
+
+## [v2.0.13] - 2026-05-29
+
+### Maintenance post-v2.0.12
+
+- Nettoyage pipeline release (badge téléchargements, doublon release v2.0.10)
+- Restauration release v2.0.10 depuis branche `release/v2.0.10` (ZIP complet avec `pics/`)
+- Stabilisation post-hotfix #142 (HJSON comments supprimés, JSON valide)
+
+---
+
+## [v2.0.12] - 2026-05-28
+
+### Corrigé — Compatibilité mods tiers (LunaLib, MagicLib, Tahlan, UAF, Diable Avionics)
+
+**Cause racine** : Starsector charge `strings.json` via `LoadingUtils.loadJSON` — premier mod dans `enabled_mods.json` gagne, aucun merge. Notre mod étant premier, les fichiers strings.json de LunaLib, MagicLib et autres n'étaient jamais lus → `Missing string [saveButtonName]` etc.
+
+**Fix** : `strings.json` est désormais la copie maître incluant toutes les catégories :
+- `lunalib` — UI LunaLib (saveButtonName, resetButtonName, header, keybindText…)
+- `MagicLib` — bounties, achievements, paintjobs, subsystems…
+- `tahlan` — UI Tahlan Shipworks
+- `uaf_strings` + `nex_invasion2` — UI UAF
+- `diableavionics` — UI Diable Avionics
+
+Note : v2.0.11 (retrait strings.json de `replace`) était un diagnostic erroné — `replace` n'affecte pas ce chemin de code.
+
+---
+
+## [v2.0.11] - 2026-05-28
+
+### Corrigé — Compatibilité LunaLib
+- `strings.json` retiré du `replace` → mode merge : les clés UI de LunaLib (saveButtonName, resetButtonName, etc.) ne sont plus écrasées
+- Traduction FR conservée intégralement (load order garanti : notre mod charge après vanilla)
+
+### Corrigé — Pipeline release
+- `release.sh` step 7 : `git stash push jars/langpack-fr.jar` avant `git checkout main` — évite le crash sur JAR modifié par la compilation
+
+## [v2.0.10] - 2026-05-27
+
+### Ajouté
+- Captures d'écran en jeu (`pics/`) : 7 screenshots montrant la traduction FR en action (aptitudes, compétences, dialogue pirate, rencontre combat)
+- Pipeline release : `pics/` injecté dans la branche release et le ZIP public
+- CI/sécurité : hooks guard-public-repo, allowlist stricte 40 fichiers data/, patch mod_info.json automatique
+
+### Corrigé — Java runtime patches
+- Patch runtime via réflexion Java : `abilities`, `submarkets`, `aptitude_data`, `planets` traduits sans crash mods de contenu
+- `planets.json` retiré du replace (`PlanetSpec` crash évité)
+
+## [2.0.9] - 2026-05-27
+
+### Corrigé
+- Retrait de `planets.json` du tableau replace — crash `PlanetSpec` avec certains mods de contenu
+
+## [2.0.8] - 2026-05-27
+
+### Corrigé — Compatibilité mods de contenu (best effort)
+- Retrait de `submarkets.csv`, `abilities.csv`, `aptitude_data.csv` du replace (API sans setter publique → patch runtime à la place)
+
+## [2.0.7] - 2026-05-27
+
+### Ajouté — Patch runtime étendu
+- Traduction runtime de `market_conditions`, `commodities`, `industries` via API publique dans `onApplicationLoad()`
+
+## [2.0.6] - 2026-05-26
+
+### Ajouté — Traduction runtime des specs vaisseaux/armes
+- Retrait de `ship_data.csv`, `weapon_data.csv`, `hull_mods.csv`, `ship_systems.csv`, `special_items.csv` du tableau replace (conflits mods de contenu)
+- `FrenchLangModPlugin` réécrit : méthodes `patchXxx()` via API publique, chargement CSV FR comme dictionnaires, seuls les IDs vanilla patchés
+
+## [2.0.5] - 2026-05-17
+
+### Corrigé — Audit textes anglais résiduels (46 manquements)
+
+Passe systématique sur les fichiers de traduction pour débusquer les descriptions encore en anglais.
+
+**`data/strings/descriptions.csv`** — 10 descriptions de systèmes de vaisseaux :
+- `combat_burn`, `maneuveringjets`, `plasmajets`, `microburn` — vitesse et maniabilité
+- `fortressshield`, `highenergyfocus` — défense et armes énergie
+- `phaseteleporter`, `displacer`, `displacer_degraded` — téléportation
+- `forgevats_station` — recharge missiles
+
+**`data/weapons/weapon_data.csv`** — 19 descriptions d'armes (2 passes) :
+- Passe 1 : SRM DEM Gazer, Répéteur de Choc, Rayon de Faille, Émetteur de Cascade de Faille, Disrupteur de Réalité, Fragment Instable, Décharge Voltaïque, Blaster du Vide, Émanation Hostile + correction typos "Nécessite lhe" → "Nécessite le"
+- Passe 2 : phasecl, ionbeam, guardian, tachyonlance, kinetic_fragments, assaying_rift, rift_lightning, abyssal_glare, vortex_launcher
+
+**`data/characters/skills/skill_data.csv`** — 13 descriptions de compétences deprecated :
+- Endurance au Combat, Expertise en Armement, Systèmes Défensifs, Contre-Mesures Avancées, Action Évasive, Commandement et Contrôle, Doctrine de Chasseurs, Commandement d'Astroporteurs, Commandant d'Escadrille, Modulation du Réseau Électrique, Conception de Configuration, Logistique de Flotte, Opérations de Récupération
+
+**`data/campaign/reports.csv`** — 4 messages commerce :
+- `trade_no_change`, `trade_no_change_negative` — messages journal campagne (lignes commentées, prêtes à l'activation)
+
+### Documenté
+- Issue [#129](https://github.com/mipsou/starsector_lang_pack_fr_private/issues/129) : hints tactiques et noms de vaisseaux ennemis hardcodés dans `MissionDefinition.java` — won't fix
+
+---
+
+## [2.0.4] - 2026-05-17
+
+### Amélioré — Retraduction complète des missions
+
+Retraduction des 11 missions de combat via comité pluridisciplinaire (issue #129).
+Glossaire factions appliqué systématiquement (Hégémonie, Voie de Ludd, Ligue Persane, Chevaliers de Ludd, Tri-Tachyon).
+
+- `afistfulofcredits` — style noir/western, registre argotique
+- `coralnebula` — Ligue Persane, Navarque, Voie de Ludd, force de frappe
+- `nothingpersonal` — Académie Galatia, HSS Phoenix, SIGINT Hégémonie
+- `direstraits` — blocus Raesvelg, ISS Black Star, Maison Rao, citation
+- `thelasthurrah` — arcologies Mayasura, Voie de Ludd, Commodore Jensulte
+- `hornetsnest` — Callisto Ibrahim, Disque de Guayota, Dynastie Kanta
+- `sinkingthebismarck` — Kane Gleise, Boucher de Troisième Skathi, TTS Chimera
+- `forlornhope` — Deuxième Bataille de Chicomoztoc, TTS Invincible, Traité de Crom Cruach
+- `thewolfpack` — convoi Gleise, meute Tri-Tachyon, Deimos
+- `ambush` — TSM/TRE, classe Doom, Directeur Adjoint de Flotte
+- `predatororprey` — TTS Ephemeral, Prédicteur Stratégique, Baikal Daud
+
+---
+
 ## [2.0.3] - 2026-05-15
 
-### 🚨 Corrigé — Crash critique avec mods (issue #127)
+### Corrigé — Crash critique avec mods (issue #127)
 
-Suite à un rapport de [@Demotion89](https://github.com/Demotion89) qui rencontrait un crash avec une stack de 25 mods (Nexerelin, Industrial Evolution, Terraforming, etc.), analyse profonde de `rules.csv` :
-
-- **Variable `$hate` corrompue en `$hâte`** (9 occurrences) — variable Java de réputation NPC traduite par erreur par un sed global. Cause probable du crash avec Nexerelin qui manipule cette variable.
-- **Variable `$gaDA_rew` tronquée** (3 occurrences) → restaurée en `$gaDA_reward` (missions Galatia Academy)
+- **Variable `$hate` corrompue en `$hâte`** (9 occurrences) — variable Java de réputation NPC
+- **Variable `$gaDA_rew` tronquée** (3 occurrences) → restaurée en `$gaDA_reward`
 - **`$fleetOrShip` inventée** (1 occurrence) → corrigée en `$shipOrFleet`
-- **`$eOr` et `$eOrE` artefacts** (2 occurrences) → supprimés (étaient des tentatives de gérer l'accord masculin/féminin en français, non supportées par le moteur Starsector)
+- **`$eOr` et `$eOrE` artefacts** (2 occurrences) → supprimés
 
-### Impact joueurs
-
-- Joueurs avec **stack mods + Nexerelin** : fix du crash signalé
-- Joueurs **vanilla seul** : pas d'impact visible (les dialogues SDTU/Macario fonctionnent à nouveau correctement)
-- Variables d'accord genré (`hisOrHer`, etc.) : 5 cas isolés où la traduction a perdu la dynamique de genre — à traiter en release ultérieure (pas critique)
+---
 
 ## [2.0.2] - 2026-04-26
 
 ### Corrigé
-- Bug CSV : guillemets manquants dans abilities.csv ligne 17 (parsing correct de l'abilité "Générer un Flux Rapide") — merci [@Dorkamrade](https://github.com/Dorkamrade) et [@carlosgmz](https://github.com/carlosgmz)
-- Cohérence noms d'abilités dans les rapports tutoriels : "Mode Furtif", "Propulsion d'Urgence", "Salve de Capteurs" alignés avec les noms affichés en jeu (mission Derinkuyu) — merci [@carlosgmz](https://github.com/carlosgmz)
-- Tip manquant dans tips.json : "Vous pouvez appuyer sur F2 à tout moment pour ouvrir le Codex"
+- Bug CSV : guillemets manquants dans abilities.csv ligne 17
+- Cohérence noms d'abilités tutoriel Derinkuyu
+- Tip manquant dans tips.json
 
-### Amélioré
-- Terminologie sci-fi du tutoriel Derinkuyu : "désengager" (au lieu de "décrocher" trop avionique), "Rendez-vous à Pontus" (destination), "cap sur la ceinture d'astéroïdes" (vecteur navigation)
-- CONTRIBUTING.md enrichi : système de confiance contributeur transparent, table contributeurs avec statuts
-- CI auto-label : skip propre pour les PRs depuis forks externes
-
-### Communauté
-- 🌟 Premier contributeur externe historique : Dorkamrade
-- 🟢 Nouveau contributeur 🟢 Confirmé : Ferno (carlosgmz) — fork espagnol en cours
+---
 
 ## [2.0.0] - 2026-04-02
 
 ### Traduit
 - 40 000+ lignes de dialogues, quêtes, événements
-- Codex complet (Manuel du Spacer — combat, UI, types technologiques)
-- Compétences (40 skills + aptitudes)
-- Hullmods (120+), armes (182), systèmes de vaisseaux
-- Factions, grades, noms de flottes
-- Missions de combat (14)
-- Tooltips, tips de chargement, noms de vaisseaux (2187+)
-- Marchandises, industries, planètes
+- Codex complet, compétences, hullmods, armes, systèmes de vaisseaux
+- Factions, grades, noms de flottes, missions de combat (14)
+- Tooltips, tips, noms de vaisseaux (2187+), marchandises, industries, planètes
 
 ### Corrigé
-- Crash au chargement corrigé
-- Corrections linguistiques (articles, accents, terminologie)
+- Crash au chargement (BOM UTF-8, cascades Q-state, guillemets typographiques)
 
 ### Compatibilité
 - Starsector 0.98a-RC8
-
-## [0.1.0] - 2024-12-30
-
-### Ajouté
-- Structure initiale du mod
-- Configuration de base
