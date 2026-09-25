@@ -21,7 +21,7 @@ Armamento Pesado,hand_weapons,hand_weapons,500,500,3,1,,military,1000,1,graphics
 Bienes de Lujo,luxury_goods,luxury_goods,100,500,3,1,,"luxury, expensive",1000,1,graphics/icons/cargo/luxurygoods.png,ui_cargo_luxury,ui_cargo_luxury_drop,1,2.7,200,500,,50000,1,,
 Langosta Volturniana,lobster,luxury_goods,,,,1,volturn,"exotic, luxury, expensive, codex_unlockable",1000,1,graphics/icons/cargo/lobster.png,ui_cargo_volturn_lobster,ui_cargo_volturn_lobster_drop,1.1,2.8,200,500,,,1,,
 ,,,,,,,,,,,,,,,,,,,,,,
-Cascos y Armamentos de las Naves,ships,ships,100,300,3,1,,meta,1000,1,graphics/ships/hound/hound_base.png,,,10,4,200,200,,,1,,
+Cascos y Armamentos de Naves,ships,ships,100,300,3,1,,meta,1000,1,graphics/ships/hound/hound_base.png,,,10,4,200,200,,,1,,
 ,,,,,,,,,,,,,,,,,,,,,,
 Núcleos IA,ai_cores,ai_cores,1000,,0,1,,"nonecon, ai_core, hide_in_codex",1000,1,graphics/icons/cargo/ai_core_gamma.png,ai_core_pickup,ui_fighter_drop,30,,,,,,1,,
 Núcleo Alpha,alpha_core,ai_cores,,,0,150,,"nonecon, ai_core, no_loss_from_combat, codex_unlockable",1000,1,graphics/icons/cargo/ai_core_alpha.png,ai_core_pickup,ui_alpha_core_drop,40,,,,HIGH,,1,,

@@ -18,72 +18,72 @@ commerce,Comercio,90,90,,3,,,"industry, urban",,graphics/icons/industry/commerce
 station_base,Estación Orbital,,,,,,,"station, parent_item, important, structure",station,graphics/icons/industry/station_category.png,com.fs.starfarer.api.impl.campaign.econ.impl.OrbitalStation,"Una estación espacial capaz de dar apoyo a las flotas aliadas cerca de $marketName y que debe ser incapacitada antes de poder intentar un bombardeo.
 
 Existen múltiples variantes, cuyas diferencias residen generalmente en los enfoques tácticos más que en la potencia total.",2000,
-orbitalstation,Estación Orbital - Baja Tecnología,50,90,,3,,battlestation,"station, sub_item, unraidable, structure","{
+orbitalstation,Estación Orbital - Baja Tec.,50,90,,3,,battlestation,"station, sub_item, unraidable, structure","{
 radius:55,
 variant:station1_Standard,
 fleetName:Orbital Station,
 }",graphics/icons/industry/orbital_station.png,com.fs.starfarer.api.impl.campaign.econ.impl.OrbitalStation,"Una estación espacial de baja tecnología, dotada de un blindaje pesado y una potencia de fuego intermedia.
 
 Debe ser incapacitada antes de poder intentar un bombardeo.",2010,
-battlestation,Estación de Combate - Baja Tecnología,100,120,,4,orbitalstation,starfortress,"station, battlestation, unraidable, structure","{
+battlestation,Estación de Combate - Baja Tec.,100,120,,4,orbitalstation,starfortress,"station, battlestation, unraidable, structure","{
 radius:65,
 variant:station2_Standard,
 fleetName:Battlestation,
 }",graphics/icons/industry/battlestation.png,com.fs.starfarer.api.impl.campaign.econ.impl.OrbitalStation,"Una estación espacial, mejorada con un bastión pesado y ciudadelas de defensa antiaérea.
 
 Debe ser incapacitada antes de poder intentar un bombardeo.",2020,
-starfortress,Fortaleza Estelar - Baja Tecnología,200,180,,5,battlestation,,"station, starfortress, unraidable, structure","{
+starfortress,Fortaleza Estelar - Baja Tec.,200,180,,5,battlestation,,"station, starfortress, unraidable, structure","{
 radius:70,
 variant:station3_Standard,
 fleetName:Star Fortress
 }",graphics/icons/industry/star_fortress.png,com.fs.starfarer.api.impl.campaign.econ.impl.OrbitalStation,"Una estación de combate reforzada y equipada con drones de defensa de clase Merlon y un extenso campo de minas.
 
 Debe ser incapacitada antes de poder intentar un bombardeo.",2030,
-orbitalstation_mid,Estación Orbital - Media Tecnología,50,90,,3,,battlestation_mid,"station, sub_item, unraidable, structure","{
+orbitalstation_mid,Estación Orbital - Media Tec.,50,90,,3,,battlestation_mid,"station, sub_item, unraidable, structure","{
 radius:55,
 variant:station1_midline_Standard,
 fleetName:Orbital Station,
 }",graphics/icons/industry/orbital_station.png,com.fs.starfarer.api.impl.campaign.econ.impl.OrbitalStation,"Una estación espacial de media tecnología dotada de una gran potencia de fuego en un costado y de una rápida rotación axial.
 
 Debe ser incapacitada antes de poder intentar un bombardeo.",2040,
-battlestation_mid,Estación de Combate - Media Tecnología,100,120,,4,orbitalstation_mid,starfortress_mid,"station, battlestation, unraidable, structure","{
+battlestation_mid,Estación de Combate - Media Tec.,100,120,,4,orbitalstation_mid,starfortress_mid,"station, battlestation, unraidable, structure","{
 radius:65,
 variant:station2_midline_Standard,
 fleetName:Battlestation,
 }",graphics/icons/industry/battlestation.png,com.fs.starfarer.api.impl.campaign.econ.impl.OrbitalStation,"Una estación espacial mejorada con módulos de misiles de apoyo.
 
 Debe ser incapacitada antes de poder intentar un bombardeo.",2050,
-starfortress_mid,Fortaleza Estelar - Media Tecnología,200,180,,5,battlestation_mid,,"station, starfortress, unraidable, structure","{
+starfortress_mid,Fortaleza Estelar - Media Tec.,200,180,,5,battlestation_mid,,"station, starfortress, unraidable, structure","{
 radius:70,
 variant:station3_midline_Standard,
 fleetName:Star Fortress
 }",graphics/icons/industry/star_fortress.png,com.fs.starfarer.api.impl.campaign.econ.impl.OrbitalStation,"Una estación de combate reforzada y equipada con drones de defensa de clase Ravelin y un extenso campo de minas.
 
 Debe ser incapacitada antes de poder intentar un bombardeo.",2060,
-orbitalstation_high,Estación Orbital - Alta Tecnología,50,90,,3,,battlestation_high,"station, sub_item, unraidable, structure","{
+orbitalstation_high,Estación Orbital - Alta Tec.,50,90,,3,,battlestation_high,"station, sub_item, unraidable, structure","{
 radius:55,
 variant:station1_hightech_Standard,
 fleetName:Orbital Station,
 }",graphics/icons/industry/orbital_station.png,com.fs.starfarer.api.impl.campaign.econ.impl.OrbitalStation,"Una estación espacial de alta tecnología, equipada con resistentes escudos giratorios, una flota de cazas y una potencia de fuego intermedia.
 
 Debe ser incapacitada antes de poder intentar un bombardeo.",2070,
-battlestation_high,Estación de Combate - Alta Tecnología,100,120,,4,orbitalstation_high,starfortress_high,"station, battlestation, unraidable, structure","{
+battlestation_high,Estación de Combate - Alta Tec.,100,120,,4,orbitalstation_high,starfortress_high,"station, battlestation, unraidable, structure","{
 radius:65,
 variant:station2_hightech_Standard,
 fleetName:Battlestation,
 }",graphics/icons/industry/battlestation.png,com.fs.starfarer.api.impl.campaign.econ.impl.OrbitalStation,"Una estación espacial mejorada con una ciudadela defensiva dotada de gran potencia de fuego.
 
 Debe ser incapacitada antes de poder intentar un bombardeo.",2080,
-starfortress_high,Fortaleza Estelar - Alta Tecnología,200,180,,5,battlestation_high,,"station, starfortress, unraidable, structure","{
+starfortress_high,Fortaleza Estelar - Alta Tec.,200,180,,5,battlestation_high,,"station, starfortress, unraidable, structure","{
 radius:70,
 variant:station3_hightech_Standard,
 fleetName:Star Fortress
 }",graphics/icons/industry/star_fortress.png,com.fs.starfarer.api.impl.campaign.econ.impl.OrbitalStation,"Una estación de combate reforzada y equipada con drones de defensa de clase Gárgola y teleportadores de minas guiadas de largo alcance.
 
 Debe ser incapacitada antes de poder intentar un bombardeo.",2090,
-grounddefenses,Defensas Terrestres,30,60,,2,,heavybatteries,"grounddefenses, unraidable, tactical_bombardment, structure",,graphics/icons/industry/ground_defenses.png,com.fs.starfarer.api.impl.campaign.econ.impl.GroundDefenses,"Una red dispersa y semiautónoma de pequeñas instalaciones armadas ocultas que hace que la perspectiva de un asalto terrestre directo, e incluso de simples incursiones, resulte extremadamente costosa para el atacante. Solo un bombardeo orbital abrumador o una cobertura activa enormemente desproporcionada pueden neutralizar estas defensas.",2200,
+grounddefenses,Defensas Terrestres,30,60,,2,,heavybatteries,"grounddefenses, unraidable, tactical_bombardment, structure",,graphics/icons/industry/ground_defenses.png,com.fs.starfarer.api.impl.campaign.econ.impl.GroundDefenses,"Una red dispersa y semiautónoma de pequeñas instalaciones armadas ocultas que hace que la perspectiva de un asalto terrestre directo, e incluso de simples incursiones, resulte muy costoso para el atacante. Solo un bombardeo orbital abrumador o una cobertura activa enormemente desproporcionada pueden neutralizar estas defensas.",2200,
 heavybatteries,Artillería Pesada,60,90,,3,grounddefenses,,"grounddefenses, unraidable, tactical_bombardment, structure",,graphics/icons/industry/heavy_batteries.png,com.fs.starfarer.api.impl.campaign.econ.impl.GroundDefenses,"La artillería blindada enterrada complementa una red dispersa de pequeñas instalaciones armadas ocultas. La artillería terrestre es capaz de demostrar una potencia de fuego realmente impresionante, aunque esta realmente solo dificulta las operaciones terrestres, ya que ningún capitán espacial sería tan imprudente como para adentrarse en su radio de alcance.",2300,
-patrolhq,Cuartel de Patrulla,60,60,,8,,militarybase,"patrol, unraidable, tactical_bombardment, structure",,graphics/icons/industry/patrol_hq.png,com.fs.starfarer.api.impl.campaign.econ.impl.MilitaryBase,"Hangares, bahías de mantenimiento, centro de mando y control, cuarteles y operaciones logísticas necesarias para proyectar fuerza en todo un sistema estelar. Una vez establecidas, las patrullas militarizadas perseguirán a piratas y protegerán a los convoyes aliados.",2400,
+patrolhq,Cuartel de Patrulla,60,60,,8,,militarybase,"patrol, unraidable, tactical_bombardment, structure",,graphics/icons/industry/patrol_hq.png,com.fs.starfarer.api.impl.campaign.econ.impl.MilitaryBase,"Hangares, bahías de mantenimiento, centros de mando y control, cuarteles y operaciones logísticas necesarias para proyectar fuerza en todo un sistema estelar. Una vez establecidas, las patrullas militarizadas perseguirán a piratas y protegerán a los convoyes aliados.",2400,
 militarybase,Base Militar,90,120,,10,patrolhq,highcommand,"military, unraidable, tactical_bombardment, industry",,graphics/icons/industry/military_base.png,com.fs.starfarer.api.impl.campaign.econ.impl.MilitaryBase,"Estas instalaciones permiten la proyección de fuerza entre sistemas estelares. Cualquier operación militar de este calado supone una enorme tarea logística que requiere la coordinación de decenas, incluso cientos, de naves y de miles de oficiales, tripulantes y soldados.",2500,
 highcommand,Alto Mando Militar,30,120,,14,militarybase,,"command, unraidable, tactical_bombardment, industry",,graphics/icons/industry/high_command.png,com.fs.starfarer.api.impl.campaign.econ.impl.MilitaryBase,Un imperio interestelar solo es posible gracias a un cuerpo excepcional de oficiales y burócratas a los que se les ha otorgado autoridad sobre los recursos de sistemas estelares enteros. Un alto mando bien establecido permite organizar y llevar a cabo operaciones militares en todo el Sector.,2600,
 lionsguard,CG de la Guardia del León,90,60,,6,,,"military, unraidable, tactical_bombardment, structure, codex_unlockable",,graphics/icons/industry/lions_guard.png,com.fs.starfarer.api.impl.campaign.econ.impl.LionsGuardHQ,"Cuartel general de la temida guardia personal de Phillip «El León de Sindria» Andrada. Con un entrenamiento excepcional y acceso al mejor equipamiento que los créditos pueden comprar, la lealtad fanática de la Guardia se mantiene mediante un sistema de privilegios e incentivos que, al tiempo que la elevan, la aíslan del ejército regular del Diktat.",2650,

@@ -29,6 +29,8 @@
 		"guardHighDeputyExecutor":{"name":"Subcomandante Ejecutor de la Guardia"},
 
 		"citizen":{"name":"Ciudadano"},
+		"executive":{"name":"Ejecutivo"},
+		"seniorExecutive":{"name":"Ejecutivo Senior"},
 		"agent":{"name":"Agente"},
 		"specialAgent":{"name":"Agente Especial"},
 
@@ -40,7 +42,7 @@
 		"father":{"name":"Padre"},
 		"mother":{"name":"Madre"},
 		"elder":{"name":"Anciano"},
-
+		"aristocrat":{"name":"Aristócrata"},
 		"terrorist":{"name":"Terrorista"},
 		"freedomFighter":{"name":"Libertador"},
 		"clone":{"name":"Clon"},
@@ -71,19 +73,21 @@
 
 		"guildMaster":{"name":"Maestro de Gremio"},
 		"communeLeader":{"name":"Líder Comunal"},
-		"executive":{"name":"Director"},
-		"seniorExecutive":{"name":"Director Senior"},
+		"executive":{"name":"Ejecutivo"},
+		"seniorExecutive":{"name":"Ejecutivo Senior"},
 		"minorCriminal":{"name":"Delincuente de poca monta"},
 		"criminal":{"name":"Criminal"},
 		"spacer":{"name":"Astronauta"},
 
 		"genericMilitary":{"name":"Comandante"},
+		"marineSquadLeader":{"name":"Sargento"},
 
 		"trader":{"name":"Comerciante"},
 		"merchant":{"name":"Mercader"},
 		"investor":{"name":"Inversor"},
 		"commodities_agent":{"name":"Agente de Materias Primas"},
 		"entrepreneur":{"name":"Emprendedor"},
+		"nanoforge_engineer":{"name":"Ingeniero de Nanoforja"},
 
 		"shady":{"name":"Individuo Sospechoso"},
 		"gangster":{"name":"Gángster"},
@@ -107,6 +111,7 @@
 		"provost":{"name":"Rector"},
 		"academician":{"name":"Académico"},
 
+		"securityChief":{"name":"Jefe de Seguridad"},
 		"doctor":{"name":"Doctor"},
 		"hacker":{"name":"Hacker"},
 		"hermit":{"name":"Ermitaño"},
@@ -118,13 +123,15 @@
 		"unknown":{"name":"Desconocido"},
 		"aristocrat":{"name":"Aristócrata"},
 
+		"curate":{"name":"Cura"},
 		"synodSubcurate":{"name":"Vicario del Sínodo"},
+		"subcurate":{"name":"Subcura"},
 		"archcurate":{"name":"Arzobispo"},
 		"heretic":{"name":"Hereje"},
 		"shrinePriest":{"name":"Cura Sacro"},
 		"excubitorOrbis":{"name":"Excubitor Orbis"},
 		"initiate":{"name":"Iniciado"},
-		"novice":{"name":"Novato"},
+		"novice":{"name":"Novicio"},
 		"pilgrim":{"name":"Peregrino"},
 	},
 }
