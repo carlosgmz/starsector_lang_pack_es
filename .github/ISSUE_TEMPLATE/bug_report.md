@@ -1,31 +1,31 @@
 ---
-name: 🐛 Bug Report
-about: Signaler un bug pour nous aider à améliorer
+name: 🐛 Informe de bug
+about: Informar de un error para ayudarnos a mejorar
 title: '[BUG] '
 labels: bug
 assignees: ''
 ---
 
-## Description du bug
-<!-- Une description claire et concise du bug -->
+## Descripción del error
+<!-- Una descripción clara y concisa del error -->
 
-## Pour reproduire
-Étapes pour reproduire le comportement :
-1. Aller à '...'
-2. Cliquer sur '....'
-3. Défiler jusqu'à '....'
-4. Voir l'erreur
+## Para reproducirlo
+Pasos para reproducir el comportamiento:
+1. Ir a '...'
+2. Haz clic en «....»
+3. Desplázate hasta «....»
+4. Observa el error
 
-## Comportement attendu
-<!-- Une description claire de ce que vous attendiez -->
+## Comportamiento esperado
+<!-- Una descripción clara de lo que esperabas -->
 
-## Screenshots
-<!-- Si applicable, ajoutez des captures d'écran -->
+## Capturas de pantalla
+<!-- Si procede, añade capturas de pantalla -->
 
-## Environnement
-- OS : [ex: Windows 10]
-- Version Starsector : [ex: 0.95.1a-RC6]
-- Version du mod : [ex: 1.0.0]
+## Entorno
+- SO: [ej.: Windows 10]
+- Versión de Starsector: [ej.: 0.95.1a-RC6]
+- Versión del mod: [ej.: 1.0.0]
 
-## Contexte additionnel
-<!-- Ajoutez tout autre contexte sur le problème ici -->
+## Contexto adicional
+<!-- Añade aquí cualquier otro dato relevante sobre el problema -->

@@ -1,28 +1,28 @@
 ---
-name: 🌍 Problème de traduction
-about: Signaler un problème de traduction
+name: 🌍 Problema de traducción
+about: Informar de un problema de traducción
 title: '[TRAD] '
 labels: translation
 assignees: ''
 ---
 
-## Texte original
-<!-- Le texte en anglais -->
+## Texto original
+<!-- El texto en inglés -->
 
-## Traduction actuelle
-<!-- La traduction française actuelle -->
+## Traducción actual
+<!-- La traducción actual al español -->
 
-## Problème
-<!-- Décrivez le problème avec la traduction actuelle -->
+## Problema
+<!-- Describe el problema con la traducción actual -->
 
-## Suggestion
-<!-- Votre suggestion de traduction -->
+## Sugerencia
+<!-- Tu sugerencia de traducción -->
 
-## Contexte
-<!-- Dans quel contexte apparaît ce texte ? -->
+## Contexto
+<!-- ¿En qué contexto aparece este texto? -->
 
-## Screenshots
-<!-- Si applicable, ajoutez des captures d'écran -->
+## Capturas de pantalla
+<!-- Si procede, añade capturas de pantalla -->
 
-## Fichier concerné
-<!-- Le fichier contenant la traduction -->
+## Archivo en cuestión
+<!-- El archivo que contiene la traducción -->

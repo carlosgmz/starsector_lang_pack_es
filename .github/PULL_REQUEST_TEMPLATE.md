@@ -1,25 +1,25 @@
-## Type de modification
-- [ ] 🎨 Reformulation / amelioration de traduction
-- [ ] 🐛 Correction d'erreur de traduction
-- [ ] 🌟 Nouvelle traduction
-- [ ] 🔧 Correction de bug CSV
+## Tipo de modificación
+- [ ] 🎨 Reformulación / mejora de la traducción
+- [ ] 🐛 Corrección de un error de traducción
+- [ ] 🌟 Nueva traducción
+- [ ] 🔧 Corrección de un error en el CSV
 
-## Fichiers et contenus modifies
-<!-- Quels fichiers, quelles armes/vaisseaux/textes ? -->
+## Archivos y contenidos modificados
+<!-- ¿Qué archivos, qué armas/naves/textos? -->
 
-## Raison
-<!-- Pourquoi cette modification ? (contresens, fluidite, ton, etc.) -->
+## Motivo
+<!-- ¿Por qué se ha realizado esta modificación? (contrasentido, fluidez, tono, etc.) -->
 
-## Teste en jeu ?
-- [ ] Oui
-- [ ] Non
+## ¿Probado en el juego?
+- [ ] Sí
+- [ ] No
 
-## Checklist
-- [ ] J'ai verifie le ton original anglais avant de reformuler
-- [ ] Le CSV n'est pas casse (structure, colonnes, guillemets)
+## Lista de comprobación
+- [ ] He comprobado el tono original en inglés antes de reformularlo
+- [ ] El CSV no presenta errores (estructura, columnas, comillas)
 
-## Screenshots (si applicable)
-<!-- Captures d'ecran du rendu en jeu -->
+## Capturas de pantalla (si procede)
+<!-- Capturas de pantalla del resultado en el juego -->
 
-## Notes
-<!-- Autre chose a signaler ? -->
+## Notas
+<!-- ¿Algo más que señalar? -->

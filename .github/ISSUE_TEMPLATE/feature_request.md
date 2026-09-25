@@ -1,22 +1,22 @@
 ---
-name: 💡 Suggestion
-about: Suggérer une idée pour ce projet
+name: 💡 Sugerencia
+about: Sugerir una idea para el proyecto
 title: '[FEATURE] '
 labels: enhancement
 assignees: ''
 ---
 
-## Problème lié
-<!-- Une description claire et concise du problème. Ex: Je suis toujours frustré quand [...] -->
+## Problema relacionado
+<!-- Una descripción clara y concisa del problema. Ej.: Siempre me frustra cuando [...] -->
 
-## Solution souhaitée
-<!-- Une description claire et concise de ce que vous voulez qu'il se passe -->
+## Solución deseada
+<!-- Una descripción clara y concisa de lo que quieres que suceda -->
 
-## Alternatives considérées
-<!-- Une description claire et concise des solutions alternatives que vous avez considérées -->
+## Alternativas consideradas
+<!-- Una descripción clara y concisa de las soluciones alternativas que has barajado -->
 
-## Contexte additionnel
-<!-- Ajoutez tout autre contexte ou captures d'écran concernant la demande de fonctionnalité ici -->
+## Contexto adicional
+<!-- Añade aquí cualquier otro contexto o capturas de pantalla relacionadas con la sugerencia de la funcionalidad -->
 
-## Impact sur la traduction
-<!-- Comment cette fonctionnalité améliorerait le processus de traduction ? -->
+## Impacto en la traducción
+<!-- ¿Cómo mejoraría esta funcionalidad el proceso de traducción? -->

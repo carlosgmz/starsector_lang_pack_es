@@ -1,58 +1,57 @@
-# Traducción de Starsector a Español
+# Traducción de Starsector al Español
 
-En progreso; este proyecto es un fork del proyecto de [mipsou](https://github.com/mipsou/starsector_lang_pack_fr). Todos los créditos van a él y por supuesto a los desarrolladores de Starsector.
-
-Readme original:
-
-# Jouez à Starsector en français
-
-> 40 000+ dialogues, missions, Codex, compétences traduits.
-> Compatible 0.98a-RC8
-
-[![⬇ Télécharger⬇](https://img.shields.io/github/v/release/mipsou/starsector_lang_pack_fr?style=for-the-badge&label=⬇%20Télécharger⬇&color=brightgreen)](https://github.com/mipsou/starsector_lang_pack_fr/releases/latest)
-![Téléchargements](https://img.shields.io/github/downloads/mipsou/starsector_lang_pack_fr/total?style=for-the-badge&label=Téléchargements&color=blue)
-![Starsector](https://img.shields.io/badge/Starsector-0.98a--RC8-orange?style=for-the-badge)
-![License](https://img.shields.io/badge/License-EUPL%201.2-blue?style=for-the-badge)
+En progreso; este proyecto es un fork del proyecto de [mipsou](https://github.com/mipsou/starsector_lang_pack_fr). Muchas gracias a él y por supuesto a los desarrolladores de Starsector.
 
 ---
 
-## Installation
+## Instalación
 
-1. Télécharger le [ZIP de la dernière version](https://github.com/mipsou/starsector_lang_pack_fr/releases/latest)
-2. Extraire dans le dossier `mods/` de Starsector
-3. Activer dans le launcher
-4. **Nouvelle partie recommandée**
+1. Descarga el archivo [ZIP con la última versión](https://github.com/carlosgmz/starsector_lang_pack_es/releases/latest)
+2. Extrae el contenido en la carpeta `mods/` de Starsector
+3. Activa el mod en el launcher
+4. **Recomendado empezar una partida nueva**
 
-## Ce qui est traduit
 
-| Contenu | Fichiers | État |
+## Qué está traducido
+
+| Contenido | Archivos | Estado |
 |---------|----------|------|
-| Dialogues de campagne | rules.csv (40 000+ lignes) | ✅ |
-| Interface, tooltips, tips | strings.json, tooltips.json, tips.json | ✅ |
-| Codex (descriptions, armes, vaisseaux) | descriptions.csv | ✅ |
-| Compétences (40 skills) | skill_data.csv | ✅ |
-| Modifications de coque (120) | hull_mods.csv | ✅ |
-| Armes (182) | weapon_data.csv | ✅ |
-| Systèmes de vaisseaux | ship_systems.csv | ✅ |
-| Missions de combat (14) | mission_text.txt | ✅ |
-| Factions et grades | .faction, default_ranks.json | ✅ |
-| Planètes, marchandises, industries | planets.json, commodities.csv, etc. | ✅ |
-| Codex manuel (combat, techno, UI) | spacers_manual_*.txt | ✅ |
-| Noms de vaisseaux (2187+) | ship_names.json | ✅ |
+| Diálogos de la campaña | rules.csv (40.000+ líneas) | ✅ |
+| Descripciones, armas, naves | descriptions.csv | ✅ |
+| Habilidades (40 skills) | skill_data.csv | ✅ |
+| Modificaciones del casco (120) | hull_mods.csv | ✅ |
+| Armamento (182) | weapon_data.csv | ✅ |
+| Sistemas de nave | ship_systems.csv | ✅ |
+| Misiones de combate (14) | mission_text.txt | ❌ |
+| Facciones y rangos | .faction, default_ranks.json | ✅ |
+| Planetas, mercancías, industrias | planets.json, commodities.csv, etc. | ✅ |
+| Codex (combate, tecnología, UI) | spacers_manual_*.txt | ✅ |
+| Nombres de naves (2187+) | ship_names.json | ✅ |
 
-## Limitations connues
 
-Certains textes restent en anglais car ils sont codés en dur dans le moteur Java :
-- Panneau de déploiement ("Your forces", "Held in reserve")
-- Labels du Codex ("Ships", "Logistical data")
-- Labels combat (FLUX, HULL, CR)
-- Écran de création de personnage ("Name", "Sector Age")
-- Variables de genre ("Un woman", "Un man")
+## Limitaciones conocidas
 
-## Signaler un bug
+Algunos textos permanecen en inglés porque están hardcodeados en el motor Java:
+- Interfaz (habilidades, información...)
+- Tutorial inicial
+- Algunas opciones de diálogo e interacciones
+- Panel de despliegue ("Your forces", "Held in reserve")
+- Etiquetas del Codex ("Ships", "Logistical data")
+- Etiquetas de combate (FLUX, HULL, CR)
+- Creación del personaje ("Name", "Sector Age")
+- Variables de género y otras ("woman", "He"/"She", etc)
 
-[Ouvrir une issue](https://github.com/mipsou/starsector_lang_pack_fr/issues/new)
 
-## Licence
+## Informar de un error
+
+[Abrir un issue](https://github.com/carlosgmz/starsector_lang_pack_es/issues)
+
+
+## Contacto
+
+También puedes enviar un correo a `carlosgmzes@proton.me`
+
+
+## Licencia
 
 [EUPL 1.2](LICENSE)
