@@ -13,6 +13,7 @@
     "data/strings/tooltips.json",
     "data/strings/ship_names.json",
     "data/campaign/reports.csv",
+    "data/campaign/procgen/name_gen_data.csv",
     "data/characters/personalities.csv",
     "data/config/battle_objectives.json",
     "data/config/contact_tag_data.json",
